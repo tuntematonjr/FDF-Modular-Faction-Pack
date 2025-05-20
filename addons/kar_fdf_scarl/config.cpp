@@ -206,7 +206,7 @@ class CfgWeapons
 		class single_medium_optics1: Single
 		{
 			requiredOpticType = MEDIUM_OPTIC;
-			showToPlayer = false;
+			showToPlayer = 0;
 			minRange = 5;
 			minRangeProbab = 0.2;
 			midRange = 300;
