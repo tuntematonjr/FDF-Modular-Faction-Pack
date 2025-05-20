@@ -50,7 +50,7 @@ class CfgGesturesMale {
 			leftHandIKEnd = true;
 			rightHandIKBeg = true;
 			rightHandIKCurve[] = { 1 };
-			rightHandIKEnd = true;
+			rightHandIKEnd = 1;
 		};
 		class HLC_GestureReloadAK_prone : Default {
 			file = "\KAR_RK62M2\anim\reload_ak_prone.rtm";
@@ -65,7 +65,7 @@ class CfgGesturesMale {
 			leftHandIKEnd = true;
 			rightHandIKBeg = true;
 			rightHandIKCurve[] = { 1 };
-			rightHandIKEnd = true;
+			rightHandIKEnd = 1;
 		};
 		class HLC_GestureReloadAK_Context : HLC_GestureReloadAK {
 			mask = "NIA_handsWeapon_context_Toadie";
