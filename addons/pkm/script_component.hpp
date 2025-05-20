@@ -1,4 +1,4 @@
-#define COMPONENT core
+#define COMPONENT pkm
 #include "\x\kar_fdf\addons\main\script_mod.hpp"
 
 //#define DEBUG_MODE_FULL

@@ -1,19 +1,17 @@
-class CfgPatches
-{
-	class KAR_RK62
-	{
-		requiredAddons[]=
-		{
-			"A3_Weapons_F_Exp","A3_Sounds_F_Exp", "KAR_RK62M2"
-		};
-		requiredVersion=0.1;
+#include "script_component.hpp"
+
+class CfgPatches {
+    class ADDON {
+        name = COMPONENT_NAME;
 		units[]={};
-		weapons[]=
-		{
-			"KAR_RIFLE_RK62",
-		};
-	};
+		weapons[]={"KAR_RIFLE_RK62"};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[]={"kar_fdf_main","A3_Weapons_F_Exp","A3_Sounds_F_Exp","KAR_RK62M2"};
+        authors[] = {"Kartsa"};
+        VERSION_CONFIG;
+    };
 };
+
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;

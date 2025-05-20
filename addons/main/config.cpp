@@ -7,7 +7,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
-		requiredAddons[] = {"cba_main","cba_xeh"};
+		requiredAddons[] = {"cba_main","cba_xeh","rhs_infantry","rhsusf_infantry","rhsgref_infantry","rhssaf_main","rhsusf_c_troops"};
 		// author = "Tuntematon";
 		// authorUrl = GITHUBLINK;
 		VERSION_CONFIG;

@@ -9,7 +9,7 @@ class CfgPatches {
 			"KAR_FDF_FFP_LEO2A6","KAR_FDF_FFP_ITO05"};
 		weapons[]={};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"KAR_FDF_Vehicles","Finnish_Forces_Pack", "Swedish_Forces_Pack","KAR_FDF_Faction"};
+        requiredAddons[] = {"kar_fdf_main","KAR_FDF_Vehicles","Finnish_Forces_Pack", "Swedish_Forces_Pack","KAR_FDF_Faction"};
         authors[] = {"Kartsa"};
         VERSION_CONFIG;
 		skipWhenMissingDependencies = 1;

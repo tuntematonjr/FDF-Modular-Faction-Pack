@@ -6,7 +6,7 @@ class CfgPatches {
 		units[]={};
 		weapons[]={};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"KAR_FDF_Faction"};
+        requiredAddons[] = {"kar_fdf_main","KAR_FDF_Faction"};
         authors[] = {"Kartsa"};
         VERSION_CONFIG;
     };

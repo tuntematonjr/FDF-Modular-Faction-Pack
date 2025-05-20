@@ -1,19 +1,17 @@
-class CfgPatches
-{
-	class KAR_PKM
-	{
-		requiredAddons[]=
-		{
-			"A3_Weapons_F_Exp","A3_Sounds_F_Exp","rhs_c_weapons"
-		};
-		requiredVersion=0.1;
+#include "script_component.hpp"
+
+class CfgPatches {
+    class ADDON {
+        name = COMPONENT_NAME;
 		units[]={};
-		weapons[]=
-		{
-			"KAR_PKM",
-		};
-	};
+		weapons[]={"KAR_PKM"};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[]={"kar_fdf_main","A3_Weapons_F_Exp","A3_Sounds_F_Exp","rhs_c_weapons"};
+        authors[] = {"Kartsa"};
+        VERSION_CONFIG;
+    };
 };
+
 class WeaponSlotsInfo;
 class Mode_SemiAuto;
 class Mode_Burst;
