@@ -80,21 +80,21 @@ class CfgWeapons
 		magazineReloadSwitchPhase = 0.47999999;
 		drySound[]=
 		{
-			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_dry",
+			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_dry.wss",
 			0.56234133,
 			1,
 			10
 		};
 		reloadMagazineSound[]=
 		{
-			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload",
+			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload.wss",
 			1,
 			1,
 			10
 		};
 		changeFiremodeSound[]=
 		{
-			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_firemode",
+			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_firemode.wss",
 			0.17782794,
 			1,
 			5
