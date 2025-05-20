@@ -16,6 +16,11 @@ include = [
     "data/**",
 ]
 
+[hemtt.build]
+pdrive = "require"
+
+[hemtt.check]
+pdrive = "require"
 
 [binarize]
 enabled = true 
