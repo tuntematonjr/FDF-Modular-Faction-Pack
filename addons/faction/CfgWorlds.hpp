@@ -1,11 +1,7 @@
-class CfgWorlds
-{
-	class GenericNames
-	{
-		class FinnishMen
-		{
-			class FirstNames 
-			{
+class CfgWorlds {
+	class GenericNames {
+		class FinnishMen {
+			class FirstNames  {
 				aapeli = "Aapeli";
 				aapo = "Aapo";
 				aarno = "Aarno";
@@ -253,8 +249,7 @@ class CfgWorlds
 				vilppu = "Vilppu";
 				yrjo = "Yrjö";		
 			};
-			class LastNames 
-			{
+			class LastNames  {
 				aalto = "Aalto";
 				aaltonen = "Aaltonen";
 				aho = "Aho";

@@ -8,13 +8,11 @@ class CfgMovesBasic {
 		class RifleBaseStandActions;
 		class RifleAdjustProneBaseActions;
 
-		class NoActions : ManActions 
-		{
+		class NoActions : ManActions  {
 			HLC_GestureReloadAK[] = { "HLC_GestureReloadAK", "Gesture" };
 		};
 
-		class RifleProneActions : RifleBaseStandActions 
-		{
+		class RifleProneActions : RifleBaseStandActions  {
 			HLC_GestureReloadAK[] = { "HLC_GestureReloadAK_Prone","Gesture" };
 		};
 
@@ -31,6 +29,7 @@ class CfgMovesBasic {
 		};
 	};
 };
+
 class CfgGesturesMale {
 	class Default;
 	class GestureReloadBase;
@@ -45,10 +44,10 @@ class CfgGesturesMale {
 			// mask="empty";
 			headBobStrength = 0.200000;
 			headBobMode = 2;
-			leftHandIKBeg = false;
+			leftHandIKBeg = 0;
 			leftHandIKCurve[] = { 0, 1, 0.075, 0, 0.85, 0, 0.93, 1 };
-			leftHandIKEnd = true;
-			rightHandIKBeg = true;
+			leftHandIKEnd = 1;
+			rightHandIKBeg = 1;
 			rightHandIKCurve[] = { 1 };
 			rightHandIKEnd = 1;
 		};
@@ -60,10 +59,10 @@ class CfgGesturesMale {
 			// mask="empty";
 			headBobStrength = 0.2;
 			headBobMode = 2;
-			leftHandIKBeg = false;
+			leftHandIKBeg = 0;
 			leftHandIKCurve[] = { 0, 1, 0.075, 0, 0.85, 0, 0.93, 1 };
-			leftHandIKEnd = true;
-			rightHandIKBeg = true;
+			leftHandIKEnd = 1;
+			rightHandIKBeg = 1;
 			rightHandIKCurve[] = { 1 };
 			rightHandIKEnd = 1;
 		};
