@@ -1306,7 +1306,7 @@ class cfgWeapons
 		{
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
 			class HitpointsProtectionInfo
 			{
@@ -1352,7 +1352,7 @@ class cfgWeapons
 		{
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
 			class HitpointsProtectionInfo
 			{
@@ -1413,11 +1413,7 @@ class cfgWeapons
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] =
-			{
-				TWest,
-				TCivilian
-			};
+			modelSides[] = {1,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -1477,11 +1473,7 @@ class cfgWeapons
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] =
-			{
-				TWest,
-				TCivilian
-			};
+			modelSides[] = {1,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -1574,7 +1566,7 @@ class cfgWeapons
 		{
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
 			class HitpointsProtectionInfo
 			{
@@ -1620,7 +1612,7 @@ class cfgWeapons
 		{
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
 			class HitpointsProtectionInfo
 			{
@@ -1681,11 +1673,7 @@ class cfgWeapons
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] =
-			{
-				TWest,
-				TCivilian
-			};
+			modelSides[] = {1,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -1745,11 +1733,7 @@ class cfgWeapons
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] =
-			{
-				TWest,
-				TCivilian
-			};
+			modelSides[] = {1,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -1794,7 +1778,7 @@ class cfgWeapons
 		{
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
 			class HitpointsProtectionInfo
 			{
@@ -1840,7 +1824,7 @@ class cfgWeapons
 		{
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
 			class HitpointsProtectionInfo
 			{
@@ -1901,11 +1885,7 @@ class cfgWeapons
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] =
-			{
-				TWest,
-				TCivilian
-			};
+			modelSides[] = {1,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -1965,11 +1945,7 @@ class cfgWeapons
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] =
-			{
-				TWest,
-				TCivilian
-			};
+			modelSides[] = {1,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -2046,7 +2022,7 @@ class cfgWeapons
 			mass=30;
 			allowedSlots[]={901,605};
 			uniformModel="\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas.p3d";
-			modelSides[]={2,3};
+			modelSides[] = {2,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -2168,7 +2144,7 @@ class cfgWeapons
 		{
 			mass = 5;
 			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = { "camo" };
 			uniformModel = "rhsgref\addons\rhsgref_infantry\gear\Head\m43cap.p3d";
 			class HitpointsProtectionInfo
@@ -2217,7 +2193,7 @@ class cfgWeapons
 		{
 			mass = 6;
 			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = { "camo" };
 			uniformModel = "\A3\Characters_F\Common\woolhat.p3d";
 			class HitpointsProtectionInfo
@@ -2302,7 +2278,7 @@ class cfgWeapons
 		{
 			mass = 6;
 			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = { "camo" };
 			uniformModel = "\A3\Characters_F\Common\woolhat.p3d";
 			class HitpointsProtectionInfo
@@ -2351,7 +2327,7 @@ class cfgWeapons
 		{
 			mass = 6;
 			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = { "camo" };
 			uniformModel = "\A3\Characters_F\Common\woolhat.p3d";
 			class HitpointsProtectionInfo
@@ -2399,7 +2375,7 @@ class cfgWeapons
 		{
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\booniehat.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"camo"};
 			class HitpointsProtectionInfo
 			{
@@ -2426,7 +2402,7 @@ class cfgWeapons
 		{
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\booniehat.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"camo"};
 			class HitpointsProtectionInfo
 			{
@@ -2453,7 +2429,7 @@ class cfgWeapons
 		{
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\cappatrol.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"camo"};
 			class HitpointsProtectionInfo
 			{
@@ -2480,7 +2456,7 @@ class cfgWeapons
 		{
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\cappatrol.p3d";
-			modelSides[] = {3,1};
+			modelSides[] = {1,3};
 			hiddenSelections[] = {"camo"};
 			class HitpointsProtectionInfo
 			{
