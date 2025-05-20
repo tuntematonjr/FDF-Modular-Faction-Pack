@@ -63,8 +63,8 @@ class CfgWeapons
         picture = "\KAR_FDF_SCARL\data\UI\icon_arifle_scar_L_black.paa";
 		hiddenSelections[] =
 		{
-			Camo1,
-			Camo2
+			"Camo1",
+			"Camo2"
 		};
 		hiddenSelectionsTextures[] =
 		{
@@ -76,7 +76,7 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\A3\Weapons_F_Exp\Rifles\SPAR_01\Data\Anim\SPAR_01.rtm"
 		};
-		reloadAction = GestureReloadSPAR_01;
+		reloadAction = "GestureReloadSPAR_01";
 		magazineReloadSwitchPhase = 0.47999999;
 		drySound[]=
 		{
@@ -107,7 +107,7 @@ class CfgWeapons
 		aimTransitionSpeed = 1.1;
 		dexterity = 1.4;
 		initSpeed = 870;
-		recoil = recoil_spar;
+		recoil = "recoil_spar";
 		maxZeroing = 800;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
