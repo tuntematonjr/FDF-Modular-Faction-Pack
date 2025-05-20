@@ -738,7 +738,7 @@ class CfgAmmo
 		nvgonly=1;
 		class CamShakeExplode
 		{
-			distance="((6^0.5)*3)";
+			distance= 7.3484693; // "((6^0.5)*3)" Could remove quotes to allow evaluation at build-time
 			duration="((round (6^0.5))*0.2 max 0.2)";
 			frequency=20;
 			power="(6^0.5)";
