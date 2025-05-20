@@ -228,7 +228,7 @@ class CfgVehicles
 			"KAR_FDF_SEIKKAILUHATTU", 1
 		};
 		weapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SNI",,"rhsusf_weap_glock17g4","Throw","Put"};
+		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
 		magazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 	};
@@ -458,7 +458,7 @@ class CfgVehicles
 		role="Marksman";
 		backpack = "";
 		weapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SNI",,"rhsusf_weap_glock17g4","Throw","Put"};
+		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
 		magazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 	};
@@ -761,7 +761,7 @@ class CfgVehicles
 		role="Marksman";
 		backpack = "";
 		weapons[] = {"KAR_FDF_SNI_SOF","rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SNI",,"rhsusf_weap_glock17g4","Throw","Put"};
+		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_SNI.jpg";
 		magazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
