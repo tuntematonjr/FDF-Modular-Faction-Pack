@@ -193,7 +193,7 @@ class CfgWeapons
 		};
 		class fullauto_medium: FullAuto
 		{
-			showToPlayer = RPM_625;
+			showToPlayer = 0;
 			burst = 3;
 			minRange = 2;
 			minRangeProbab = 0.5;
@@ -205,7 +205,7 @@ class CfgWeapons
 		};
 		class single_medium_optics1: Single
 		{
-			requiredOpticType = MEDIUM_OPTIC;
+			requiredOpticType = 1;
 			showToPlayer = 0;
 			minRange = 5;
 			minRangeProbab = 0.2;
@@ -218,7 +218,7 @@ class CfgWeapons
 		};
 		class single_medium_optics2: single_medium_optics1
 		{
-			requiredOpticType = FAR_OPTIC;
+			requiredOpticType = 2;
 			minRange = 100;
 			minRangeProbab = 0.1;
 			midRange = 400;
