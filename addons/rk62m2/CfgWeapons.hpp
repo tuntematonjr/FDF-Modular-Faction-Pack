@@ -51,7 +51,7 @@ class CfgWeapons {
 		};
 		maxZeroing=600;
 		model="KAR_RK62M2\RK62m2.p3d";
-		picture="\KAR_RK62M2\ui\RK62M2_UI_CA.paa";
+		picture = QPATHTOF(pictures\RK62M2_UI_CA.paa);
 		hiddenSelections[]= {
 			"camo1",
 			"camo2",

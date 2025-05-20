@@ -24,7 +24,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope=2;
 		displayName="Combat Uniform (M05)";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M05_TAISTELUPAITA_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TAISTELUPAITA_CA.PAA);
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -37,7 +37,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope=2;
 		displayName="Combat Uniform (M05/Rolled-Up)";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M05_TAISTELUPAITA_SLEEVE_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TAISTELUPAITA_SLEEVE_CA.PAA);
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -50,7 +50,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope=2;
 		displayName="Sweater (M05)";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_VILLAPAITA_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_VILLAPAITA_CA.PAA);
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 		hiddenSelections[]= {"camo"};
 		hiddenSelectionsTextures[]= {"KAR_FDF\data\M05_villapaita_co.paa"};
@@ -63,7 +63,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_NCU: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_NCU_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_NCU_CA.PAA);
 		scope = 2;
 		displayName = "NCU (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -76,7 +76,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_M05: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_M05_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -89,7 +89,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_M05_CW: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_M05_CW_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_CW_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05/M05CW)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -102,7 +102,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_M05_W: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_M05_W_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_W_CA.PAA);
 		scope = 2;
 		displayName = "Jacket M05/M05W";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -115,7 +115,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_M05W: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_M05W_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05W)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -128,7 +128,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_M05W_M05: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_M05W_M05_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05W/M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -141,7 +141,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_M05W_M05CW: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_M05W_M05CW_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05CW_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05W/M05CW)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -154,7 +154,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_CW: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_CW_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05CW)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -167,7 +167,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_JACKET_CW_M05: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_CW_M05_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_M05_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05CW/M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -180,7 +180,7 @@ class CfgWeapons {
 	};	
 	class KAR_FDF_JACKET_CW_M05W: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_JACKET_CW_M05W_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_M05W_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M05CW/M05W)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -193,7 +193,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_COVERALLS_01: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_COVERALLS_01_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_01_CA.PAA);
 		scope = 2;
 		displayName = "Tanker Coveralls (Green)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -206,7 +206,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_COVERALLS_02: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_COVERALLS_02_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_02_CA.PAA);
 		scope = 2;
 		displayName = "Tanker Coveralls (M62/Green)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -219,7 +219,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_COVERALLS_03: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_COVERALLS_03_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_03_CA.PAA);
 		scope = 2;
 		displayName = "Tanker Coveralls (M62)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -232,7 +232,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_GORKA_W: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_GORKA_W_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_GORKA_W_CA.PAA);
 		scope = 2;
 		displayName = "Winter Jacket (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -245,7 +245,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_GORKA_SW: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_GORKA_SW_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_GORKA_SW_CA.PAA);
 		scope = 2;
 		displayName = "Jacket 2 (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -258,7 +258,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_CRYE_GEN3: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_CRYE_GEN3_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_CRYE_GEN3_CA.PAA);
 		scope = 2;
 		displayName = "Crye Gen3 (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -273,7 +273,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope=2;
 		displayName="Combat Uniform (M04)";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M04_TAISTELUPAITA_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M04_TAISTELUPAITA_CA.PAA);
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -284,7 +284,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M04_Takki: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M04_TAKKI_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M04_TAKKI_CA.PAA);
 		scope = 2;
 		displayName = "Jacket (M04)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -297,7 +297,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M62_maastopuku: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M62_MAASTOPUKU_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOPUKU_CA.PAA);
 		scope = 2;
 		displayName = "Camo Uniform 2 (M62)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -310,7 +310,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M62_Palvelus: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M62_PALVELUS_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_PALVELUS_CA.PAA);
 		scope = 2;
 		displayName = "Camo Uniform (M62)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -323,7 +323,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M62_maastopuku_hihat: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M62_MAASTOPUKU_HIHAT_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOPUKU_HIHAT_CA.PAA);
 		scope = 2;
 		displayName = "Camo Uniform (M62/Rolled-Up)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -336,7 +336,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M62_maastotakki: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M62_MAASTOTAKKI_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOTAKKI_CA.PAA);
 		scope = 2;
 		displayName = "Camo Jacket (M62)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -351,7 +351,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope=2;
 		displayName="Winter Oversuit";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_TALVIPUKU_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_TALVIPUKU_CA.PAA);
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -362,7 +362,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M05_Palvelus: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M05_PALVELUS_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_PALVELUS_CA.PAA);
 		scope = 2;
 		displayName = "Camo Uniform 2 (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -375,7 +375,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M05_maastopuku_hihat: Uniform_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M05_MAASTOPUKU_HIHAT_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_MAASTOPUKU_HIHAT_CA.PAA);
 		scope = 2;
 		displayName = "M05 Camo Uniform 2 (M05/Rolled-Up)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -392,7 +392,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M62_HELM: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M62_HELM_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_HELM_CA.PAA);
 		displayName = "Helmet (M62)";
 		scope = 2;
 		scopeCurator = 2;
@@ -414,7 +414,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_VP_01: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_VP_01_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_VP_01_CA.PAA);
 		allowedFacewear[] = {"",3,"rhs_scarf",5,"G_Aviator",2};
 		displayName = "Tank Helmet";
 		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4.p3d";
@@ -430,7 +430,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_VP_02: KAR_FDF_VP_01 {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_VP_02_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_VP_02_CA.PAA);
 		allowedFacewear[] = {"",3,"rhs_scarf",7};
 		displayName = "Tank Helmet (Goggles)";
 		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4_ess.p3d";
@@ -441,7 +441,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_COM_01: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_01_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_01_CA.PAA);
 		displayName = "Composite Helmet (M05)";
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
@@ -484,7 +484,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_COM_02: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_02_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_02_CA.PAA);
 		displayName = "Composite Helmet (M05W)";
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
@@ -530,7 +530,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Composite Helmet 2 (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_03_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_03_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CHV2_co.paa"};
@@ -573,7 +573,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Composite Helmet 2 (M05/Black ESS)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_04_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_04_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -616,7 +616,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Composite Helmet 2 (M05/Headset/Black ESS)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_05_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_05_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -659,7 +659,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Composite Helmet 2 (M05W)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_06_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_06_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -702,7 +702,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Composite Helmet 2 (M05W/Black ESS)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_07_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_07_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -745,7 +745,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Composite Helmet 2 (M05W/Headset/Black ESS)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_08_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_08_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -785,7 +785,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_OPSCORE_01: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_01_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_01_CA.PAA);
 		scope = 2;
 		displayName = "FAST Opscore Helmet (M05)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -826,7 +826,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_OPSCORE_02: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_02_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_02_CA.PAA);
 		scope = 2;
 		displayName = "FAST Opscore Helmet (M05/Headset)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -870,7 +870,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "FAST Opscore Helmet (M05/Cover)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_01_C_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_01_C_CA.PAA);
 		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 		allowedFacewear[] = {
@@ -924,7 +924,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "FAST Opscore Helmet (M05/Cover/Headset)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_02_C_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_02_C_CA.PAA);
 		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 		allowedFacewear[] = {
@@ -975,7 +975,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_COM_10: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_10_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_10_CA.PAA);
 		displayName = "Composite Helmet (M04)";
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
@@ -1018,7 +1018,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_OPSCORE_04: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_04_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_04_CA.PAA);
 		scope = 2;
 		displayName = "FAST Opscore Helmet (M04)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -1059,7 +1059,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_OPSCORE_05: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_05_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_05_CA.PAA);
 		scope = 2;
 		displayName = "FAST Opscore Helmet (M04/Headset)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -1103,7 +1103,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "FAST Opscore Helmet (M04/Cover)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_04_C_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_04_C_CA.PAA);
 		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 		allowedFacewear[] = {
@@ -1157,7 +1157,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "FAST Opscore Helmet (M04/Cover/Headset)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_OPSCORE_05_C_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_05_C_CA.PAA);
 		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 		allowedFacewear[] = {
@@ -1208,7 +1208,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_W_OPSCORE_01: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_W_OPSCORE_01_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_01_CA.PAA);
 		scope = 2;
 		displayName = "FAST Opscore Helmet (M05W)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -1249,7 +1249,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_W_OPSCORE_02: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_W_OPSCORE_02_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_02_CA.PAA);
 		scope = 2;
 		displayName = "FAST Opscore Helmet (M05W/Headset)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -1293,7 +1293,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "FAST Opscore Helmet (M05W/Cover)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_W_OPSCORE_01_C_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_01_C_CA.PAA);
 		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 		allowedFacewear[] = {
@@ -1347,7 +1347,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "FAST Opscore Helmet (M05W/Cover/Headset)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_W_OPSCORE_02_C_CA.PAA";
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_02_C_CA.PAA);
 		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 		allowedFacewear[] = {
@@ -1398,7 +1398,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_COM_11: H_HelmetB {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_11_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_11_ca.paa);
 		displayName = "Composite Helmet (M62)";
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
@@ -1424,7 +1424,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope = 2;
 		displayName="Composite Helmet 3 (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_12_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_12_ca.paa);
 		model="\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -1467,7 +1467,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope = 2;
 		displayName="Winter Composite Helmet 3 (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_13_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_13_ca.paa);
 		hiddenSelections[] = {"Camo"};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -1496,7 +1496,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope = 2;
 		displayName="Composite Helmet 3 (M05CW)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_14_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_14_ca.paa);
 		hiddenSelections[] = {"Camo"};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -1525,7 +1525,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope = 2;
 		displayName="Composite Helmet 3 (M05CW)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_COM_15_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_15_ca.paa);
 		hiddenSelections[] = {"Camo"};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -1553,7 +1553,7 @@ class CfgWeapons {
 	/////HATS/////
 	class KAR_FDF_LIPPALAKKI_M36: Helmet_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF\ui\GRR_CO.paa";
+		picture = QPATHTOF(pictures\GRR_CO.paa);
 		displayName = "M36 Cap";
 		scope = 0;
 		model = "rhsgref\addons\rhsgref_infantry\gear\Head\m43cap.p3d";
@@ -1579,7 +1579,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "Beanie (M05)";
 		weaponPoolAvailable = 1;
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_BEANIE_01_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_01_ca.paa);
 		model = "\A3\Characters_F\Common\woolhat.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_beanie_co.paa"};
@@ -1620,7 +1620,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M62_lippalakki: Helmet_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M62_LIPPALAKKI_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_LIPPALAKKI_ca.paa);
 		displayName = "Cap (M62)";
 		scope = 2;
 		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap.p3d";
@@ -1656,7 +1656,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "Beanie (M05CW)";
 		weaponPoolAvailable = 1;
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_BEANIE_02_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_02_ca.paa);
 		model = "\A3\Characters_F\Common\woolhat.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CW_beanie.paa"};
@@ -1700,7 +1700,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "Beanie (M05W)";
 		weaponPoolAvailable = 1;
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_BEANIE_03_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_03_ca.paa);
 		model = "\A3\Characters_F\Common\woolhat.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_W_beanie_co.paa"};
@@ -1744,7 +1744,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Booniehat (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_SEIKKAILUHATTU_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_ca.paa);
 		model = "\A3\Characters_F\Common\booniehat.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_seikkailuhattu_co.paa"};
@@ -1786,7 +1786,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Booniehat (M04)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_SEIKKAILUHATTU_M04_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_M04_ca.paa);
 		model = "\A3\Characters_F\Common\booniehat.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_seikkailuhattu_co.paa"};
@@ -1809,7 +1809,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Cap (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_LIPPALAKKI_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_ca.paa);
 		model = "\A3\Characters_F\Common\cappatrol.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_cap_co.paa"};
@@ -1832,7 +1832,7 @@ class CfgWeapons {
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Cap (M04)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_LIPPALAKKI_M04_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_M04_ca.paa);
 		model = "\A3\Characters_F\Common\cappatrol.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_lippalakki_co.paa"};
@@ -1853,7 +1853,7 @@ class CfgWeapons {
 	class KAR_FDF_KARVALAKKI: Helmet_Base {
 		author = "Kartsa";
 		scope = 2;
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_KARVALAKKI_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_KARVALAKKI_ca.paa);
 		displayName = "Furhat (M05)";
 		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_ushanka.p3d";
 		hiddenSelections[] = {"Camo"};
@@ -1871,7 +1871,7 @@ class CfgWeapons {
 		author = "Kartsa";
 		scope = 2;
 		displayName = "M17 Plate Carrier (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M17_LITE_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_LITE_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_M17_PC_CO.paa"};
@@ -1906,7 +1906,7 @@ class CfgWeapons {
 		author = "Kartsa";
 		scope = 2;
 		displayName = "M18 Plate Carrier Vest (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M17_vest_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_vest_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_M17_PC_CO.paa"};
@@ -1942,7 +1942,7 @@ class CfgWeapons {
 		author="Kartsa";
 		scope=2;
 		displayName="M17 Plate Carrier GL (M05)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M17_VEST_H_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_H_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[]= {
@@ -1979,7 +1979,7 @@ class CfgWeapons {
 		author = "Kartsa";
 		scope = 2;
 		displayName = "M17 Plate Carrier (M04)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M17_LITE_M04_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_LITE_M04_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_modular_co.paa"};
@@ -2014,7 +2014,7 @@ class CfgWeapons {
 		author = "Kartsa";
 		scope = 2;
 		displayName = "M17 Plate Carrier Vest (M04)";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M17_VEST_M04_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_M04_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_modular_co.paa"};
@@ -2051,7 +2051,7 @@ class CfgWeapons {
 		_generalMacro="M17 Plate Carrier GL (M04)";
 		scope=2;
 		displayName="M04 Plate Carrier M17 Vest Heavy";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M17_VEST_M04_H_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_M04_H_ca.paa);
 		hiddenSelections[] = {"camo"};
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
 		hiddenSelectionsTextures[]= {
@@ -2086,7 +2086,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M05_TST: Vest_Camo_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M05_TST_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TST_ca.paa);
 		scope = 2;
 		displayName = "TST (M05)";
 		model = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
@@ -2114,7 +2114,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M05_TST_ARM: Vest_Camo_Base {
 		author = "Kartsa";
-		picture = "\KAR_FDF_EP\pic\KAR_FDF_M05_TST_ARM_ca.paa";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TST_ARM_ca.paa);
 		scope = 2;
 		displayName = "TST (M05/Armoured)";
 		model = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
