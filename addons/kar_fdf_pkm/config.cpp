@@ -53,8 +53,8 @@ class CfgWeapons
 		handAnim[] = {"OFP2_ManSkeleton","\rhsafrf\addons\rhs_c_weapons\anims\pkm.rtm"};
 		deployedPivot = "bipod";
 		hasBipod=1;
-		soundBipodDown[]= { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_down", db-3, 1, 20 };
-		soundBipodUp[]= { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", db-3, 1, 20 };
+		soundBipodDown[]= { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_down", -3, 1, 20 };
+		soundBipodUp[]= { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", -3, 1, 20 };
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"KAR_PKM\data\PKM_co.paa","KAR_PKM\data\rails_co.paa"};
 		magazines[] = {"rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR_green","rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N26","rhs_100Rnd_762x54mmR_7BZ3"};
