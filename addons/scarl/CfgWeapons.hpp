@@ -46,8 +46,8 @@ class CfgWeapons {
 			"Camo2"
 		};
 		hiddenSelectionsTextures[] = {
-			"KAR_FDF_SCARL\Data\SCAR_L_01_black_CO.paa",
-			"KAR_FDF_SCARL\Data\SCAR_L_02_black_CO.paa"
+			QPATHTOF(data\SCAR_L_01_black_CO.paa),
+			QPATHTOF(data\SCAR_L_02_black_CO.paa)
 		};
 		handAnim[] = {
 			"OFP2_ManSkeleton",
@@ -245,3 +245,4 @@ class CfgWeapons {
 		};
 	};
 };
+

@@ -59,10 +59,10 @@ class CfgWeapons {
 			"camo4"
 		};
 		hiddenSelectionsTextures[]= {
-			"KAR_RK62M2\data\stock_co.paa",
-			"KAR_RK62M2\data\rails_co.paa",
-			"KAR_RK62M2\data\grip_co.paa",
-			"KAR_RK62M2\data\frame_co.paa"
+			QPATHTOF(data\stock_co.paa),
+			QPATHTOF(data\rails_co.paa),
+			QPATHTOF(data\grip_co.paa),
+			QPATHTOF(data\frame_co.paa)
 		};
 		handAnim[]= {
 			"OFP2_ManSkeleton",
@@ -266,3 +266,4 @@ class CfgWeapons {
 		};
 	};
 };
+

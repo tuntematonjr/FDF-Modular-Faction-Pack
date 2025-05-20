@@ -28,12 +28,12 @@ class CfgVehicles {
 			class KAR_FDF_BMP_M05 {
 				displayName = "Finnish Summer";
 				author = "Kartsa";
-				textures[] = {"KAR_FDF_Vehicles\data\BMP_1_co.paa","KAR_FDF_Vehicles\data\BMP_2_co.paa","KAR_FDF_Vehicles\data\BMP_3_co.paa","KAR_FDF_Vehicles\data\BMP_4_co.paa","KAR_FDF_Vehicles\data\BMP_5_co.paa","KAR_FDF_Vehicles\data\BMP_6_co.paa"};
+				textures[] = {QPATHTOF(data\BMP_1_co.paa),QPATHTOF(data\BMP_2_co.paa),QPATHTOF(data\BMP_3_co.paa),QPATHTOF(data\BMP_4_co.paa),QPATHTOF(data\BMP_5_co.paa),QPATHTOF(data\BMP_6_co.paa)};
 			};
             class KAR_FDF_BMP_M05W {
 				displayName = "Finnish Winter";
 				author = "Kartsa";
-				textures[] = {"KAR_FDF_Vehicles\data\BMP_1_W_co.paa","KAR_FDF_Vehicles\data\BMP_2_W_co.paa","KAR_FDF_Vehicles\data\BMP_3_W_co.paa","KAR_FDF_Vehicles\data\BMP_4_W_co.paa","KAR_FDF_Vehicles\data\BMP_5_W_co.paa","KAR_FDF_Vehicles\data\BMP_6_W_co.paa"};
+				textures[] = {QPATHTOF(data\BMP_1_W_co.paa),QPATHTOF(data\BMP_2_W_co.paa),QPATHTOF(data\BMP_3_W_co.paa),QPATHTOF(data\BMP_4_W_co.paa),QPATHTOF(data\BMP_5_W_co.paa),QPATHTOF(data\BMP_6_W_co.paa)};
 			};
 		};
     };
@@ -101,7 +101,7 @@ class CfgVehicles {
 			class KAR_FDF_K9_M05 {
 				displayName = "Finnish Summer";
 				author = "Kartsa";
-				Textures[] = {"KAR_FDF_Vehicles\data\k9_01_co.paa","KAR_FDF_Vehicles\data\k9_02_co.paa","KAR_FDF_Vehicles\data\k9_03_co.paa","rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_wd_ca.paa","rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_wd_co.paa"};
+				Textures[] = {QPATHTOF(data\k9_01_co.paa),QPATHTOF(data\k9_02_co.paa),QPATHTOF(data\k9_03_co.paa),"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_wd_ca.paa","rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_wd_co.paa"};
 			};
 		};
 	};
@@ -257,8 +257,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION"
 				};
 				Textures[] = {
-					"KAR_FDF_Vehicles\data\psh74_hull_co.paa",
-					"KAR_FDF_Vehicles\data\psh74_turretl_co.paa",
+					QPATHTOF(data\psh74_hull_co.paa),
+					QPATHTOF(data\psh74_turretl_co.paa),
 				};
 			};
 			class KAR_FDF_122PSH_M05W {
@@ -268,8 +268,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"KAR_FDF_Vehicles\data\psh74_hull_w_co.paa",
-					"KAR_FDF_Vehicles\data\psh74_turretl_w_co.paa",
+					QPATHTOF(data\psh74_hull_w_co.paa),
+					QPATHTOF(data\psh74_turretl_w_co.paa),
 				};			
 			};
 		};
@@ -324,9 +324,9 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] =  {
-					"KAR_FDF_Vehicles\data\iptsv_aa_vartalo_co.paa",
-					"KAR_FDF_Vehicles\data\iptsv_vart_co.paa",
-					"KAR_FDF_Vehicles\data\itpsv_torni_co.paa"
+					QPATHTOF(data\iptsv_aa_vartalo_co.paa),
+					QPATHTOF(data\iptsv_vart_co.paa),
+					QPATHTOF(data\itpsv_torni_co.paa)
 				};
 			};
 			class KAR_FDF_ITPSV_M05W {
@@ -336,9 +336,9 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] =  {
-					"KAR_FDF_Vehicles\data\iptsv_W_vartalo.paa",
-					"KAR_FDF_Vehicles\data\vaunu_W_vartalo.paa",
-					"KAR_FDF_Vehicles\data\iptsv_W_torni.paa"
+					QPATHTOF(data\iptsv_W_vartalo.paa),
+					QPATHTOF(data\vaunu_W_vartalo.paa),
+					QPATHTOF(data\iptsv_W_torni.paa)
 				};
 			};
 		};
@@ -376,8 +376,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_kuz_co.paa",
+					QPATHTOF(data\sisu_02_kab_co.paa),
+					QPATHTOF(data\sisu_02_kuz_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -389,8 +389,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kuz_co.paa",
+					QPATHTOF(data\sisu_02_w_kab_co.paa),
+					QPATHTOF(data\sisu_02_w_kuz_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -432,8 +432,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_kuz_co.paa",
+					QPATHTOF(data\sisu_02_kab_co.paa),
+					QPATHTOF(data\sisu_02_kuz_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -445,8 +445,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kuz_co.paa",
+					QPATHTOF(data\sisu_02_w_kab_co.paa),
+					QPATHTOF(data\sisu_02_w_kuz_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -487,8 +487,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_repair_co.paa",
+					QPATHTOF(data\sisu_02_kab_co.paa),
+					QPATHTOF(data\sisu_02_repair_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -500,8 +500,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_w_repair_co.paa",
+					QPATHTOF(data\sisu_02_w_kab_co.paa),
+					QPATHTOF(data\sisu_02_w_repair_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -543,8 +543,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_kuz_co.paa",
+					QPATHTOF(data\sisu_02_kab_co.paa),
+					QPATHTOF(data\sisu_02_kuz_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -556,8 +556,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kuz_co.paa",
+					QPATHTOF(data\sisu_02_w_kab_co.paa),
+					QPATHTOF(data\sisu_02_w_kuz_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -599,8 +599,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_repair_co.paa",
+					QPATHTOF(data\sisu_02_kab_co.paa),
+					QPATHTOF(data\sisu_02_repair_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -612,8 +612,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_w_repair_co.paa",
+					QPATHTOF(data\sisu_02_w_kab_co.paa),
+					QPATHTOF(data\sisu_02_w_repair_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
@@ -654,8 +654,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_fuel_co.paa",
+					QPATHTOF(data\sisu_02_kab_co.paa),
+					QPATHTOF(data\sisu_02_fuel_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa",
 				};
@@ -667,8 +667,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"\KAR_FDF_Vehicles\data\sisu_02_w_kab_co.paa",
-					"\KAR_FDF_Vehicles\data\sisu_02_w_fuel_co.paa",
+					QPATHTOF(data\sisu_02_w_kab_co.paa),
+					QPATHTOF(data\sisu_02_w_fuel_co.paa),
 					"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa",
 				};
@@ -774,8 +774,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_Vehicles\data\FDF_bm21_02_co.paa",
-					"KAR_FDF_Vehicles\data\FDF_bm21_01_co.paa"
+					QPATHTOF(data\FDF_bm21_02_co.paa),
+					QPATHTOF(data\FDF_bm21_01_co.paa)
 				};
 
 			};
@@ -786,8 +786,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_Vehicles\data\FDF_bm21_02_W_co.paa",
-					"KAR_FDF_Vehicles\data\FDF_bm21_01_W_co.paa"
+					QPATHTOF(data\FDF_bm21_02_W_co.paa),
+					QPATHTOF(data\FDF_bm21_01_W_co.paa)
 				};
 			};
 		};
@@ -822,7 +822,7 @@ class CfgVehicles {
 				};
 				textures[] =  {
 					"KAR_FDF_Vehicles\data\KAR_FDF_BTR_01_co",
-					"KAR_FDF_Vehicles\data\KAR_FDF_BTR_02_co.paa"
+					QPATHTOF(data\KAR_FDF_BTR_02_co.paa)
 				};
 
 			};
@@ -833,8 +833,8 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_Vehicles\data\KAR_FDF_BTR_01_W_co.paa",
-					"KAR_FDF_Vehicles\data\KAR_FDF_BTR_02_W_co.paa"
+					QPATHTOF(data\KAR_FDF_BTR_01_W_co.paa),
+					QPATHTOF(data\KAR_FDF_BTR_02_W_co.paa)
 				};
 			};
 		};
@@ -917,10 +917,10 @@ class CfgVehicles {
 					"KAR_FIN_FACTION"
 				};
 				Textures[] = {
-					"KAR_FDF_Vehicles\data\KAR_72_01_co.paa",
-					"KAR_FDF_Vehicles\data\KAR_72_02_co.paa",
-					"KAR_FDF_Vehicles\data\KAR_72_03_co.paa",
-					"KAR_FDF_Vehicles\data\KAR_72_04_co.paa"
+					QPATHTOF(data\KAR_72_01_co.paa),
+					QPATHTOF(data\KAR_72_02_co.paa),
+					QPATHTOF(data\KAR_72_03_co.paa),
+					QPATHTOF(data\KAR_72_04_co.paa)
 				};
 			};
 			class KAR_FDF_T72_M05W {
@@ -930,10 +930,10 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				Textures[] = {
-					"KAR_FDF_Vehicles\data\KAR_72_01_W_co.paa",
-					"KAR_FDF_Vehicles\data\KAR_72_02_W_co.paa",
-					"KAR_FDF_Vehicles\data\KAR_72_03_co.paa",
-					"KAR_FDF_Vehicles\data\KAR_72_04_co.paa"
+					QPATHTOF(data\KAR_72_01_W_co.paa),
+					QPATHTOF(data\KAR_72_02_W_co.paa),
+					QPATHTOF(data\KAR_72_03_co.paa),
+					QPATHTOF(data\KAR_72_04_co.paa)
 				};			
 			};
 		};

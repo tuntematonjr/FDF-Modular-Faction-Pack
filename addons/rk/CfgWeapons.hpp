@@ -29,7 +29,7 @@ class CfgWeapons {
 		model="KAR_RK\KARRK62.p3d";
 		picture = QPATHTOF(pictures\RK62_UI_CA.paa);
 		hiddenSelections[]={"camo1","camo2"};
-		hiddenSelectionsTextures[]={"KAR_RK\data\handguard_d_co.paa","KAR_RK\data\rk62_d2_co.paa"};
+		hiddenSelectionsTextures[]={QPATHTOF(data\handguard_d_co.paa),QPATHTOF(data\rk62_d2_co.paa)};
 		handAnim[]={"OFP2_ManSkeleton","\KAR_RK\anim\handpose_ak12.rtm"};
 		reloadAction = "HLC_GestureReloadAK";
         reloadMagazineSound[] = { "\KAR_RK62M2\snd\ak74m_reload.wss", 0.8, 1, 20 };
@@ -207,3 +207,4 @@ class CfgWeapons {
 		};
 	};
 };
+

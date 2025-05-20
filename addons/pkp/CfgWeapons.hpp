@@ -34,7 +34,7 @@ class CfgWeapons {
 		handAnim[] = {"OFP2_ManSkeleton","\rhsafrf\addons\rhs_c_weapons\anims\pkp.rtm"};
 		hasBipod = 1;
 		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"rhsafrf\addons\rhs_weapons\pkp_bis\data\pecheneg_co.paa","KAR_PKP\data\rails_co.paa","KAR_PKP\data\stock_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\pecheneg_co.paa),QPATHTOF(data\rails_co.paa),QPATHTOF(data\stock_co.paa)};
 		magazines[] = {"rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR_green","rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N26","rhs_100Rnd_762x54mmR_7BZ3"};
 		maxZeroing=600;
 		model = "KAR_PKP\KAR_PKP.p3d";

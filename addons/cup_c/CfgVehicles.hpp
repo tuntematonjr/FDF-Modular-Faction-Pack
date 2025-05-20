@@ -58,7 +58,7 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_CUP_C\data\KAR_FDF_RSRAKH06_co.paa"
+					QPATHTOF(data\KAR_FDF_RSRAKH06_co.paa)
 				};
 
 			};
@@ -69,7 +69,7 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_CUP_C\data\KAR_FDF_RSRAKH06_W_co.paa"
+					QPATHTOF(data\KAR_FDF_RSRAKH06_W_co.paa)
 				};
 			};
 		};
@@ -88,10 +88,10 @@ class CfgVehicles {
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_CUP_RSRAKH89.jpg";
 		hiddenSelectionsTextures[] =  {
 			
-			"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_01_co.paa",
-			"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_02_co.paa",
-			"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_03_co.paa",
-			"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_04_co.paa",
+			QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_01_co.paa),
+			QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_02_co.paa),
+			QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_03_co.paa),
+			QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_04_co.paa),
 			"CUP\WheeledVehicles\CUP_WheeledVehicles_RM70\data\RM70uc_co.paa",
 			"CUP\WheeledVehicles\CUP_WheeledVehicles_RM70\data\csla.paa"
 		};
@@ -110,10 +110,10 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_01_co.paa",
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_02_co.paa",
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_03_co.paa",
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_04_co.paa"
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_01_co.paa),
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_02_co.paa),
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_03_co.paa),
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_04_co.paa)
 				};
 			};
 			class KAR_FDF_CUP_RSRAKH_M055W {
@@ -123,10 +123,10 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_01_W_co.paa",
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_02_W_co.paa",
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_03_co.paa",
-					"KAR_FDF_CUP_C\data\KAR_FDF_CUP_RSRAKH89_04_co.paa"
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_01_W_co.paa),
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_02_W_co.paa),
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_03_co.paa),
+					QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_04_co.paa)
 				};
 			};
 		};

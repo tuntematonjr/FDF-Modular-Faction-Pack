@@ -10,7 +10,7 @@ class CfgMagazines {
 			"camo2"
 		};
 		hiddenSelectionsTextures[]= {
-			"KAR_RK62M2\data\stock_co.paa"
+			QPATHTOF(data\stock_co.paa)
 		};
 		modelSpecial="KAR_RK62M2\mag\KARRK62_mag.p3d";
 		modelSpecialIsProxy=1;

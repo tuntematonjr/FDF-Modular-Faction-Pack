@@ -37,7 +37,7 @@ class CfgWeapons {
 		soundBipodDown[]= { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_down.wss", -3, 1, 20 };
 		soundBipodUp[]= { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up.wss", -3, 1, 20 };
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"KAR_PKM\data\PKM_co.paa","KAR_PKM\data\rails_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\PKM_co.paa),QPATHTOF(data\rails_co.paa)};
 		magazines[] = {"rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR_green","rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N26","rhs_100Rnd_762x54mmR_7BZ3"};
 		maxZeroing=600;
 		model = "KAR_PKM\KAR_PKM.p3d";

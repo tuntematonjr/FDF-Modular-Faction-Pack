@@ -53,7 +53,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_VILLAPAITA_CA.PAA);
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 		hiddenSelections[]= {"camo"};
-		hiddenSelectionsTextures[]= {"KAR_FDF\data\M05_villapaita_co.paa"};
+		hiddenSelectionsTextures[]= {QPATHTOF(data\M05_villapaita_co.paa)};
 		class ItemInfo: UniformItem {
 			uniformModel="-";
 			uniformClass="KAR_FDF_BASE_05";
@@ -398,7 +398,7 @@ class CfgWeapons {
 		scopeCurator = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoverwinter.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M62_helmet_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M62_helmet_co.paa)};
 		class ItemInfo: ItemInfo {
 			uniformModel = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoversummer";
 			allowedSlots[] = {801,901,701,605};
@@ -419,7 +419,7 @@ class CfgWeapons {
 		displayName = "Tank Helmet";
 		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\kar_vaunupaahine_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\kar_vaunupaahine_co.paa)};
 		class ItemInfo: HeadGearItem {
 			mass = 5;
 			hiddenSelections[] = {"camo1"};
@@ -446,7 +446,7 @@ class CfgWeapons {
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CH_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_co.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -468,7 +468,7 @@ class CfgWeapons {
 		};
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
-			hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CH_co.paa"};
+			hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_co.paa)};
 			mass = 40;
 			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 			allowedSlots[] = {801,901,701,605};
@@ -489,7 +489,7 @@ class CfgWeapons {
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CH_W_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_W_co.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -511,7 +511,7 @@ class CfgWeapons {
 		};
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
-			hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CH_W_co.paa"};
+			hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_W_co.paa)};
 			allowedSlots[] = {801,901,701,605};
 			mass = 40;
 			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
@@ -533,7 +533,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_COM_03_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CHV2_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -595,7 +595,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CHV2_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
 		class ItemInfo: HeadGearItem {
 			mass = 40;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
@@ -638,7 +638,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CHV2_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
 		class ItemInfo: HeadGearItem {
 			mass = 40;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
@@ -681,7 +681,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CHV2_W_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa)};
 		class ItemInfo: HeadGearItem {
 			mass = 40;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
@@ -724,7 +724,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CHV2_W_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
 		class ItemInfo: HeadGearItem {
 			mass = 40;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
@@ -767,7 +767,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CHV2_W_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
 		class ItemInfo: HeadGearItem {
 			mass = 40;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
@@ -790,7 +790,7 @@ class CfgWeapons {
 		displayName = "FAST Opscore Helmet (M05)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_opscore_co.paa","","","","",""};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"","","","",""};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -850,7 +850,7 @@ class CfgWeapons {
 			"KAR_FDF_B_B", 1,
 			"", 1
 		};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
 		class ItemInfo: HeadGearItem {
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -898,11 +898,11 @@ class CfgWeapons {
 			"rhsusf_oakley_goggles_ylw", 1,
 		};
 		hiddenSelectionsTextures[] =  {
-			"\KAR_FDF\data\M05_opscore_co.paa",
+			QPATHTOF(data\M05_opscore_co.paa),
 			"",
 			"",
 			"",
-			"\KAR_FDF\data\M05_cover_co.paa",
+			QPATHTOF(data\M05_cover_co.paa),
 			""
 		};
 		class ItemInfo: HeadGearItem {
@@ -952,11 +952,11 @@ class CfgWeapons {
 			"rhsusf_oakley_goggles_ylw", 1,
 		};
 		hiddenSelectionsTextures[] =  {
-			"\KAR_FDF\data\M05_opscore_co.paa",
+			QPATHTOF(data\M05_opscore_co.paa),
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
 			"",
 			"",
-			"\KAR_FDF\data\M05_cover_co.paa",
+			QPATHTOF(data\M05_cover_co.paa),
 			""
 		};
 		class ItemInfo: HeadGearItem {
@@ -980,7 +980,7 @@ class CfgWeapons {
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_pask_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_pask_co.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -1002,7 +1002,7 @@ class CfgWeapons {
 		};
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
-			hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_pask_co.paa"};
+			hiddenSelectionsTextures[] = {QPATHTOF(data\M04_pask_co.paa)};
 			mass = 40;
 			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 			allowedSlots[] = {801,901,701,605};
@@ -1023,7 +1023,7 @@ class CfgWeapons {
 		displayName = "FAST Opscore Helmet (M04)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_opscore_co.paa","","","","",""};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"","","","",""};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -1083,7 +1083,7 @@ class CfgWeapons {
 			"KAR_FDF_B_B", 1,
 			"", 1
 		};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
 		class ItemInfo: HeadGearItem {
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -1131,11 +1131,11 @@ class CfgWeapons {
 			"rhsusf_oakley_goggles_ylw", 1,
 		};
 		hiddenSelectionsTextures[] =  {
-			"\KAR_FDF\data\M04_opscore_co.paa",
+			QPATHTOF(data\M04_opscore_co.paa),
 			"",
 			"",
 			"",
-			"\KAR_FDF\data\M04_cover_co.paa",
+			QPATHTOF(data\M04_cover_co.paa),
 			""
 		};
 		class ItemInfo: HeadGearItem {
@@ -1185,11 +1185,11 @@ class CfgWeapons {
 			"rhsusf_oakley_goggles_ylw", 1,
 		};
 		hiddenSelectionsTextures[] =  {
-			"\KAR_FDF\data\M04_opscore_co.paa",
+			QPATHTOF(data\M04_opscore_co.paa),
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
 			"",
 			"",
-			"\KAR_FDF\data\M04_cover_co.paa",
+			QPATHTOF(data\M04_cover_co.paa),
 			""
 		};
 		class ItemInfo: HeadGearItem {
@@ -1213,7 +1213,7 @@ class CfgWeapons {
 		displayName = "FAST Opscore Helmet (M05W)";
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_W_opscore.paa","","","","",""};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"","","","",""};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -1273,7 +1273,7 @@ class CfgWeapons {
 			"KAR_FDF_B_B", 1,
 			"", 1
 		};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_W_opscore.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
 		class ItemInfo: HeadGearItem {
 			mass = 30;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
@@ -1321,11 +1321,11 @@ class CfgWeapons {
 			"rhsusf_oakley_goggles_ylw", 1,
 		};
 		hiddenSelectionsTextures[] =  {
-			"\KAR_FDF\data\M05_W_opscore.paa",
+			QPATHTOF(data\M05_W_opscore.paa),
 			"",
 			"",
 			"",
-			"\KAR_FDF\data\M05W_cover_co.paa",
+			QPATHTOF(data\M05W_cover_co.paa),
 			""
 		};
 		class ItemInfo: HeadGearItem {
@@ -1375,11 +1375,11 @@ class CfgWeapons {
 			"rhsusf_oakley_goggles_ylw", 1,
 		};
 		hiddenSelectionsTextures[] =  {
-			"\KAR_FDF\data\M05_W_opscore.paa",
+			QPATHTOF(data\M05_W_opscore.paa),
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
 			"",
 			"",
-			"\KAR_FDF\data\M05W_cover_co.paa",
+			QPATHTOF(data\M05W_cover_co.paa),
 			""
 		};
 		class ItemInfo: HeadGearItem {
@@ -1403,10 +1403,10 @@ class CfgWeapons {
 		scope = 2;
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M62_CH_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M62_CH_co.paa)};
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
-			hiddenSelectionsTextures[] = {"KAR_FDF\data\M62_CH_co.paa"};
+			hiddenSelectionsTextures[] = {QPATHTOF(data\M62_CH_co.paa)};
 			mass = 40;
 			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 			allowedSlots[] = {801,901,701,605};
@@ -1447,7 +1447,7 @@ class CfgWeapons {
 		};
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[]= {
-			"KAR_FDF\data\M05_COM_03_co.paa"
+			QPATHTOF(data\M05_COM_03_co.paa)
 		};
 		class ItemInfo: ItemInfo {
 			mass=30;
@@ -1489,7 +1489,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelectionsTextures[]= {
-			"KAR_FDF\data\M05W_COM_03_co.paa"
+			QPATHTOF(data\M05W_COM_03_co.paa)
 		};
 	};
 	class KAR_FDF_COM_14: KAR_FDF_COM_12 {
@@ -1518,7 +1518,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelectionsTextures[]= {
-			"KAR_FDF\data\M05CW_COM_03_co.paa"
+			QPATHTOF(data\M05CW_COM_03_co.paa)
 		};
 	};
 	class KAR_FDF_COM_15: KAR_FDF_COM_12 {
@@ -1547,7 +1547,7 @@ class CfgWeapons {
 			"", 1
 		};
 		hiddenSelectionsTextures[]= {
-			"KAR_FDF\data\M04_COM_03_co.paa"
+			QPATHTOF(data\M04_COM_03_co.paa)
 		};
 	};
 	/////HATS/////
@@ -1558,7 +1558,7 @@ class CfgWeapons {
 		scope = 0;
 		model = "rhsgref\addons\rhsgref_infantry\gear\Head\m43cap.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M36_lippalakki_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M36_lippalakki_co.paa)};
 		class ItemInfo: HeadGearItem {
 			mass = 5;
 			allowedSlots[] = {801,901,701,605};
@@ -1582,7 +1582,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_01_ca.paa);
 		model = "\A3\Characters_F\Common\woolhat.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_beanie_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_beanie_co.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -1625,7 +1625,7 @@ class CfgWeapons {
 		scope = 2;
 		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\m62_lippalakki_Co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\m62_lippalakki_Co.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -1659,7 +1659,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_02_ca.paa);
 		model = "\A3\Characters_F\Common\woolhat.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_CW_beanie.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CW_beanie.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -1703,7 +1703,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_03_ca.paa);
 		model = "\A3\Characters_F\Common\woolhat.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_W_beanie_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_beanie_co.paa)};
 
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
@@ -1747,7 +1747,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_ca.paa);
 		model = "\A3\Characters_F\Common\booniehat.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_seikkailuhattu_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_seikkailuhattu_co.paa)};
 		allowedFacewear[] = {
 			"rhs_balaclava", 1,
 			"rhs_balaclava1_olive", 1,
@@ -1789,7 +1789,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_M04_ca.paa);
 		model = "\A3\Characters_F\Common\booniehat.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_seikkailuhattu_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_seikkailuhattu_co.paa)};
 		class ItemInfo: HeadGearItem {
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\booniehat.p3d";
@@ -1812,7 +1812,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_ca.paa);
 		model = "\A3\Characters_F\Common\cappatrol.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_cap_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_cap_co.paa)};
 		class ItemInfo: HeadGearItem {
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\cappatrol.p3d";
@@ -1835,7 +1835,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_M04_ca.paa);
 		model = "\A3\Characters_F\Common\cappatrol.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_lippalakki_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_lippalakki_co.paa)};
 		class ItemInfo: HeadGearItem {
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\cappatrol.p3d";
@@ -1857,7 +1857,7 @@ class CfgWeapons {
 		displayName = "Furhat (M05)";
 		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_ushanka.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_karvalakki_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_karvalakki_co.paa)};
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
 			uniformModel = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_ushanka.p3d";
@@ -1874,7 +1874,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_M17_LITE_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_M17_PC_CO.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_M17_PC_CO.paa)};
 		class ItemInfo: ItemInfo {
 			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 			containerClass = "Supply100";
@@ -1909,7 +1909,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_M17_vest_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_M17_PC_CO.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_M17_PC_CO.paa)};
 		descriptionShort = "Armor Level III";
 		class ItemInfo: ItemInfo {
 			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
@@ -1946,7 +1946,7 @@ class CfgWeapons {
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[]= {
-			"KAR_FDF\data\M05_M17_PC_CO.paa"
+			QPATHTOF(data\M05_M17_PC_CO.paa)
 		};
 		class ItemInfo: ItemInfo {
 			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
@@ -1982,7 +1982,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_M17_LITE_M04_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_modular_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_modular_co.paa)};
 		class ItemInfo: ItemInfo {
 			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 			containerClass = "Supply100";
@@ -2017,7 +2017,7 @@ class CfgWeapons {
 		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_M04_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M04_modular_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_modular_co.paa)};
 		descriptionShort = "Armor Level III";
 		class ItemInfo: ItemInfo {
 			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
@@ -2055,7 +2055,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo"};
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
 		hiddenSelectionsTextures[]= {
-			"KAR_FDF\data\M04_modular_co.paa"
+			QPATHTOF(data\M04_modular_co.paa)
 		};
 		class ItemInfo: ItemInfo {
 			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
@@ -2091,7 +2091,7 @@ class CfgWeapons {
 		displayName = "TST (M05)";
 		model = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
 		hiddenSelections[] = {"Camo","Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_TST_co.paa","KAR_FDF\data\M05_pouchs_co.paa","KAR_FDF\data\M05_pouchs_2_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_TST_co.paa),QPATHTOF(data\M05_pouchs_co.paa),QPATHTOF(data\M05_pouchs_2_co.paa)};
 		descriptionShort = "No Armor";
 		class ItemInfo: ItemInfo {
 			hiddenSelections[] = {"Camo","Camo1","Camo2"};
@@ -2119,7 +2119,7 @@ class CfgWeapons {
 		displayName = "TST (M05/Armoured)";
 		model = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
 		hiddenSelections[] = {"Camo","Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\M05_TST_co.paa","KAR_FDF\data\M05_pouchs_co.paa","KAR_FDF\data\M05_pouchs_2_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_TST_co.paa),QPATHTOF(data\M05_pouchs_co.paa),QPATHTOF(data\M05_pouchs_2_co.paa)};
 		descriptionShort = "No Armor";
 		class ItemInfo: ItemInfo {
 			hiddenSelections[] = {"Camo","Camo1","Camo2"};
@@ -2150,3 +2150,4 @@ class CfgWeapons {
 		};
 	};
 };
+
