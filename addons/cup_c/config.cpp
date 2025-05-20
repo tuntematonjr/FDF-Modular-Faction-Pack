@@ -13,7 +13,7 @@ class CfgPatches {
     };
 };
 
-#include "cfggroups.hpp"
+#include "CfgGroups.hpp"
 
 class EventHandlers;
 class cfgVehicles {

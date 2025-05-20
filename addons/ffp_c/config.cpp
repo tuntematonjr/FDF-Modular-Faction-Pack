@@ -16,7 +16,7 @@ class CfgPatches {
     };
 };
 
-#include "cfggroups.hpp"
+#include "CfgGroups.hpp"
 
 class cfgVehicles {
 	class sfp_patgb203;

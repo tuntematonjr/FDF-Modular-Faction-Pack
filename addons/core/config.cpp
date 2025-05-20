@@ -375,7 +375,7 @@ class CfgVehicles
 		mass = 50;
 	};
 };
-class cfgWeapons
+class CfgWeapons
 {
 	class ItemCore;
 	class HeadGearItem;

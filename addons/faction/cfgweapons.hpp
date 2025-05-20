@@ -1,4 +1,4 @@
-class cfgWeapons
+class CfgWeapons
 {
 	class KAR_RIFLE_RK62M2;
 	class KAR_FDF_MK: KAR_RIFLE_RK62M2

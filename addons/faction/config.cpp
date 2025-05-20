@@ -12,9 +12,9 @@ class CfgPatches {
     };
 };
 
-#include "cfgWorlds.hpp"
-#include "cfgGroups.hpp"
-#include "cfgWeapons.hpp"
+#include "CfgWorlds.hpp"
+#include "CfgGroups.hpp"
+#include "CfgWeapons.hpp"
 
 class cfgFactionClasses
 {
