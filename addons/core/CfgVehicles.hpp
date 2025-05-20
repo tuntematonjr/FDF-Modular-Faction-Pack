@@ -15,7 +15,7 @@ class CfgVehicles {
 		scope = 1;
 		author = "Kartsa";
 		model = "\rhsusf\addons\rhsusf_infantry\rhsusf_army_base.p3d";
-		picture = "\KAR_FDF_EP\PIC\KAR_FDF_NCU_CA.PAA"; QPATHTOF(pictures\PB_Bala_B_ca.paa);
+		picture = "\KAR_FDF_EP\PIC\KAR_FDF_NCU_CA.PAA"; 
 		hiddenSelections[] = {"camo1","camo2","camo3","insignia"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\NCU_M05_CU_CO.paa","KAR_FDF\data\NCU_M05_POCKETS_CO.paa"};
 	};
