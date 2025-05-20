@@ -265,7 +265,7 @@ class CfgVehicles
 	{
 		scope = 1;
 		author = "Kartsa";
-		model = "rhsgref\addons\rhsgref_infantry\gear_gue\gue_m93";
+		model = "rhsgref\addons\rhsgref_infantry\gear_gue\gue_m93.p3d";
 		picture = "\KAR_FDF_EP\PIC\KAR_FDF_M62_MAASTOTAKKI_CA.PAA";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\m62_takki_co.paa"};
@@ -839,7 +839,7 @@ class cfgWeapons
 		displayName = "Helmet (M62)";
 		scope = 2;
 		scopeCurator = 2;
-		model = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoverwinter";
+		model = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoverwinter.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\M62_helmet_co.paa"};
 		class ItemInfo: ItemInfo
@@ -2213,7 +2213,7 @@ class cfgWeapons
 		picture = "\KAR_FDF_EP\pic\KAR_FDF_M62_LIPPALAKKI_ca.paa";
 		displayName = "Cap (M62)";
 		scope = 2;
-		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap";
+		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"KAR_FDF\data\m62_lippalakki_Co.paa"};
 		allowedFacewear[] =

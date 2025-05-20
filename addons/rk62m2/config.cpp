@@ -702,7 +702,7 @@ class CfgMagazines
 		{
 			"KAR_RK62M2\data\stock_co.paa"
 		};
-		modelSpecial="KAR_RK62M2\mag\KARRK62_mag";
+		modelSpecial="KAR_RK62M2\mag\KARRK62_mag.p3d";
 		modelSpecialIsProxy=1;
 		picture="\KAR_RK62M2\ui\RK62MAG_UI_CA.paa";
 		lastroundstracer=3;
@@ -790,7 +790,7 @@ class CfgWeapons
 		cameraDir="eye_look";
 		changeFiremodeSound[]=
 		{
-			"KAR_RK62M2\snd\ak_selector",
+			"KAR_RK62M2\snd\ak_selector.wss",
 			1,
 			1,
 			8
@@ -805,7 +805,7 @@ class CfgWeapons
 		displayName="RK62M2";
 		drySound[]=
 		{
-			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_dry",
+			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_dry.wss",
 			0.17782794,
 			1,
 			10
@@ -835,7 +835,7 @@ class CfgWeapons
 		reloadAction="HLC_GestureReloadAK";
 		reloadMagazineSound[]=
 		{
-			"\KAR_RK62M2\snd\ak74m_reload",
+			"\KAR_RK62M2\snd\ak74m_reload.wss",
 			0.80000001,
 			1,
 			20
@@ -852,7 +852,7 @@ class CfgWeapons
 		recoil="recoil_spar";
 		bullet1[]=
 		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_01",
+			"A3\sounds_f\weapons\shells\7_62\metal_762_01.wss",
 			0.50118721,
 			1,
 			15

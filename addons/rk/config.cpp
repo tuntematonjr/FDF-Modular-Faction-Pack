@@ -43,7 +43,7 @@ class CfgWeapons
 		discreteDistance[] = {100,200,300,400,500,600};
 		discreteDistanceCameraPoint[] = {"eye"};
 		displayName="RK62";
-		drySound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK47\AK47_dry",0.17782794,1,10};
+		drySound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK47\AK47_dry.wss",0.17782794,1,10};
 		maxZeroing=600;
 		model="KAR_RK\KARRK62.p3d";
 		picture="\KAR_RK\ui\RK62_UI_CA.paa";
@@ -51,7 +51,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]={"KAR_RK\data\handguard_d_co.paa","KAR_RK\data\rk62_d2_co.paa"};
 		handAnim[]={"OFP2_ManSkeleton","\KAR_RK\anim\handpose_ak12.rtm"};
 		reloadAction = "HLC_GestureReloadAK";
-        reloadMagazineSound[] = { "\KAR_RK62M2\snd\ak74m_reload", 0.8, 1, 20 };
+        reloadMagazineSound[] = { "\KAR_RK62M2\snd\ak74m_reload.wss", 0.8, 1, 20 };
 		magazineReloadSwitchPhase = 0.3;
 		magazines[]=
 		{
