@@ -73,7 +73,7 @@ class CfgWeapons
 		};
 		handAnim[] =
 		{
-			OFP2_ManSkeleton,
+			"OFP2_ManSkeleton",
 			"\A3\Weapons_F_Exp\Rifles\SPAR_01\Data\Anim\SPAR_01.rtm"
 		};
 		reloadAction = GestureReloadSPAR_01;
@@ -266,7 +266,7 @@ class CfgWeapons
         scope = 2;
 		handAnim[] =
 		{
-			OFP2_ManSkeleton,
+			"OFP2_ManSkeleton",
 			"\A3\Weapons_F_Exp\Rifles\SPAR_02\Data\Anim\SPAR_02.rtm"
 		};
 		dexterity = 1.7;
