@@ -1,0 +1,15 @@
+Sissi Gear:
+
+Helmet:
+- KAR_FDF_SEIKKAILUHATTU
+Uni:
+- KAR_FDF_M05_maastopuku_hihat
+Vest:
+- rhsgref_chicom
+Backpack:
+- KAR_FDF_BAG_01
+- Make Carryall for AT
+Weapons:
+- KAR_RIFLE_RK62
+- TRG
+- M72 LAW
