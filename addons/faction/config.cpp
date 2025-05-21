@@ -25,10 +25,7 @@ class cfgFactionClasses {
 		icon = "KAR_FDF_Faction\UI\FDF_emblem_ca.paa";
 	};
 };
-class UniformSlotInfo {
-	slotType = 0;
-	linkProxy = "-";
-};
+
 class CfgVehicleClasses {
 	class KAR_FDF_INF_C {
 		displayName = "Jaegers (Conscript)";
@@ -42,10 +39,13 @@ class CfgVehicleClasses {
 	class KAR_FDF_INF_SOF {
 		displayName = "Special Jaegers";
 	};
+	class KAR_FDF_PILOT {
+		displayName = "Pilots";
+	};
 };
 class CfgEditorCategories {
 	class KAR_FDF_TOP {
-		displayname = "Finnish Defence Forces";
+		displayName = "Finnish Defence Forces";
 	};
 };
 class CfgEditorSubcategories {
@@ -60,5 +60,8 @@ class CfgEditorSubcategories {
 	};
 	class KAR_FDF_SIS {
 		displayName = "Sissi (Recon)";
+	};
+	class KAR_FDF_PILOT {
+		displayName = "Pilots";
 	};
 };

@@ -39,7 +39,7 @@ class CfgWeapons {
 	class rhs_weap_XM2010;
 	class KAR_FDF_TRG10: rhs_weap_XM2010 {
 		author = "Kartsa";
-		displayname ="SAKO TRG-10";
+		displayName = "SAKO TRG-10";
 		scope = 2;
 		baseWeapon = "KAR_FDF_TRG10";
 		magazines[] = {"rhs_5Rnd_338lapua_t5000"};

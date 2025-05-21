@@ -13,7 +13,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_Tanks";
 					icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
@@ -46,7 +46,7 @@ class CfgGroups {
 					name = "Leopard 2A4 Section";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					faction = "KAR_FIN_FACTION";
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_Tanks";
@@ -70,7 +70,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_Tanks";
 					icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
@@ -103,7 +103,7 @@ class CfgGroups {
 					name = "Leopard 2A6 Section";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					faction = "KAR_FIN_FACTION";
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_Tanks";
@@ -132,7 +132,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -196,7 +196,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -244,7 +244,7 @@ class CfgGroups {
 					};
 					class Unit7 {
 						side = 1;
-						vehicle = "KAR_FDF_RIF_S_";
+						vehicle = "KAR_FDF_RIF_S";
 						rank = "PRIVATE";
 						position[] = {37,-44,0};
 					};
@@ -260,7 +260,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -324,7 +324,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -372,7 +372,7 @@ class CfgGroups {
 					};
 					class Unit7 {
 						side = 1;
-						vehicle = "KAR_FDF_RIF_S_";
+						vehicle = "KAR_FDF_RIF_S";
 						rank = "PRIVATE";
 						position[] = {37,-44,0};
 					};
@@ -393,7 +393,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -457,7 +457,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -505,7 +505,7 @@ class CfgGroups {
 					};
 					class Unit7 {
 						side = 1;
-						vehicle = "KKAR_FDF_RIF_S_AT";
+						vehicle = "KAR_FDF_RIF_S_AT";
 						rank = "PRIVATE";
 						position[] = {20,-20,0};
 					};

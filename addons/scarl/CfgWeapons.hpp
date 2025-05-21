@@ -35,7 +35,7 @@ class CfgWeapons {
 	class KAR_FDF_SCAR_L: Rifle_Base_F {
         author = "Kartsa, A3 Aegis";
         scope = 2;
-        displayname = "SCAR-L";
+        displayName = "SCAR-L";
 		baseweapon = "KAR_FDF_SCAR_L";
 		descriptionShort = "Assault rifle<br/>Caliber: 5.56x45mm NATO";
 		model = "KAR_FDF_SCARL\SCAR_L_F.p3d";
@@ -192,7 +192,7 @@ class CfgWeapons {
 		model = "KAR_FDF_SCARL\SCAR_L_short_F.p3d";
         scope = "2";
 		baseweapon = "KAR_FDF_SCAR_L_S";
-        displayname = "SCAR-L (Short)";
+        displayName = "SCAR-L (Short)";
 		picture = QPATHTOF(pictures\icon_arifle_scar_L_short_black.paa);
 		inertia = 0.4;
 		dexterity = 1.5;
@@ -214,7 +214,7 @@ class CfgWeapons {
 		model = "KAR_FDF_SCARL\SCAR_L_grip_F.p3d";
 		baseweapon = "KAR_FDF_SCAR_L_G";
 		picture = QPATHTOF(pictures\icon_arifle_scar_L_grip_black.paa);
-        displayname = "SCAR-L (Grip)";
+        displayName = "SCAR-L (Grip)";
         scope = 2;
 		handAnim[] = {
 			"OFP2_ManSkeleton",

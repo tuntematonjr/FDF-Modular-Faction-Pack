@@ -52,4 +52,4 @@
 			"rhsusf_oakley_goggles_blk", 1,\
 			"rhsusf_oakley_goggles_clr", 1,\
 			"rhsusf_oakley_goggles_ylw", 1,\
-		};
+		}

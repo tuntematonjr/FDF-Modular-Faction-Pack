@@ -5,7 +5,7 @@ class CfgVehicles {
 		
 		scope = 2;
 		scopeCurator = 2;
-		side = "1";
+		side = 1;
 		faction = "KAR_FIN_FACTION";
 		editorCategory = "KAR_FDF_TOP";
 		editorSubcategory = "KAR_FDF_Planes";
@@ -20,7 +20,7 @@ class CfgVehicles {
 	class KAR_FDF_CUP_F35_S: CUP_B_F35B_Stealth_BAF {
 		scope = 2;
 		scopeCurator = 2;
-		side = "1";
+		side = 1;
 		faction = "KAR_FIN_FACTION";
 		editorCategory = "KAR_FDF_TOP";
 		editorSubcategory = "KAR_FDF_Planes";
@@ -35,13 +35,13 @@ class CfgVehicles {
 	class KAR_FDF_CUP_RSRAKH: CUP_B_M270_HE_USMC  {
 		scope = 2;
 		scopeCurator = 2;
-		side = "1";
+		side = 1;
 		faction = "KAR_FIN_FACTION";
 		editorCategory = "KAR_FDF_TOP";
 		editorSubcategory = "KAR_FDF_ART";
 		vehicleclass = "KAR_FDF_ART";
 		crew = "KAR_FDF_RIF_C_TD";
-		displayname = "298 RSRAKH06";
+		displayName = "298 RSRAKH06";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_CUP_RSRAKH.jpg";
 		texturelist[] = {
 			"KAR_FDF_CUP_RSRAKH_M05",1,
@@ -78,13 +78,13 @@ class CfgVehicles {
 	class KAR_FDF_CUP_RSRAKH89: CUP_B_RM70_CZ {
 		scope = 2;
 		scopeCurator = 2;
-		side = "1";
+		side = 1;
 		faction = "KAR_FIN_FACTION";
 		editorCategory = "KAR_FDF_TOP";
 		editorSubcategory = "KAR_FDF_ART";
 		vehicleclass = "KAR_FDF_ART";
 		crew = "KAR_FDF_RIF_C_TD";
-		displayname = "122 RAKH 89";
+		displayName = "122 RAKH 89";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_CUP_RSRAKH89.jpg";
 		hiddenSelectionsTextures[] =  {
 			

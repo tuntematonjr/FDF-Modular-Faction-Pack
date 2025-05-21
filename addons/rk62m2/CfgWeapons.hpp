@@ -27,8 +27,8 @@ class CfgWeapons {
 		class GunParticles;
 	};
 	class KAR_RIFLE_RK62M2: Rifle_Base_F {
-		author="Kartsa, Tööttieläin";
-		scope=2;
+		author = "Kartsa, Tööttieläin";
+		scope = 2;
 		cameraDir="eye_look";
 		changeFiremodeSound[]= {
 			"KAR_RK62M2\snd\ak_selector.wss",
@@ -42,7 +42,7 @@ class CfgWeapons {
 		discreteDistanceCameraPoint[]= {
 			"eye"
 		};
-		displayName="RK62M2";
+		displayName = "RK62M2";
 		drySound[]= {
 			"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_dry.wss",
 			0.17782794,
@@ -50,15 +50,15 @@ class CfgWeapons {
 			10
 		};
 		maxZeroing=600;
-		model="KAR_RK62M2\RK62m2.p3d";
+		model = "KAR_RK62M2\RK62m2.p3d";
 		picture = QPATHTOF(pictures\RK62M2_UI_CA.paa);
-		hiddenSelections[]= {
+		hiddenSelections[] = {
 			"camo1",
 			"camo2",
 			"camo3",
 			"camo4"
 		};
-		hiddenSelectionsTextures[]= {
+		hiddenSelectionsTextures[] = {
 			QPATHTOF(data\stock_co.paa),
 			QPATHTOF(data\rails_co.paa),
 			QPATHTOF(data\grip_co.paa),
@@ -206,7 +206,7 @@ class CfgWeapons {
 				iconPicture="\A3\Weapons_F\Data\clear_empty.paa";
 				iconPinPoint="Left";
 			};
-			mass=70;
+			mass = 70;
 		};
 		distanceZoomMin=300;
 		distanceZoomMax=300;

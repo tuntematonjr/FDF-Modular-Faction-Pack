@@ -1253,7 +1253,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_Tanks";
 					icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
@@ -1286,7 +1286,7 @@ class CfgGroups {
 					name = "T-72 Section";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					faction = "KAR_FIN_FACTION";
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_Tanks";
@@ -1315,7 +1315,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -1379,7 +1379,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -1443,7 +1443,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -1512,7 +1512,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
@@ -1602,7 +1602,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
@@ -1642,7 +1642,7 @@ class CfgGroups {
 					faction = "KAR_FIN_FACTION";
 					side = 1;
 					scope = 2;
-					scopecurator = 2;
+					scopeCurator = 2;
 					editorCategory = "KAR_FDF_TOP";
 					editorSubcategory = "KAR_FDF_APCs";
 					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";

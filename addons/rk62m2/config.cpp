@@ -53,7 +53,7 @@ class CfgAmmo {
 		airFriction=-0.0014104;
 		caliber=0.62800002;
 		deflecting=23;
-		model="\A3\Weapons_f\Data\bullettracer\tracer_green";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_green";
 		tracerStartTime=0.072999999;
 		tracerEndTime=1.7;
 		hit=10.034;

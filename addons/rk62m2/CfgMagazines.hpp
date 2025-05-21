@@ -2,22 +2,22 @@ class CfgMagazines {
 	class Default;
 	class 30Rnd_762x39_Mag_F;
 	class KARRK62_Mag: 30Rnd_762x39_Mag_F {
-		author="Kartsa";
+		author = "Kartsa";
 		ammo="KAR_35RK_762x39_Ball";
 		descriptionshort="7.62x39mm";
-		displayname="7.62x39mm 30 Round RK Magazine";
-		hiddenSelections[]= {
+		displayName = "7.62x39mm 30 Round RK Magazine";
+		hiddenSelections[] = {
 			"camo2"
 		};
-		hiddenSelectionsTextures[]= {
+		hiddenSelectionsTextures[] = {
 			QPATHTOF(data\stock_co.paa)
 		};
 		modelSpecial="KAR_RK62M2\mag\KARRK62_mag.p3d";
 		modelSpecialIsProxy=1;
-		picture="\KAR_RK62M2\ui\RK62MAG_UI_CA.paa";
+		picture = "\KAR_RK62M2\ui\RK62MAG_UI_CA.paa";
 		lastroundstracer=3;
 		count=30;
-		scope=2;
+		scope = 2;
 		initspeed=800;
 		displaynameshort="7.62x39mm";
 	};

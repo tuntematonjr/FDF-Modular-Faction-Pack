@@ -570,7 +570,7 @@ class CfgWeapons {
 		scope = 2;
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
-			uniformModel = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap";
+			uniformModel = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap.p3d";
 		};
 	};
 	class KAR_FDF_LIPPALAKKI: Helmet_Base {

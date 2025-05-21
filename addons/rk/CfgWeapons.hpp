@@ -16,20 +16,20 @@ class CfgWeapons {
 		class GunParticles;
 	};
 	class KAR_RIFLE_RK62: Rifle_Base_F {
-		author="Kartsa, Tööttieläin";
-		scope=2;
+		author = "Kartsa, Tööttieläin";
+		scope = 2;
 		cameraDir = "eye_look";
 		descriptionShort="RK62 7.62x39mm";
 		dexterity = 1.8;
 		discreteDistance[] = {100,200,300,400,500,600};
 		discreteDistanceCameraPoint[] = {"eye"};
-		displayName="RK62";
+		displayName = "RK62";
 		drySound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK47\AK47_dry.wss",0.17782794,1,10};
 		maxZeroing=600;
-		model="KAR_RK\KARRK62.p3d";
+		model = "KAR_RK\KARRK62.p3d";
 		picture = QPATHTOF(pictures\RK62_UI_CA.paa);
-		hiddenSelections[]={"camo1","camo2"};
-		hiddenSelectionsTextures[]={QPATHTOF(data\handguard_d_co.paa),QPATHTOF(data\rk62_d2_co.paa)};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\handguard_d_co.paa),QPATHTOF(data\rk62_d2_co.paa)};
 		handAnim[]={"OFP2_ManSkeleton","\KAR_RK\anim\handpose_ak12.rtm"};
 		reloadAction = "HLC_GestureReloadAK";
         reloadMagazineSound[] = { "\KAR_RK62M2\snd\ak74m_reload.wss", 0.8, 1, 20 };
@@ -164,7 +164,7 @@ class CfgWeapons {
 				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
 				iconPinPoint = "Left";
 				};
-			mass=70;
+			mass = 70;
 		};
 		distanceZoomMin=300;
 		distanceZoomMax=300;
