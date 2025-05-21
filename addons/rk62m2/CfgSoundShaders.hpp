@@ -2,19 +2,19 @@ class CfgSoundShaders {
 	class KAR_NIA_Close_Shot_SoundShader {
 		samples[]= {
 			 {
-				"\KAR_RK62M2\snd\G36\close_1.ogg",
+				QPATHTOF(snd\G36\close_1.wss),
 				1
 			},
 			 {
-				"\KAR_RK62M2\snd\G36\close_2.ogg",
+				QPATHTOF(snd\G36\close_2.wss),
 				1
 			},
 			 {
-				"\KAR_RK62M2\snd\G36\close_3.ogg",
+				QPATHTOF(snd\G36\close_3.wss),
 				1
 			},
 			 {
-				"\KAR_RK62M2\snd\G36\close_4.ogg",
+				QPATHTOF(snd\G36\close_4.wss),
 				1
 			}
 		};
@@ -26,7 +26,7 @@ class CfgSoundShaders {
 	class KAR_NIA_CloseDistance_Shot_SoundShader {
 		samples[]= {
 			 {
-				"\KAR_RK62M2\snd\G36\close_distance.ogg",
+				QPATHTOF(snd\G36\close_distance.wss),
 				1
 			}
 		};
@@ -38,7 +38,7 @@ class CfgSoundShaders {
 	class KAR_NIA_MediumDistance_Shot_SoundShader {
 		samples[]= {
 			 {
-				"\KAR_RK62M2\snd\G36\medium_distance.ogg",
+				QPATHTOF(snd\G36\medium_distance.wss),
 				1
 			}
 		};
@@ -50,7 +50,7 @@ class CfgSoundShaders {
 	class KAR_NIA_FarDistance_Shot_SoundShader {
 		samples[]= {
 			 {
-				"\KAR_RK62M2\snd\G36\far_distance.ogg",
+				QPATHTOF(snd\G36\far_distance.wss),
 				1
 			}
 		};
@@ -62,7 +62,7 @@ class CfgSoundShaders {
 	class KAR_NIA_Interior_Shot_SoundShader {
 		samples[]= {
 			 {
-				"\KAR_RK62M2\snd\G36\Close_Interior.ogg",
+				QPATHTOF(snd\G36\Close_Interior.wss),
 				1
 			}
 		};
@@ -74,7 +74,7 @@ class CfgSoundShaders {
 	class KAR_NIA_InteriorDistance_Shot_SoundShader {
 		samples[]= {
 			 {
-				"\KAR_RK62M2\snd\G36\Close_Distance_Interior.ogg",
+				QPATHTOF(snd\G36\Close_Distance_Interior.wss),
 				1
 			}
 		};
@@ -86,7 +86,7 @@ class CfgSoundShaders {
 	class KAR_NIA_silencerShot_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Silenced_Close",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Silenced_Close.wss),
 				1
 			}
 		};
@@ -98,7 +98,7 @@ class CfgSoundShaders {
 	class KAR_NIA_silencerShot_mid_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_suppressed_mid",
+				QPATHTOF(snd\G36_MLI\G36_MLI_suppressed_mid.wss),
 				1
 			}
 		};
@@ -110,7 +110,7 @@ class CfgSoundShaders {
 	class KAR_NIA_silencerTailForest_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Silenced_Tail",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Silenced_Tail.wss),
 				1
 			}
 		};
@@ -123,7 +123,7 @@ class CfgSoundShaders {
 	class KAR_NIA_silencerTailHouses_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Silenced_Tail",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Silenced_Tail.wss),
 				1
 			}
 		};
@@ -136,7 +136,7 @@ class CfgSoundShaders {
 	class KAR_NIA_silencerTailInterior_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Silenced_Tail_Indoor",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Silenced_Tail_Indoor.wss),
 				1
 			}
 		};
@@ -149,7 +149,7 @@ class CfgSoundShaders {
 	class KAR_NIA_silencerTailMeadows_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Silenced_Tail",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Silenced_Tail.wss),
 				1
 			}
 		};
@@ -162,7 +162,7 @@ class CfgSoundShaders {
 	class KAR_NIA_silencerTailTrees_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Silenced_Tail",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Silenced_Tail.wss),
 				1
 			}
 		};
@@ -175,7 +175,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailInterior_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_indoor",
+				QPATHTOF(snd\G36_MLI\G36_MLI_indoor.wss),
 				1
 			}
 		};
@@ -188,7 +188,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailInterior_mid_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_indoor_mid",
+				QPATHTOF(snd\G36_MLI\G36_MLI_indoor_mid.wss),
 				1
 			}
 		};
@@ -201,7 +201,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailTrees_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_trees",
+				QPATHTOF(snd\G36_MLI\G36_MLI_trees.wss),
 				1
 			}
 		};
@@ -214,7 +214,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailTrees_mid_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_trees_mid",
+				QPATHTOF(snd\G36_MLI\G36_MLI_trees_mid.wss),
 				1
 			}
 		};
@@ -227,7 +227,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailForest_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_forest",
+				QPATHTOF(snd\G36_MLI\G36_MLI_forest.wss),
 				1
 			}
 		};
@@ -240,7 +240,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailForest_mid_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_forest_mid",
+				QPATHTOF(snd\G36_MLI\G36_MLI_forest_mid.wss),
 				1
 			}
 		};
@@ -253,7 +253,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailMeadows_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_meadows",
+				QPATHTOF(snd\G36_MLI\G36_MLI_meadows.wss),
 				1
 			}
 		};
@@ -266,7 +266,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailMeadows_mid_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_meadows_mid",
+				QPATHTOF(snd\G36_MLI\G36_MLI_meadows_mid.wss),
 				1
 			}
 		};
@@ -279,7 +279,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailHouses_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Urban",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Urban.wss),
 				1
 			}
 		};
@@ -292,7 +292,7 @@ class CfgSoundShaders {
 	class KAR_NIA_tailHouses_mid_SoundShader {
 		samples[]= {
 			 {
-				"KAR_RK62M2\snd\G36_MLI\G36_MLI_Urban_mid",
+				QPATHTOF(snd\G36_MLI\G36_MLI_Urban_mid.wss),
 				1
 			}
 		};
