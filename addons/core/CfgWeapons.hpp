@@ -21,1798 +21,567 @@ class CfgWeapons {
 	};
 	////UNIFORMS////
 	class KAR_FDF_M05_Taistelupaita: Uniform_Base {
-		author="Kartsa";
-		scope=2;
-		displayName="Combat Uniform (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_M05_TAISTELUPAITA_CA.PAA);
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-		class ItemInfo: UniformItem {
-			uniformModel="-";
-			uniformClass="KAR_FDF_BASE_07";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-	class KAR_FDF_M05_Taistelupaita_Sleeve: Uniform_Base {
-		author="Kartsa";
-		scope=2;
-		displayName="Combat Uniform (M05/Rolled-Up)";
-		picture = QPATHTOF(pictures\KAR_FDF_M05_TAISTELUPAITA_SLEEVE_CA.PAA);
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-		class ItemInfo: UniformItem {
-			uniformModel="-";
-			uniformClass="KAR_FDF_BASE_24";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-	class KAR_FDF_VILLAPAITA: Uniform_Base {
-		author="Kartsa";
-		scope=2;
-		displayName="Sweater (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_VILLAPAITA_CA.PAA);
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-		hiddenSelections[]= {"camo"};
-		hiddenSelectionsTextures[]= {QPATHTOF(data\M05_villapaita_co.paa)};
-		class ItemInfo: UniformItem {
-			uniformModel="-";
-			uniformClass="KAR_FDF_BASE_05";
-			containerClass="Supply20";
-			mass=30;
-		};
-	};
-	class KAR_FDF_NCU: Uniform_Base {
 		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_NCU_CA.PAA);
+		displayName = "Combat Uniform (M05)";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TAISTELUPAITA_CA.PAA);
 		scope = 2;
-		displayName = "NCU (M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
+			containerClass = "Supply40";
+			mass = 40;
+			uniformClass = "KAR_FDF_BASE_07";
 			uniformModel = "-";
-			uniformClass = "KAR_FDF_BASE_01";
+		};
+	};
+	class KAR_FDF_M05_Taistelupaita_Sleeve: KAR_FDF_M05_Taistelupaita {
+		displayName = "Combat Uniform (M05/Rolled-Up)";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TAISTELUPAITA_SLEEVE_CA.PAA);
+		class ItemInfo: UniformItem {
+			uniformClass = "KAR_FDF_BASE_24";
+		};
+	};
+	class KAR_FDF_VILLAPAITA: KAR_FDF_M05_Taistelupaita {
+		displayName = "Sweater (M05)";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_villapaita_co.paa)};
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_VILLAPAITA_CA.PAA);
+		class ItemInfo: UniformItem {
 			containerClass = "Supply20";
 			mass = 30;
+			uniformClass = "KAR_FDF_BASE_05";
+			uniformModel = "-";
 		};
 	};
-	class KAR_FDF_JACKET_M05: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_CA.PAA);
-		scope = 2;
+	class KAR_FDF_NCU: KAR_FDF_VILLAPAITA {
+		displayName = "NCU (M05)";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_NCU_CA.PAA);
+		class ItemInfo: UniformItem {
+			uniformClass = "KAR_FDF_BASE_01";
+		};
+	};
+	class KAR_FDF_JACKET_M05: KAR_FDF_NCU {
 		displayName = "Jacket (M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
+			containerClass = "Supply40";
+			mass = 40;
 			uniformClass = "KAR_FDF_BASE_02";
-			containerClass = "Supply40";
-			mass = 40;
+			uniformModel = "-";
 		};
 	};
-	class KAR_FDF_JACKET_M05_CW: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_CW_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_M05_CW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05/M05CW)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_CW_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_02a";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_JACKET_M05_W: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_W_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_M05_W: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket M05/M05W";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05_W_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_02b";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_JACKET_M05W: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_M05W: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05W)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_03";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_JACKET_M05W_M05: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_M05W_M05: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05W/M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_03a";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_JACKET_M05W_M05CW: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05CW_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_M05W_M05CW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05W/M05CW)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05CW_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_03b";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_JACKET_CW: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_CW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05CW)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_06";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_JACKET_CW_M05: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_M05_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_CW_M05: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05CW/M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_M05_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_06a";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};	
-	class KAR_FDF_JACKET_CW_M05W: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_M05W_CA.PAA);
-		scope = 2;
+	class KAR_FDF_JACKET_CW_M05W: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05CW/M05W)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_JACKET_CW_M05W_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_06b";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_COVERALLS_01: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_01_CA.PAA);
-		scope = 2;
+	class KAR_FDF_COVERALLS_01: KAR_FDF_JACKET_M05 {
 		displayName = "Tanker Coveralls (Green)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_01_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_13";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_COVERALLS_02: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_02_CA.PAA);
-		scope = 2;
+	class KAR_FDF_COVERALLS_02: KAR_FDF_JACKET_M05 {
 		displayName = "Tanker Coveralls (M62/Green)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_02_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_14";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_COVERALLS_03: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_03_CA.PAA);
-		scope = 2;
+	class KAR_FDF_COVERALLS_03: KAR_FDF_JACKET_M05 {
 		displayName = "Tanker Coveralls (M62)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_COVERALLS_03_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_15";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_GORKA_W: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_GORKA_W_CA.PAA);
-		scope = 2;
+	class KAR_FDF_GORKA_W: KAR_FDF_JACKET_M05 {
 		displayName = "Winter Jacket (M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_GORKA_W_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_04";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_GORKA_SW: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_GORKA_SW_CA.PAA);
-		scope = 2;
+	class KAR_FDF_GORKA_SW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket 2 (M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_GORKA_SW_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_16";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_CRYE_GEN3: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_CRYE_GEN3_CA.PAA);
-		scope = 2;
+	class KAR_FDF_CRYE_GEN3: KAR_FDF_JACKET_M05 {
 		displayName = "Crye Gen3 (M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_CRYE_GEN3_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_08";
-			containerClass = "Supply40";
-			mass = 30;
 		};
 	};
-	class KAR_FDF_M04_Taistelupaita: Uniform_Base {
-		author="Kartsa";
-		scope=2;
-		displayName="Combat Uniform (M04)";
-		picture = QPATHTOF(pictures\KAR_FDF_M04_TAISTELUPAITA_CA.PAA);
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-		class ItemInfo: UniformItem {
-			uniformModel="-";
-			uniformClass="KAR_FDF_BASE_09";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-	class KAR_FDF_M04_Takki: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M04_TAKKI_CA.PAA);
-		scope = 2;
+	class KAR_FDF_M04_Takki: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M04)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_M04_TAKKI_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_10";
-			containerClass = "Supply40";
-			mass = 40;
 		};
 	};
-	class KAR_FDF_M62_maastopuku: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOPUKU_CA.PAA);
-		scope = 2;
+	class KAR_FDF_M62_maastopuku: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Uniform 2 (M62)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOPUKU_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_12";
-			containerClass = "Supply40";
-			mass = 30;
 		};
 	};
-	class KAR_FDF_M62_Palvelus: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M62_PALVELUS_CA.PAA);
-		scope = 2;
+	class KAR_FDF_M62_Palvelus: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Uniform (M62)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_PALVELUS_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_18";
 			containerClass = "Supply20";
 			mass = 20;
 		};
 	};
-	class KAR_FDF_M62_maastopuku_hihat: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOPUKU_HIHAT_CA.PAA);
-		scope = 2;
+	class KAR_FDF_M62_maastopuku_hihat: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Uniform (M62/Rolled-Up)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOPUKU_HIHAT_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_19";
-			containerClass = "Supply40";
-			mass = 30;
 		};
 	};
-	class KAR_FDF_M62_maastotakki: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOTAKKI_CA.PAA);
-		scope = 2;
+	class KAR_FDF_M62_maastotakki: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Jacket (M62)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOTAKKI_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_20";
-			containerClass = "Supply40";
-			mass = 30;
 		};
 	};
-	class KAR_FDF_TALVIPUKU: Uniform_Base {
-		author="Kartsa";
-		scope=2;
-		displayName="Winter Oversuit";
-		picture = QPATHTOF(pictures\KAR_FDF_TALVIPUKU_CA.PAA);
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-		class ItemInfo: UniformItem {
-			uniformModel="-";
-			uniformClass="KAR_FDF_BASE_21";
-			containerClass="Supply20";
-			mass=20;
-		};
-	};
-	class KAR_FDF_M05_Palvelus: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M05_PALVELUS_CA.PAA);
-		scope = 2;
+	class KAR_FDF_M05_Palvelus: KAR_FDF_M62_Palvelus {
 		displayName = "Camo Uniform 2 (M05)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_PALVELUS_CA.PAA);
 		class ItemInfo: UniformItem {
-			uniformModel = "-";
 			uniformClass = "KAR_FDF_BASE_22";
+		};
+	};
+	class KAR_FDF_M05_maastopuku_hihat: KAR_FDF_JACKET_M05 {
+		displayName = "M05 Camo Uniform 2 (M05/Rolled-Up)";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_MAASTOPUKU_HIHAT_CA.PAA);
+		class ItemInfo: UniformItem {
+			uniformClass = "KAR_FDF_BASE_23";
+		};
+	};
+	class KAR_FDF_M04_Taistelupaita: KAR_FDF_M05_Taistelupaita {
+		displayName = "Combat Uniform (M04)";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_M04_TAISTELUPAITA_CA.PAA);
+		class ItemInfo: UniformItem {
+			containerClass = "Supply40";
+			mass = 40;
+			uniformClass = "KAR_FDF_BASE_09";
+		};
+	};
+	class KAR_FDF_TALVIPUKU: KAR_FDF_M04_Taistelupaita {
+		displayName = "Winter Oversuit";
+		picture = QPATHTOF(pictures\KAR_FDF_TALVIPUKU_CA.PAA);
+		class ItemInfo: UniformItem {
+			uniformClass = "KAR_FDF_BASE_21";
 			containerClass = "Supply20";
 			mass = 20;
 		};
 	};
-	class KAR_FDF_M05_maastopuku_hihat: Uniform_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M05_MAASTOPUKU_HIHAT_CA.PAA);
-		scope = 2;
-		displayName = "M05 Camo Uniform 2 (M05/Rolled-Up)";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem {
-			uniformModel = "-";
-			uniformClass = "KAR_FDF_BASE_23";
-			containerClass = "Supply40";
-			mass = 30;
-		};
-	};
+
 	/////Helmets////
 	class H_HelmetB: ItemCore {
 		class ItemInfo;
 	};
+	// class KAR_FDF_HELM_BASE: H_HelmetB{
+	// 	class ItemInfo;
+	// };
 	class KAR_FDF_M62_HELM: H_HelmetB {
 		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M62_HELM_CA.PAA);
 		displayName = "Helmet (M62)";
-		scope = 2;
-		scopeCurator = 2;
-		model = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoverwinter.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M62_helmet_co.paa)};
+		model = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoverwinter.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_HELM_CA.PAA);
+		scope = 2;
+		scopeCurator = 2;
 		class ItemInfo: ItemInfo {
-			uniformModel = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoversummer";
 			allowedSlots[] = {801,901,701,605};
 			modelSides[] = {6};
+			uniformModel = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoversummer";
 			class HitpointsProtectionInfo {
 				class Head {
-					hitpointName = "HitHead";
 					armor = 2;
+					hitpointName = "HitHead";
 					passThrough = 0.5;
 				};
 			};
 		};
 	};
 	class KAR_FDF_VP_01: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_VP_01_CA.PAA);
 		allowedFacewear[] = {"",3,"rhs_scarf",5,"G_Aviator",2};
+		author = "Kartsa";
 		displayName = "Tank Helmet";
-		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\kar_vaunupaahine_co.paa)};
+		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_VP_01_CA.PAA);
 		class ItemInfo: HeadGearItem {
-			mass = 5;
-			hiddenSelections[] = {"camo1"};
-			uniformModel = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4";
 			allowedSlots[] = {801,901,701,605};
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
 			modelSides[] = {6};
+			uniformModel = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4";
 		};
 	};
 	class KAR_FDF_VP_02: KAR_FDF_VP_01 {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_VP_02_CA.PAA);
 		allowedFacewear[] = {"",3,"rhs_scarf",7};
 		displayName = "Tank Helmet (Goggles)";
 		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4_ess.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_VP_02_CA.PAA);
 		class ItemInfo: ItemInfo {
 			mass = 6;
 			uniformModel = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4_ess.p3d";
 		};
 	};
 	class KAR_FDF_COM_01: H_HelmetB {
+		ALLOWEDFACEWEAR_COM;
 		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_01_CA.PAA);
 		displayName = "Composite Helmet (M05)";
-		scope = 2;
-		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_co.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
+		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_01_CA.PAA);
+		scope = 2;
+
 		class ItemInfo: HeadGearItem {
+			allowedSlots[] = {801,901,701,605};
 			hiddenSelections[] = {"Camo"};
 			hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_co.paa)};
 			mass = 40;
-			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-			allowedSlots[] = {801,901,701,605};
 			modelSides[] = {6};
+			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
 			class HitpointsProtectionInfo {
 				class Head {
-					hitpointName = "HitHead";
 					armor = 6;
+					hitpointName = "HitHead";
 					passThrough = 0.5;
 				};
 			};
 		};
 	};
-	class KAR_FDF_COM_02: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_02_CA.PAA);
+	class KAR_FDF_COM_02: KAR_FDF_COM_01 {
 		displayName = "Composite Helmet (M05W)";
-		scope = 2;
-		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_W_co.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
+		picture = QPATHTOF(pictures\KAR_FDF_COM_02_CA.PAA);
+
 		class ItemInfo: HeadGearItem {
-			hiddenSelections[] = {"Camo"};
 			hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_W_co.paa)};
-			allowedSlots[] = {801,901,701,605};
-			mass = 40;
-			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-			modelSides[] = {6};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitpointName = "HitHead";
-					armor = 6;
-					passThrough = 0.5;
-				};
-			};
 		};
 	};
-	class KAR_FDF_COM_03: H_HelmetB {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
+	class KAR_FDF_COM_03: KAR_FDF_COM_01 {
 		displayName = "Composite Helmet 2 (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_03_CA.PAA);
-		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 40;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo","camo2"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_COM_04: H_HelmetB {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Composite Helmet 2 (M05/Black ESS)";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_04_CA.PAA);
-		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
-		class ItemInfo: HeadGearItem {
-			mass = 40;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo","camo2"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_COM_05: H_HelmetB {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Composite Helmet 2 (M05/Headset/Black ESS)";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_05_CA.PAA);
-		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
-		class ItemInfo: HeadGearItem {
-			mass = 40;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo","camo2"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_COM_06: H_HelmetB {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Composite Helmet 2 (M05W)";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_06_CA.PAA);
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa)};
+		picture = QPATHTOF(pictures\KAR_FDF_COM_03_CA.PAA);
+		weaponPoolAvailable = 1;
 		class ItemInfo: HeadGearItem {
-			mass = 40;
+			hiddenSelections[] = {"camo","camo2"};
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo","camo2"};
 			class HitpointsProtectionInfo {
 				class Head {
-					hitPointName = "HitHead";
 					armor = 8;
+					hitpointName = "HitHead";
 					passThrough = 0.5;
 				};
 			};
 		};
 	};
-	class KAR_FDF_COM_07: H_HelmetB {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Composite Helmet 2 (M05W/Black ESS)";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_07_CA.PAA);
+	class KAR_FDF_COM_04: KAR_FDF_COM_03 {
+		displayName = "Composite Helmet 2 (M05/Black ESS)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
+		picture = QPATHTOF(pictures\KAR_FDF_COM_04_CA.PAA);
 		class ItemInfo: HeadGearItem {
-			mass = 40;
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo","camo2"};
 			class HitpointsProtectionInfo {
 				class Head {
-					hitPointName = "HitHead";
 					armor = 8;
+					hitPointName = "HitHead";
 					passThrough = 0.5;
 				};
 			};
 		};
 	};
-	class KAR_FDF_COM_08: H_HelmetB {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
+	class KAR_FDF_COM_05: KAR_FDF_COM_04 {
+		displayName = "Composite Helmet 2 (M05/Headset/Black ESS)";
+		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_05_CA.PAA);
+		class ItemInfo: HeadGearItem {
+			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
+		};
+	};
+	class KAR_FDF_COM_06: KAR_FDF_COM_03 {
+		displayName = "Composite Helmet 2 (M05W)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa)};
+		picture = QPATHTOF(pictures\KAR_FDF_COM_06_CA.PAA);
+	};
+	class KAR_FDF_COM_07: KAR_FDF_COM_04 {
+		displayName = "Composite Helmet 2 (M05W/Black ESS)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
+		picture = QPATHTOF(pictures\KAR_FDF_COM_07_CA.PAA);
+	};
+	class KAR_FDF_COM_08: KAR_FDF_COM_05 {
 		displayName = "Composite Helmet 2 (M05W/Headset/Black ESS)";
 		picture = QPATHTOF(pictures\KAR_FDF_COM_08_CA.PAA);
-		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
-		class ItemInfo: HeadGearItem {
-			mass = 40;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo","camo2"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
 	};
-	class KAR_FDF_OPSCORE_01: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_01_CA.PAA);
-		scope = 2;
-		displayName = "FAST Opscore Helmet (M05)";
-		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"","","","",""};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_OPSCORE_02: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_02_CA.PAA);
-		scope = 2;
-		displayName = "FAST Opscore Helmet (M05/Headset)";
-		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_Opscore_01_C: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "FAST Opscore Helmet (M05/Cover)";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_01_C_CA.PAA);
-		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-		allowedFacewear[] = {
-			"rhs_googles_black", 1,  
-			"rhs_googles_clear", 1,
-			"rhs_googles_orange", 1,
-			"rhs_googles_yellow", 1,
-			"rhs_ess_black", 1,
-			"G_Bandanna_khk", 1,
-			"G_Bandanna_tan", 1,
-			"rhs_scarf", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_tan", 1,
-			"rhsusf_shemagh2_tan", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh_gogg_tan", 1,
-			"rhsusf_shemagh2_gogg_tan", 1,
-			"rhsusf_oakley_goggles_blk", 1,
-			"rhsusf_oakley_goggles_clr", 1,
-			"rhsusf_oakley_goggles_ylw", 1,
-		};
-		hiddenSelectionsTextures[] =  {
-			QPATHTOF(data\M05_opscore_co.paa),
-			"",
-			"",
-			"",
-			QPATHTOF(data\M05_cover_co.paa),
-			""
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] = {1,3};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_Opscore_02_C: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "FAST Opscore Helmet (M05/Cover/Headset)";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_02_C_CA.PAA);
-		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-		allowedFacewear[] = {
-			"rhs_googles_black", 1,  
-			"rhs_googles_clear", 1,
-			"rhs_googles_orange", 1,
-			"rhs_googles_yellow", 1,
-			"rhs_ess_black", 1,
-			"G_Bandanna_khk", 1,
-			"G_Bandanna_tan", 1,
-			"rhs_scarf", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_tan", 1,
-			"rhsusf_shemagh2_tan", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh_gogg_tan", 1,
-			"rhsusf_shemagh2_gogg_tan", 1,
-			"rhsusf_oakley_goggles_blk", 1,
-			"rhsusf_oakley_goggles_clr", 1,
-			"rhsusf_oakley_goggles_ylw", 1,
-		};
-		hiddenSelectionsTextures[] =  {
-			QPATHTOF(data\M05_opscore_co.paa),
-			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
-			"",
-			"",
-			QPATHTOF(data\M05_cover_co.paa),
-			""
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] = {1,3};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_COM_10: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_10_CA.PAA);
+	class KAR_FDF_COM_10: KAR_FDF_COM_01 {
 		displayName = "Composite Helmet (M04)";
-		scope = 2;
-		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_pask_co.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
+		picture = QPATHTOF(pictures\KAR_FDF_COM_10_CA.PAA);
 		class ItemInfo: HeadGearItem {
-			hiddenSelections[] = {"Camo"};
 			hiddenSelectionsTextures[] = {QPATHTOF(data\M04_pask_co.paa)};
-			mass = 40;
-			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitpointName = "HitHead";
-					armor = 6;
-					passThrough = 0.5;
-				};
-			};
 		};
 	};
-	class KAR_FDF_OPSCORE_04: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_04_CA.PAA);
-		scope = 2;
-		displayName = "FAST Opscore Helmet (M04)";
-		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"","","","",""};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_OPSCORE_05: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_05_CA.PAA);
-		scope = 2;
-		displayName = "FAST Opscore Helmet (M04/Headset)";
-		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_Opscore_04_C: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "FAST Opscore Helmet (M04/Cover)";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_04_C_CA.PAA);
-		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-		allowedFacewear[] = {
-			"rhs_googles_black", 1,  
-			"rhs_googles_clear", 1,
-			"rhs_googles_orange", 1,
-			"rhs_googles_yellow", 1,
-			"rhs_ess_black", 1,
-			"G_Bandanna_khk", 1,
-			"G_Bandanna_tan", 1,
-			"rhs_scarf", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_tan", 1,
-			"rhsusf_shemagh2_tan", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh_gogg_tan", 1,
-			"rhsusf_shemagh2_gogg_tan", 1,
-			"rhsusf_oakley_goggles_blk", 1,
-			"rhsusf_oakley_goggles_clr", 1,
-			"rhsusf_oakley_goggles_ylw", 1,
-		};
-		hiddenSelectionsTextures[] =  {
-			QPATHTOF(data\M04_opscore_co.paa),
-			"",
-			"",
-			"",
-			QPATHTOF(data\M04_cover_co.paa),
-			""
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] = {1,3};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_Opscore_05_C: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "FAST Opscore Helmet (M04/Cover/Headset)";
-		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_05_C_CA.PAA);
-		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-		allowedFacewear[] = {
-			"rhs_googles_black", 1,  
-			"rhs_googles_clear", 1,
-			"rhs_googles_orange", 1,
-			"rhs_googles_yellow", 1,
-			"rhs_ess_black", 1,
-			"G_Bandanna_khk", 1,
-			"G_Bandanna_tan", 1,
-			"rhs_scarf", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_tan", 1,
-			"rhsusf_shemagh2_tan", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh_gogg_tan", 1,
-			"rhsusf_shemagh2_gogg_tan", 1,
-			"rhsusf_oakley_goggles_blk", 1,
-			"rhsusf_oakley_goggles_clr", 1,
-			"rhsusf_oakley_goggles_ylw", 1,
-		};
-		hiddenSelectionsTextures[] =  {
-			QPATHTOF(data\M04_opscore_co.paa),
-			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
-			"",
-			"",
-			QPATHTOF(data\M04_cover_co.paa),
-			""
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] = {1,3};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_W_OPSCORE_01: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_01_CA.PAA);
-		scope = 2;
-		displayName = "FAST Opscore Helmet (M05W)";
-		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"","","","",""};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_W_OPSCORE_02: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_02_CA.PAA);
-		scope = 2;
-		displayName = "FAST Opscore Helmet (M05W/Headset)";
-		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_W_Opscore_01_C: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "FAST Opscore Helmet (M05W/Cover)";
-		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_01_C_CA.PAA);
-		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-		allowedFacewear[] = {
-			"rhs_googles_black", 1,  
-			"rhs_googles_clear", 1,
-			"rhs_googles_orange", 1,
-			"rhs_googles_yellow", 1,
-			"rhs_ess_black", 1,
-			"G_Bandanna_khk", 1,
-			"G_Bandanna_tan", 1,
-			"rhs_scarf", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_tan", 1,
-			"rhsusf_shemagh2_tan", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh_gogg_tan", 1,
-			"rhsusf_shemagh2_gogg_tan", 1,
-			"rhsusf_oakley_goggles_blk", 1,
-			"rhsusf_oakley_goggles_clr", 1,
-			"rhsusf_oakley_goggles_ylw", 1,
-		};
-		hiddenSelectionsTextures[] =  {
-			QPATHTOF(data\M05_W_opscore.paa),
-			"",
-			"",
-			"",
-			QPATHTOF(data\M05W_cover_co.paa),
-			""
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] = {1,3};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_W_Opscore_02_C: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "FAST Opscore Helmet (M05W/Cover/Headset)";
-		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_02_C_CA.PAA);
-		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-		allowedFacewear[] = {
-			"rhs_googles_black", 1,  
-			"rhs_googles_clear", 1,
-			"rhs_googles_orange", 1,
-			"rhs_googles_yellow", 1,
-			"rhs_ess_black", 1,
-			"G_Bandanna_khk", 1,
-			"G_Bandanna_tan", 1,
-			"rhs_scarf", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_tan", 1,
-			"rhsusf_shemagh2_tan", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh_gogg_tan", 1,
-			"rhsusf_shemagh2_gogg_tan", 1,
-			"rhsusf_oakley_goggles_blk", 1,
-			"rhsusf_oakley_goggles_clr", 1,
-			"rhsusf_oakley_goggles_ylw", 1,
-		};
-		hiddenSelectionsTextures[] =  {
-			QPATHTOF(data\M05_W_opscore.paa),
-			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
-			"",
-			"",
-			QPATHTOF(data\M05W_cover_co.paa),
-			""
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 30;
-			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
-			modelSides[] = {1,3};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_COM_11: H_HelmetB {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_COM_11_ca.paa);
-		displayName = "Composite Helmet (M62)";
-		scope = 2;
-		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M62_CH_co.paa)};
-		class ItemInfo: HeadGearItem {
-			hiddenSelections[] = {"Camo"};
-			hiddenSelectionsTextures[] = {QPATHTOF(data\M62_CH_co.paa)};
-			mass = 40;
-			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {6};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitpointName = "HitHead";
-					armor = 4;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
-	class KAR_FDF_COM_12: H_HelmetB {
-		author="Kartsa";
-		scope = 2;
-		displayName="Composite Helmet 3 (M05)";
+	class KAR_FDF_COM_12: KAR_FDF_COM_01 {
+		displayName = "Composite Helmet 3 (M05)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_COM_03_co.paa)};
+		model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
 		picture = QPATHTOF(pictures\KAR_FDF_COM_12_ca.paa);
-		model="\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[]= {
-			QPATHTOF(data\M05_COM_03_co.paa)
-		};
 		class ItemInfo: ItemInfo {
-			mass=30;
 			allowedSlots[]={901,605};
-			uniformModel="\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas.p3d";
+			mass = 30;
 			modelSides[] = {2,3};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitpointName="HitHead";
-					armor=6;
-					passThrough=0.5;
-				};
-			};
+			uniformModel = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas.p3d";
 		};
 	};
 	class KAR_FDF_COM_13: KAR_FDF_COM_12 {
-		author="Kartsa";
-		scope = 2;
-		displayName="Winter Composite Helmet 3 (M05)";
+		displayName = "Winter Composite Helmet 3 (M05)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05W_COM_03_co.paa)};
 		picture = QPATHTOF(pictures\KAR_FDF_COM_13_ca.paa);
-		hiddenSelections[] = {"Camo"};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelectionsTextures[]= {
-			QPATHTOF(data\M05W_COM_03_co.paa)
-		};
 	};
 	class KAR_FDF_COM_14: KAR_FDF_COM_12 {
-		author="Kartsa";
-		scope = 2;
-		displayName="Composite Helmet 3 (M05CW)";
+		displayName = "Composite Helmet 3 (M05CW)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05CW_COM_03_co.paa)};
 		picture = QPATHTOF(pictures\KAR_FDF_COM_14_ca.paa);
-		hiddenSelections[] = {"Camo"};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		hiddenSelectionsTextures[]= {
-			QPATHTOF(data\M05CW_COM_03_co.paa)
-		};
 	};
 	class KAR_FDF_COM_15: KAR_FDF_COM_12 {
-		author="Kartsa";
-		scope = 2;
-		displayName="Composite Helmet 3 (M05CW)";
+		displayName = "Composite Helmet 3 (M05CW)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_COM_03_co.paa)};
 		picture = QPATHTOF(pictures\KAR_FDF_COM_15_ca.paa);
-		hiddenSelections[] = {"Camo"};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
+	};
+	class KAR_FDF_OPSCORE_01: H_HelmetB {
+		ALLOWEDFACEWEAR_COM;
+		author = "Kartsa";
+		displayName = "FAST Opscore Helmet (M05)";
+		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"","","","",""};
+		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_01_CA.PAA);
+		scope = 2;
+		class ItemInfo: HeadGearItem {
+			hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
+			mass = 30;
+			modelSides[] = {1,3};
+			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
+			class HitpointsProtectionInfo {
+				class Head {
+					armor = 8;
+					hitPointName = "HitHead";
+					passThrough = 0.5;
+				};
+			};
 		};
-		hiddenSelectionsTextures[]= {
-			QPATHTOF(data\M04_COM_03_co.paa)
+	};
+	class KAR_FDF_OPSCORE_02: KAR_FDF_OPSCORE_01 {
+		displayName = "FAST Opscore Helmet (M05/Headset)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_02_CA.PAA);
+	};
+	class KAR_FDF_OPSCORE_04: KAR_FDF_OPSCORE_01 {
+		displayName = "FAST Opscore Helmet (M04)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"","","","",""};
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_04_CA.PAA);
+	};
+	class KAR_FDF_OPSCORE_05: KAR_FDF_OPSCORE_01 {
+		displayName = "FAST Opscore Helmet (M04/Headset)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_05_CA.PAA);
+	};
+	class KAR_FDF_W_OPSCORE_01: KAR_FDF_OPSCORE_01 {
+		displayName = "FAST Opscore Helmet (M05W)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"","","","",""};
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_01_CA.PAA);
+	};
+	class KAR_FDF_W_OPSCORE_02: KAR_FDF_OPSCORE_01 {
+		displayName = "FAST Opscore Helmet (M05W/Headset)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_02_CA.PAA);
+	};
+	class KAR_FDF_Opscore_01_C: KAR_FDF_OPSCORE_01 {
+		ALLOWEDFACEWEAR_OPSCORE;
+		displayName = "FAST Opscore Helmet (M05/Cover)";
+		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
+		hiddenSelectionsTextures[] =  {QPATHTOF(data\M05_opscore_co.paa),"","","",QPATHTOF(data\M05_cover_co.paa),""};
+		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_01_C_CA.PAA);
+		class ItemInfo: HeadGearItem {
+			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
+			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
+		};
+	};
+	class KAR_FDF_Opscore_02_C: KAR_FDF_Opscore_01_C {
+		displayName = "FAST Opscore Helmet (M05/Cover/Headset)";
+		hiddenSelectionsTextures[] =  {QPATHTOF(data\M05_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","",QPATHTOF(data\M05_cover_co.paa),""};
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_02_C_CA.PAA);
+	};
+	class KAR_FDF_Opscore_04_C: KAR_FDF_Opscore_01_C {
+		displayName = "FAST Opscore Helmet (M04/Cover)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"","","",QPATHTOF(data\M04_cover_co.paa),""};
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_04_C_CA.PAA);
+	};
+	class KAR_FDF_Opscore_05_C: KAR_FDF_Opscore_01_C {
+		displayName = "FAST Opscore Helmet (M04/Cover/Headset)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","",QPATHTOF(data\M04_cover_co.paa),""};
+		picture = QPATHTOF(pictures\KAR_FDF_OPSCORE_05_C_CA.PAA);
+	};
+	class KAR_FDF_W_Opscore_01_C: KAR_FDF_Opscore_01_C {
+		displayName = "FAST Opscore Helmet (M05W/Cover)";
+		hiddenSelectionsTextures[] =  {QPATHTOF(data\M05_W_opscore.paa),"","","",QPATHTOF(data\M05W_cover_co.paa),""};
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_01_C_CA.PAA);
+		class ItemInfo: HeadGearItem {
+			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
+		};
+	};
+	class KAR_FDF_W_Opscore_02_C: KAR_FDF_Opscore_01_C {
+		displayName = "FAST Opscore Helmet (M05W/Cover/Headset)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","",QPATHTOF(data\M05W_cover_co.paa),""};
+		picture = QPATHTOF(pictures\KAR_FDF_W_OPSCORE_02_C_CA.PAA);
+	};
+	class KAR_FDF_COM_11: H_HelmetB {
+		author = "Kartsa";
+		displayName = "Composite Helmet (M62)";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M62_CH_co.paa)};
+		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_COM_11_ca.paa);
+		scope = 2;
+		class ItemInfo: HeadGearItem {
+			allowedSlots[] = {801,901,701,605};
+			hiddenSelections[] = {"Camo"};
+			hiddenSelectionsTextures[] = {QPATHTOF(data\M62_CH_co.paa)};
+			mass = 40;
+			modelSides[] = {6};
+			uniformModel = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
+			class HitpointsProtectionInfo {
+				class Head {
+					armor = 4;
+					hitpointName = "HitHead";
+					passThrough = 0.5;
+				};
+			};
 		};
 	};
 	/////HATS/////
 	class KAR_FDF_LIPPALAKKI_M36: Helmet_Base {
 		author = "Kartsa";
-		picture = QPATHTOF(pictures\GRR_CO.paa);
 		displayName = "M36 Cap";
-		scope = 0;
-		model = "rhsgref\addons\rhsgref_infantry\gear\Head\m43cap.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M36_lippalakki_co.paa)};
+		model = "rhsgref\addons\rhsgref_infantry\gear\Head\m43cap.p3d";
+		picture = QPATHTOF(pictures\GRR_CO.paa);
+		scope = 0;
 		class ItemInfo: HeadGearItem {
-			mass = 5;
 			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {1,3};
 			hiddenSelections[] = { "camo" };
+			mass = 5;
+			modelSides[] = {1,3};
 			uniformModel = "rhsgref\addons\rhsgref_infantry\gear\Head\m43cap.p3d";
 			class HitpointsProtectionInfo {
 				class Head {
-					hitPointName = "HitHead";
 					armor = 0;
-					passThrough = 1;
-				};
-			};
-		};
-	};
-	class KAR_FDF_Beanie_01: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		displayName = "Beanie (M05)";
-		weaponPoolAvailable = 1;
-		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_01_ca.paa);
-		model = "\A3\Characters_F\Common\woolhat.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_beanie_co.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-
-		class ItemInfo: HeadGearItem {
-			mass = 6;
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {1,3};
-			hiddenSelections[] = { "camo" };
-			uniformModel = "\A3\Characters_F\Common\woolhat.p3d";
-			class HitpointsProtectionInfo {
-				class Head {
 					hitPointName = "HitHead";
-					armor = 0;
 					passThrough = 1;
 				};
 			};
 		};
 	};
 	class KAR_FDF_M62_lippalakki: Helmet_Base {
+		ALLOWEDFACEWEAR_COM;
 		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M62_LIPPALAKKI_ca.paa);
+		descriptionShort = "No Armor";
 		displayName = "Cap (M62)";
-		scope = 2;
-		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\m62_lippalakki_Co.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		descriptionShort = "No Armor";
+		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_M62_LIPPALAKKI_ca.paa);
+		scope = 2;
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
 			uniformModel = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_afghan_cap";
 		};
 	};
-	class KAR_FDF_Beanie_02: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		displayName = "Beanie (M05CW)";
-		weaponPoolAvailable = 1;
-		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_02_ca.paa);
-		model = "\A3\Characters_F\Common\woolhat.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CW_beanie.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-
-		class ItemInfo: HeadGearItem {
-			mass = 6;
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {1,3};
-			hiddenSelections[] = { "camo" };
-			uniformModel = "\A3\Characters_F\Common\woolhat.p3d";
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 0;
-					passThrough = 1;
-				};
-			};
-		};
-	};
-	class KAR_FDF_Beanie_03: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		displayName = "Beanie (M05W)";
-		weaponPoolAvailable = 1;
-		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_03_ca.paa);
-		model = "\A3\Characters_F\Common\woolhat.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_beanie_co.paa)};
-
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 6;
-			allowedSlots[] = {801,901,701,605};
-			modelSides[] = {1,3};
-			hiddenSelections[] = { "camo" };
-			uniformModel = "\A3\Characters_F\Common\woolhat.p3d";
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 0;
-					passThrough = 1;
-				};
-			};
-		};
-	};
-	class KAR_FDF_SEIKKAILUHATTU: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Booniehat (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_ca.paa);
-		model = "\A3\Characters_F\Common\booniehat.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_seikkailuhattu_co.paa)};
-		allowedFacewear[] = {
-			"rhs_balaclava", 1,
-			"rhs_balaclava1_olive", 1,
-			"G_Bandanna_oli", 1,
-			"G_Combat", 1,
-			"rhsusf_shemagh_grn", 1,
-			"rhsusf_shemagh2_grn", 1,
-			"rhsusf_shemagh_od", 1,
-			"rhsusf_shemagh2_od", 1,
-			"rhsusf_shemagh_gogg_od", 1,
-			"rhsusf_shemagh2_gogg_od", 1,
-			"rhsusf_shemagh_gogg_grn", 1,
-			"rhsusf_shemagh2_gogg_grn", 1,
-			"KAR_FDF_B_W", 1,
-			"KAR_FDF_B_GR", 1,
-			"KAR_FDF_B_GL", 1,
-			"KAR_FDF_B_B", 1,
-			"", 1
-		};
-		class ItemInfo: HeadGearItem {
-			mass = 5;
-			uniformModel = "\A3\Characters_F\Common\booniehat.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"camo"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 0;
-					passThrough = 1;
-				};
-			};
-		};
-	};
-	class KAR_FDF_SEIKKAILUHATTU_M04: Helmet_Base {
-		author = "Kartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Booniehat (M04)";
-		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_M04_ca.paa);
-		model = "\A3\Characters_F\Common\booniehat.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_seikkailuhattu_co.paa)};
-		class ItemInfo: HeadGearItem {
-			mass = 5;
-			uniformModel = "\A3\Characters_F\Common\booniehat.p3d";
-			modelSides[] = {1,3};
-			hiddenSelections[] = {"camo"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitPointName = "HitHead";
-					armor = 0;
-					passThrough = 1;
-				};
-			};
-		};
-	};
 	class KAR_FDF_LIPPALAKKI: Helmet_Base {
 		author = "Kaartsa";
-		scope = 2;
-		weaponPoolAvailable = 1;
 		displayName = "Cap (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_ca.paa);
-		model = "\A3\Characters_F\Common\cappatrol.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_cap_co.paa)};
+		model = "\A3\Characters_F\Common\cappatrol.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_ca.paa);
+		scope = 2;
+		weaponPoolAvailable = 1;
 		class ItemInfo: HeadGearItem {
 			mass = 5;
 			uniformModel = "\A3\Characters_F\Common\cappatrol.p3d";
@@ -1827,37 +596,70 @@ class CfgWeapons {
 			};
 		};
 	};
-	class KAR_FDF_LIPPALAKKI_M04: Helmet_Base {
-		author = "Kaartsa";
+	class KAR_FDF_LIPPALAKKI_M04: KAR_FDF_LIPPALAKKI {
+		displayName = "Cap (M04)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_lippalakki_co.paa)};
+		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_M04_ca.paa);
+	};
+	class KAR_FDF_Beanie_01: Helmet_Base {
+		ALLOWEDFACEWEAR_COM;
+		author = "Kartsa";
+		displayName = "Beanie (M05)";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_beanie_co.paa)};
+		model = "\A3\Characters_F\Common\woolhat.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_01_ca.paa);
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Cap (M04)";
-		picture = QPATHTOF(pictures\KAR_FDF_LIPPALAKKI_M04_ca.paa);
-		model = "\A3\Characters_F\Common\cappatrol.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_lippalakki_co.paa)};
 		class ItemInfo: HeadGearItem {
-			mass = 5;
-			uniformModel = "\A3\Characters_F\Common\cappatrol.p3d";
-			modelSides[] = {1,3};
+			allowedSlots[] = {801,901,701,605};
 			hiddenSelections[] = {"camo"};
+			mass = 6;
+			modelSides[] = {1,3};
+			uniformModel = "\A3\Characters_F\Common\woolhat.p3d";
 			class HitpointsProtectionInfo {
 				class Head {
-					hitPointName = "HitHead";
 					armor = 0;
+					hitPointName = "HitHead";
 					passThrough = 1;
 				};
 			};
 		};
+	};
+	class KAR_FDF_Beanie_02: KAR_FDF_Beanie_01 {
+		displayName = "Beanie (M05CW)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CW_beanie.paa)};
+		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_02_ca.paa);
+	};
+	class KAR_FDF_Beanie_03: KAR_FDF_Beanie_01 {
+		displayName = "Beanie (M05W)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_beanie_co.paa)};
+		picture = QPATHTOF(pictures\KAR_FDF_BEANIE_03_ca.paa);
+	};
+	class KAR_FDF_SEIKKAILUHATTU: KAR_FDF_Beanie_01 {
+		displayName = "Booniehat (M05)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_seikkailuhattu_co.paa)};
+		model = "\A3\Characters_F\Common\booniehat.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_ca.paa);
+		class ItemInfo: HeadGearItem {
+			mass = 5;
+			uniformModel = "\A3\Characters_F\Common\booniehat.p3d";
+		};
+	};
+	class KAR_FDF_SEIKKAILUHATTU_M04: KAR_FDF_SEIKKAILUHATTU {
+		allowedFacewear[] = { };
+		displayName = "Booniehat (M04)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_seikkailuhattu_co.paa)};
+		picture = QPATHTOF(pictures\KAR_FDF_SEIKKAILUHATTU_M04_ca.paa);
 	};
 	class KAR_FDF_KARVALAKKI: Helmet_Base {
 		author = "Kartsa";
-		scope = 2;
-		picture = QPATHTOF(pictures\KAR_FDF_KARVALAKKI_ca.paa);
 		displayName = "Furhat (M05)";
-		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_ushanka.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_karvalakki_co.paa)};
+		model = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_ushanka.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_KARVALAKKI_ca.paa);
+		scope = 2;
 		class ItemInfo: HeadGearItem {
 			hiddenSelections[] = {"Camo"};
 			uniformModel = "\rhsafrf\addons\rhs_infantry3\gear\head\rhs_ushanka.p3d";
@@ -1869,30 +671,31 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M17_LITE: Vest_Camo_Base {
 		author = "Kartsa";
-		scope = 2;
+		descriptionShort = "Armor Level III";
 		displayName = "M17 Plate Carrier (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_M17_LITE_ca.paa);
-		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_M17_PC_CO.paa)};
+		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_LITE_ca.paa);
+		scope = 2;
 		class ItemInfo: ItemInfo {
-			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 			containerClass = "Supply100";
 			mass = 70;
+			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 			class HitpointsProtectionInfo {
 				class Chest {
-					HitpointName = "HitChest";
 					armor = 25;
+					HitpointName = "HitChest";
 					PassThrough = 0.2;
 				};
 				class Diaphragm {
-					HitpointName = "HitDiaphragm";
 					armor = 25;
+					HitpointName = "HitDiaphragm";
 					PassThrough = 0.2;
 				};
 				class Abdomen {
-					hitpointName = "HitAbdomen";
 					armor = 25;
+					hitpointName = "HitAbdomen";
 					passThrough = 0.2;
 				};
 				class Body {
@@ -1902,244 +705,99 @@ class CfgWeapons {
 			};
 		};
 	};
-	class KAR_FDF_M17_VEST: Vest_Camo_Base {
-		author = "Kartsa";
-		scope = 2;
+	class KAR_FDF_M17_VEST: KAR_FDF_M17_LITE {
 		displayName = "M18 Plate Carrier Vest (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_M17_vest_ca.paa);
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_M17_PC_CO.paa)};
-		descriptionShort = "Armor Level III";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_vest_ca.paa);
 		class ItemInfo: ItemInfo {
-			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 			containerClass = "Supply50";
 			mass = 60;
-			class HitpointsProtectionInfo {
-				class Chest {
-					HitpointName = "HitChest";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Diaphragm {
-					HitpointName = "HitDiaphragm";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Abdomen {
-					hitpointName = "HitAbdomen";
-					armor = 25;
-					passThrough = 0.2;
-				};
-				class Body {
-					hitpointName = "HitBody";
-					passThrough = 0.2;
-				};
-			};
+			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 		};
 	};
 	class KAR_FDF_M17_VEST_H: KAR_FDF_M17_LITE {
-		author="Kartsa";
-		scope=2;
-		displayName="M17 Plate Carrier GL (M05)";
-		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_H_ca.paa);
+		displayName = "M17 Plate Carrier GL (M05)";
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[]= {
-			QPATHTOF(data\M05_M17_PC_CO.paa)
-		};
+		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_H_ca.paa);
 		class ItemInfo: ItemInfo {
-			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
-			containerClass = "Supply100";
 			mass = 90;
-			class HitpointsProtectionInfo {
-				class Chest {
-					HitpointName = "HitChest";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Diaphragm {
-					HitpointName = "HitDiaphragm";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Abdomen {
-					hitpointName = "HitAbdomen";
-					armor = 25;
-					passThrough = 0.2;
-				};
-				class Body {
-					hitpointName = "HitBody";
-					passThrough = 0.2;
-				};
-			};
+			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
 		};
 	};
-	class KAR_FDF_M17_LITE_M04: Vest_Camo_Base {
-		author = "Kartsa";
-		scope = 2;
+	class KAR_FDF_M17_LITE_M04: KAR_FDF_M17_LITE {
 		displayName = "M17 Plate Carrier (M04)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_modular_co.paa)};
 		picture = QPATHTOF(pictures\KAR_FDF_M17_LITE_M04_ca.paa);
-		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_modular_co.paa)};
-		class ItemInfo: ItemInfo {
-			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
-			containerClass = "Supply100";
-			mass = 70;
-			class HitpointsProtectionInfo {
-				class Chest {
-					HitpointName = "HitChest";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Diaphragm {
-					HitpointName = "HitDiaphragm";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Abdomen {
-					hitpointName = "HitAbdomen";
-					armor = 25;
-					passThrough = 0.2;
-				};
-				class Body {
-					hitpointName = "HitBody";
-					passThrough = 0.2;
-				};
-			};
-		};
 	};
-	class KAR_FDF_M17_VEST_M04: Vest_Camo_Base {
-		author = "Kartsa";
-		scope = 2;
+	class KAR_FDF_M17_VEST_M04: KAR_FDF_M17_LITE {
 		displayName = "M17 Plate Carrier Vest (M04)";
-		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_M04_ca.paa);
-		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
-		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_modular_co.paa)};
-		descriptionShort = "Armor Level III";
+		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_M04_ca.paa);
 		class ItemInfo: ItemInfo {
-			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 			containerClass = "Supply50";
 			mass = 60;
-			class HitpointsProtectionInfo {
-				class Chest {
-					HitpointName = "HitChest";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Diaphragm {
-					HitpointName = "HitDiaphragm";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Abdomen {
-					hitpointName = "HitAbdomen";
-					armor = 25;
-					passThrough = 0.2;
-				};
-				class Body {
-					hitpointName = "HitBody";
-					passThrough = 0.2;
-				};
-			};
+			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_F.p3d";
 		};
 	};
 	class KAR_FDF_M17_VEST_M04_H: KAR_FDF_M17_LITE_M04 {
-		author="Kartsa";
-		_generalMacro="M17 Plate Carrier GL (M04)";
-		scope=2;
-		displayName="M04 Plate Carrier M17 Vest Heavy";
-		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_M04_H_ca.paa);
-		hiddenSelections[] = {"camo"};
+		displayName = "M04 Plate Carrier M17 Vest Heavy";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_modular_co.paa)};
 		model = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
-		hiddenSelectionsTextures[]= {
-			QPATHTOF(data\M04_modular_co.paa)
-		};
+		picture = QPATHTOF(pictures\KAR_FDF_M17_VEST_M04_H_ca.paa);
 		class ItemInfo: ItemInfo {
-			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
 			containerClass = "Supply100";
 			mass = 90;
-			class HitpointsProtectionInfo {
-				class Chest {
-					HitpointName = "HitChest";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Diaphragm {
-					HitpointName = "HitDiaphragm";
-					armor = 25;
-					PassThrough = 0.2;
-				};
-				class Abdomen {
-					hitpointName = "HitAbdomen";
-					armor = 25;
-					passThrough = 0.2;
-				};
-				class Body {
-					hitpointName = "HitBody";
-					passThrough = 0.2;
-				};
-			};
+			uniformModel = "\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_heavy_F.p3d";
 		};
 	};
-	class KAR_FDF_M05_TST: Vest_Camo_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M05_TST_ca.paa);
-		scope = 2;
+	class KAR_FDF_M05_TST: KAR_FDF_M17_LITE {
+		descriptionShort = "No Armor";
 		displayName = "TST (M05)";
-		model = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
 		hiddenSelections[] = {"Camo","Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_TST_co.paa),QPATHTOF(data\M05_pouchs_co.paa),QPATHTOF(data\M05_pouchs_2_co.paa)};
-		descriptionShort = "No Armor";
+		model = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TST_ca.paa);
 		class ItemInfo: ItemInfo {
-			hiddenSelections[] = {"Camo","Camo1","Camo2"};
-			uniformModel = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
 			containerClass = "Supply100";
+			hiddenSelections[] = {"Camo","Camo1","Camo2"};
 			mass = 15;
+			uniformModel = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
 			class HitpointsProtectionInfo {
 				class Diaphragm {
-					HitpointName = "HitDiaphragm";
 					armor = 3;
+					HitpointName = "HitDiaphragm";
 					passThrough = 0.6;
 				};
 				class Body {
-					hitpointName = "HitBody";
 					armor = 0;
+					hitpointName = "HitBody";
 					passThrough = 0.8;
 				};
 			};
 		};
 	};
-	class KAR_FDF_M05_TST_ARM: Vest_Camo_Base {
-		author = "Kartsa";
-		picture = QPATHTOF(pictures\KAR_FDF_M05_TST_ARM_ca.paa);
-		scope = 2;
+	class KAR_FDF_M05_TST_ARM: KAR_FDF_M05_TST {
+		descriptionShort = "Armor Level III";
 		displayName = "TST (M05/Armoured)";
-		model = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
-		hiddenSelections[] = {"Camo","Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_TST_co.paa),QPATHTOF(data\M05_pouchs_co.paa),QPATHTOF(data\M05_pouchs_2_co.paa)};
-		descriptionShort = "No Armor";
+		picture = QPATHTOF(pictures\KAR_FDF_M05_TST_ARM_ca.paa);
 		class ItemInfo: ItemInfo {
-			hiddenSelections[] = {"Camo","Camo1","Camo2"};
-			uniformModel = "rhsafrf\addons\rhs_infantry3\ratnik\rhs_emr_6sh117_AK01.p3d";
-			containerClass = "Supply100";
 			mass = 15;
 			class HitpointsProtectionInfo {
 				class Chest {
-					HitpointName = "HitChest";
 					armor = 25;
+					HitpointName = "HitChest";
 					PassThrough = 0.2;
 				};
 				class Diaphragm {
-					HitpointName = "HitDiaphragm";
 					armor = 25;
+					HitpointName = "HitDiaphragm";
 					PassThrough = 0.2;
 				};
 				class Abdomen {
-					hitpointName = "HitAbdomen";
 					armor = 25;
+					hitpointName = "HitAbdomen";
 					passThrough = 0.2;
 				};
 				class Body {
@@ -2150,4 +808,3 @@ class CfgWeapons {
 		};
 	};
 };
-
