@@ -46,59 +46,17 @@ parameters = [
 [hemtt.launch.all]
 extends = "default"
 workshop = [
-    "1673456286", # 3CB FACTIONS Workshop ID
-    "1661066023", # RKSL
-    "893339590", # BAF weapons
-    "893349825", # BAF vehicle
-    "893346105", # BAF units
-    "893328083", # BAF Equipment
+    "366425329", #FIR AWS(AirWeaponSystem)
+    "1849091860", #FA-18 Hornet
+    "1663110214", #F-35C Lightning II
+    "826911897", #SFP: Swedish Forces Pack
+    "917042703", #SFP: Finnish Forces Pack
+    "909320014", #HAFM
+    "541888371", #CUP Vehicles
+    "497660133", #CUP Weapons
+    "497661914", #CUP Units
 ]
 
-parameters = [
-]
 
 [hemtt.release]
 folder = "@fdf_modular_faction_pack"
-
-
-[hemtt.launch.server]
-extends = "default"
-workshop = [
-    "843425103", # RHS AFRF Workshop ID
-    "843577117", # RHS USAF Workshop ID
-    "843593391", # RHS GREF Workshop ID
-    "843632231", # RHS SAF  Workshop ID
-    "1673456286", # 3CB FACTIONS Workshop ID
-    "893349825", # 3CB Vehicles Workshop ID
-]
-parameters = [
-    "-server",
-    "-port=2302",
-    "-filePatching",
-    "-cfg=C:\\Users\\mikal\\Documents\\GitHub\\Afi-Balance\\server\\server_basic.cfg",
-    "-config=C:\\Users\\mikal\\Documents\\GitHub\\Afi-Balance\\server\\server_config.cfg",
-]
-
-[hemtt.launch.player]
-extends = "default"
-workshop = [
-    "843425103", # RHS AFRF Workshop ID
-    "843577117", # RHS USAF Workshop ID
-    "843593391", # RHS GREF Workshop ID
-    "843632231", # RHS SAF  Workshop ID
-    "1673456286", # 3CB FACTIONS Workshop ID
-    "893349825", # 3CB Vehicles Workshop ID
-]
-parameters = [
-    "-skipIntro",         # These parameters are passed to the Arma 3 executable
-    "-noSplash",          # They do not need to be added to your list
-    "-showScriptErrors",  # You can add additional parameters here
-    "-debug",
-    "-filePatching",
-    "-world=empty",
-    "-noPause",
-    "-noPauseAudio",
-    "-connect=localHost",
-    "-port=2302",
-    "-window",
-]
