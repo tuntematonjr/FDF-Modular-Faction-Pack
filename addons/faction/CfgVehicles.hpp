@@ -5,26 +5,26 @@ class CfgVehicles {
 	};
 	/////CONSCRIPTS////
 	class KAR_FDF_SOL_C_BASE: B_Soldier_base_G {	
-		author="Kartsa";
 		_generalMacro="I_G_Soldier_base_F";
-		expansion=1;
-		identityTypes[]={"Head_Enoch","Head_Euro","NoGlasses","LanguageENGB_F"};
-		faceType="Man_A3";
-		side=1;
-		faction="KAR_FIN_FACTION";
-		genericNames="FinnishMen";
-		vehicleClass="Men";
-		editorSubcategory="KAR_FDF_INF_C";
+		accuracy = 3.9000001;
+		author = "Kartsa";
+		camouflage = 1.1;
+		editorSubcategory = "KAR_FDF_INF_C";
+		expansion = 1;
+		faceType = "Man_A3";
+		faction = "KAR_FIN_FACTION";
+		genericNames = "FinnishMen";
+		icon = "iconMan";
+		identityTypes[] = {"Head_Enoch","Head_Euro","NoGlasses","LanguageENGB_F"};
+		minFireTime = 10;
 		nakedUniform = "U_BasicBody";
-		portrait="";
-		picture="";
-		icon="iconMan";
-		accuracy=3.9000001;
-		camouflage=1.1;
-		minFireTime=10;
-		scope=0;
-		scopeCurator=0;
-		linkedItems[]= {
+		picture = "";
+		portrait = "";
+		scope = 0;
+		scopeCurator = 0;
+		side = 1;
+		vehicleClass = "Men";
+		linkedItems[] = {
 			"KAR_FDF_M05_TST_ARM",
 			"KAR_FDF_COM_01",
 			"ItemMap",
@@ -32,7 +32,7 @@ class CfgVehicles {
 			"ItemWatch",
 			"ItemRadio"
 		};
-		respawnLinkedItems[]= {
+		respawnlinkedItems[] = {
 			"KAR_FDF_M05_TST_ARM",
 			"KAR_FDF_COM_01",
 			"ItemMap",
@@ -42,14 +42,23 @@ class CfgVehicles {
 		};
 	};
 	class KAR_FDF_RIF_C: KAR_FDF_SOL_C_BASE {
-		vehicleClass = "KAR_FDF_INF_C";
+		backpack = "KAR_FDF_C_BAG";
+		displayName = "Rifleman";
 		editorCategory = "KAR_FDF_TOP";
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C.jpg";
 		editorSubcategory = "KAR_FDF_INF_C";
+		headgearProbability = 1;
+		Items[] = {"FirstAidKit"};
+		magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
+		RespawnItems[] = {"FirstAidKit"};
+		respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
+		respawnWeapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
+		role = "Rifleman";
 		scope = 2;
 		scopeCurator = 2;
-		author = "Kartsa";
-		headgearProbability=100;
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C.jpg";
+		uniformClass = "KAR_FDF_M05_Palvelus";
+		vehicleClass = "KAR_FDF_INF_C";
+		weapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
 		allowedHeadgear[]= {
 			"KAR_FDF_COM_01",
 			"KAR_FDF_COM_03",
@@ -67,57 +76,39 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			init="if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
 		};
-		displayName = "Rifleman";
-		role = "Rifleman";
-		uniformClass = "KAR_FDF_M05_Palvelus";
-		backpack = "KAR_FDF_C_BAG";
-		weapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
-		respawnWeapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
-		Items[] = {"FirstAidKit"};
-		RespawnItems[] = {"FirstAidKit"};
-		magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
-		respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
 	};
 	class KAR_FDF_RIF_C_AT: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Rifleman (M72)";
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_AT.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_RIFLE_RK62","rhs_weap_m72a7","Throw","Put"};
 		role = "Rifleman";
 		weapons[] = {"KAR_RIFLE_RK62","rhs_weap_m72a7","Throw","Put"};
-		respawnWeapons[] = {"KAR_RIFLE_RK62","rhs_weap_m72a7","Throw","Put"};
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_AT.jpg";
 	};
 	class KAR_FDF_RIF_C_HAT: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Rifleman (NLAW)";
-		icon="iconManAT";
-		role="MissileSpecialist";
-		weapons[] = {"KAR_RIFLE_RK62","launch_NLAW_F","Throw","Put"};
-		respawnWeapons[] = {"KAR_RIFLE_RK62","launch_NLAW_F","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_HAT.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_RIFLE_RK62","launch_NLAW_F","Throw","Put"};
+		role = "MissileSpecialist";
+		weapons[] = {"KAR_RIFLE_RK62","launch_NLAW_F","Throw","Put"};
 	};
 	class KAR_FDF_RIF_C_MK: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Marksman";
-		role="Marksman";
-		weapons[] = {"KAR_FDF_MK","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_MK.jpg";
+		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
+		role = "Marksman";
+		weapons[] = {"KAR_FDF_MK","Throw","Put"};
 	};
 	class KAR_FDF_RIF_C_SNI: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Sniper";
-		role="Marksman";
 		backpack = "";
-		headgearProbability=100;
+		displayName = "Sniper";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_SNI.jpg";
+		magazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
+		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
+		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
+		role = "Marksman";
+		weapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
 		allowedHeadgear[]= {
 			"KAR_FDF_COM_01",
 			"KAR_FDF_COM_03",
@@ -134,143 +125,100 @@ class CfgVehicles {
 			"KAR_FDF_Beanie_01", 1,
 			"KAR_FDF_SEIKKAILUHATTU", 1
 		};
-		weapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
-		magazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
-		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 	};
 	class KAR_FDF_RIF_C_MEDIC: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Medic";
-		icon="iconManMedic";
-		role="CombatLifeSaver";
-		attendant=1;
+		attendant = 1;
 		backpack = "KAR_FDF_MEDICBAG";
+		displayName = "Medic";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_MEDIC.jpg";
+		icon = "iconManMedic";
+		medic = 1;
+		role = "CombatLifeSaver";
 	};
 	class KAR_FDF_RIF_C_MG: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Machinegunner";
-		icon="iconManMG";
-		role="MachineGunner";
 		backpack = "KAR_FDF_MG_BAG";
-		weapons[] = {"KAR_PKM","Throw","Put"};
-		respawnWeapons[] = {"KAR_PKM","Throw","Put"};
+		displayName = "Machinegunner";
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_MG.jpg";
+		icon = "iconManMG";
 		magazines[] = {"SmokeShell","SmokeShell","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_MG.jpg";
+		respawnWeapons[] = {"KAR_PKM","Throw","Put"};
+		role = "MachineGunner";
+		weapons[] = {"KAR_PKM","Throw","Put"};
 	};
 	class KAR_FDF_RIF_C_ENG: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Engineer";
-		engineer=1;
-		icon="iconManEngineer";
-		role="Sapper";
 		backpack = "KAR_FDF_MECH";
+		displayName = "Engineer";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_ENG.jpg";
+		engineer = 1;
+		icon = "iconManEngineer";
+		role = "Sapper";
 	};
-	class KAR_FDF_RIF_C_EOD: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "EOD";
-		engineer=1;
-		canDeactivateMines=1;
-		detectSkill=38;
-		icon="iconManExplosive";
-		role="Sapper";
+	class KAR_FDF_RIF_C_EOD: KAR_FDF_RIF_C_ENG {
 		backpack = "KAR_FDF_EOD";
+		canDeactivateMines = 1;
+		detectSkill = 38;
+		displayName = "EOD";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_EOD.jpg";
+		engineer = 1;
 	};
 	class KAR_FDF_RIF_C_SL: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Squad Leader";
-		icon="iconManLeader";
-		role="Rifleman";
-		weapons[] = {"KAR_FDF_MK","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_SL.jpg";
+		icon = "iconManLeader";
+		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
+		role = "Rifleman";
+		weapons[] = {"KAR_FDF_MK","Throw","Put"};
 	};
 	class KAR_FDF_RIF_C_TD: KAR_FDF_RIF_C {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Crewman";
-		role="Crewman";
-		
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_TD.jpg";
-		allowedHeadgear[]= {
-			"KAR_FDF_VP_01",
-			"KAR_FDF_VP_02"
-		};
-		headgearList[] =  {
-			"KAR_FDF_VP_02", 1,
-			"KAR_FDF_VP_01", 1
-		};
-		linkedItems[]= {
-			"KAR_FDF_M05_TST"
-		};
-		respawnLinkedItems[]= {
-			"KAR_FDF_M05_TST"
-		};
+		allowedHeadgear[]= {"KAR_FDF_VP_01","KAR_FDF_VP_02"};
 		backpack = "";
+		displayName = "Crewman";
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C_TD.jpg";
+		headgearList[] =  {"KAR_FDF_VP_02", 1,"KAR_FDF_VP_01", 1};
+		linkedItems[] = {"KAR_FDF_M05_TST"};
+		respawnlinkedItems[] = {"KAR_FDF_M05_TST"};
+		role = "Crewman";
 		uniformClass = "KAR_FDF_COVERALLS_02";
 	};
 	////SERVICEMEN////
-	class KAR_FDF_SOL_S_BASE: B_Soldier_base_G {	
-		author="Kartsa";
-		_generalMacro="I_G_Soldier_base_F";
-		expansion=1;
-		identityTypes[]={"Head_Enoch","Head_Euro","NoGlasses","LanguageENGB_F"};
-		faceType="Man_A3";
-		side=1;
-		faction="KAR_FIN_FACTION";
-		genericNames="FinnishMen";
-		vehicleClass="Men";
-		editorSubcategory="KAR_FDF_INF_S";
-		nakedUniform = "U_BasicBody";
-		portrait="";
-		picture="";
-		icon="iconMan";
-		accuracy=3.9000001;
-		camouflage=1.1;
-		minFireTime=10;
-		scope=0;
-		scopeCurator=0;
-		linkedItems[]= {
+	class KAR_FDF_SOL_S_BASE: KAR_FDF_SOL_C_BASE {	
+		editorSubcategory = "KAR_FDF_INF_S";
+		linkedItems[] = {
 			"KAR_FDF_M17_LITE",
 			"KAR_FDF_OPSCORE_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ItemRadio",
+			"ItemRadio"
 		};
-		respawnLinkedItems[]= {
+		respawnlinkedItems[] = {
 			"KAR_FDF_M17_LITE",
 			"KAR_FDF_OPSCORE_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ItemRadio",
+			"ItemRadio"
 		};	
 	};
 	class KAR_FDF_RIF_S: KAR_FDF_SOL_S_BASE {
-		vehicleClass = "KAR_FDF_INF_S";
+		backpack = "KAR_FDF_S_BAG";
+		displayName = "Rifleman";
 		editorCategory = "KAR_FDF_TOP";
-		editorSubcategory = "KAR_FDF_INF_S";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S.jpg";
+		editorSubcategory = "KAR_FDF_INF_S";
+		headgearProbability = 1;
+		Items[] = {"FirstAidKit"};
+		magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
+		RespawnItems[] = {"FirstAidKit"};
+		respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
+		respawnWeapons[] = {"KAR_FDF_M62M2","Throw","Put"};
+		role = "Rifleman";
 		scope = 2;
 		scopeCurator = 2;
-		author = "Kartsa";
-		headgearProbability=100;
+		uniformClass = "KAR_FDF_M05_Taistelupaita";
+		vehicleClass = "KAR_FDF_INF_S";
+		weapons[] = {"KAR_FDF_M62M2","Throw","Put"};
 		allowedHeadgear[]= {
 			"KAR_FDF_OPSCORE_01",
 			"KAR_FDF_OPSCORE_02",
@@ -281,7 +229,6 @@ class CfgVehicles {
 			"KAR_FDF_COM_12"
 		};
 		headgearList[] =  {
-			
 			"KAR_FDF_OPSCORE_01", 1,
 			"KAR_FDF_OPSCORE_02", 1,
 			"KAR_FDF_COM_01", 1,
@@ -293,140 +240,98 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			init="if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
 		};
-		displayName = "Rifleman";
-		role = "Rifleman";
-		uniformClass = "KAR_FDF_M05_Taistelupaita";
-		backpack = "KAR_FDF_S_BAG";
-		weapons[] = {"KAR_FDF_M62M2","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_M62M2","Throw","Put"};
-		Items[] = {"FirstAidKit"};
-		RespawnItems[] = {"FirstAidKit"};
-		magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
-		respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
 	};
 	class KAR_FDF_RIF_S_AT: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Rifleman (M72)";
-		role = "Rifleman";
-		weapons[] = {"KAR_FDF_M62M2","rhs_weap_m72a7","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_M62M2","rhs_weap_m72a7","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_AT.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_FDF_M62M2","rhs_weap_m72a7","Throw","Put"};
+		weapons[] = {"KAR_FDF_M62M2","rhs_weap_m72a7","Throw","Put"};
 	};	
 	class KAR_FDF_RIF_S_HAT: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Rifleman (NLAW)";
-		icon="iconManAT";
-		role="MissileSpecialist";
-		weapons[] = {"KAR_FDF_M62M2","launch_NLAW_F","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_M62M2","launch_NLAW_F","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_HAT.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_FDF_M62M2","launch_NLAW_F","Throw","Put"};
+		role = "MissileSpecialist";
+		weapons[] = {"KAR_FDF_M62M2","launch_NLAW_F","Throw","Put"};
 	};
 	class KAR_FDF_RIF_S_MK: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Marksman";
-		role="Marksman";
-		weapons[] = {"KAR_FDF_MK_02","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_MK_02","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_MK.jpg";
+		respawnWeapons[] = {"KAR_FDF_MK_02","Throw","Put"};
+		role = "Marksman";
+		weapons[] = {"KAR_FDF_MK_02","Throw","Put"};
 	};
 	class KAR_FDF_RIF_S_SNI: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
+		backpack = "";
 		displayName = "Sniper";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_SNI.jpg";
-		role="Marksman";
-		backpack = "";
-		weapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
 		magazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
+		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
+		role = "Marksman";
+		weapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
 	};
 	class KAR_FDF_RIF_S_MEDIC: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Medic";
-		icon="iconManMedic";
-		role="CombatLifeSaver";
-		attendant=1;
+		attendant = 1;
 		backpack = "KAR_FDF_S_MEDICBAG";
+		displayName = "Medic";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_MEDIC.jpg";
+		icon = "iconManMedic";
+		medic = 1;
+		role = "CombatLifeSaver";
 	};
 	class KAR_FDF_RIF_S_MG: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Machinegunner";
-		icon="iconManMG";
-		role="MachineGunner";
 		backpack = "KAR_FDF_MG_S_BAG";
-		weapons[] = {"KAR_PKM_S","Throw","Put"};
-		respawnWeapons[] = {"KAR_PKM_S","Throw","Put"};
+		displayName = "Machinegunner";
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_MG.jpg";
+		icon = "iconManMG";
 		magazines[] = {"SmokeShell","SmokeShell","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_MG.jpg";
+		respawnWeapons[] = {"KAR_PKM_S","Throw","Put"};
+		role = "MachineGunner";
+		weapons[] = {"KAR_PKM_S","Throw","Put"};
 	};
 	class KAR_FDF_RIF_S_ENG: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Engineer";
-		engineer=1;
-		icon="iconManEngineer";
-		role="Sapper";
 		backpack = "KAR_FDF_S_MECH";
+		displayName = "Engineer";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_ENG.jpg";
+		engineer = 1;
+		icon = "iconManEngineer";
+		role = "Sapper";
 	};
-	class KAR_FDF_RIF_S_EOD: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "EOD";
-		engineer=1;
-		canDeactivateMines=1;
-		detectSkill=38;
-		icon="iconManExplosive";
-		role="Sapper";
+	class KAR_FDF_RIF_S_EOD: KAR_FDF_RIF_S_ENG {
 		backpack = "KAR_FDF_S_EOD";
+		canDeactivateMines = 1;
+		detectSkill = 38;
+		displayName = "EOD";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_EOD.jpg";
+		icon = "iconManExplosive";
 	};
 	class KAR_FDF_RIF_S_AA: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Rifleman (AA)";
-		icon="iconManAT";
-		role="MissileSpecialist";
 		backpack = "KAR_FDF_S_AA";
-		weapons[] = {"KAR_FDF_M62M2","rhs_weap_fim92","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_M62M2","rhs_weap_fim92","Throw","Put"};
+		displayName = "Rifleman (AA)";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_AA.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_FDF_M62M2","rhs_weap_fim92","Throw","Put"};
+		role = "MissileSpecialist";
+		weapons[] = {"KAR_FDF_M62M2","rhs_weap_fim92","Throw","Put"};
 	};
 	class KAR_FDF_RIF_S_SL: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Squad Leader";
-		icon="iconManLeader";
-		role="Rifleman";
-		weapons[] = {"KAR_FDF_MK","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_SL.jpg";
+		icon = "iconManLeader";
+		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
+		weapons[] = {"KAR_FDF_MK","Throw","Put"};
 	};
 	class KAR_FDF_RIF_S_TD: KAR_FDF_RIF_S {
-		scope = 2;
-		scopeCurator = 2;
 		author = "Kartsa";
+		backpack = "";
 		displayName = "Crewman";
-		role="Crewman";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_S_TD.jpg";
+		role = "Crewman";
+		uniformClass = "KAR_FDF_COVERALLS_01";
 		allowedHeadgear[]= {
 			"KAR_FDF_VP_02",
 			"KAR_FDF_VP_01",
@@ -437,100 +342,100 @@ class CfgVehicles {
 			"KAR_FDF_VP_01", 0.2,
 			"H_HelmetCrew_I", 0.6
 		};
-		linkedItems[]= {
+		linkedItems[] = {
 			"KAR_FDF_M17_VEST"
 		};
-		respawnLinkedItems[]= {
+		respawnlinkedItems[] = {
 			"KAR_FDF_M17_VEST"
 		};
-		backpack = "";
-		uniformClass = "KAR_FDF_COVERALLS_01";
 	};
 	////PILOTS////
 	class KAR_FDF_F35_Pilot: KAR_FDF_RIF_S {	
-		genericNames="FinnishMen";
-		displayName = "Pilot";
-		role="Crewman";
-		icon="iconMan";
 		backpack = "rhsusf_eject_Parachute_backpack";
+		displayName = "Pilot";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_F35_Pilot.jpg";
-		linkedItems[]= {
-			"KAR_FDF_M17_LITE",
-			"H_PilotHelmetFighter_O",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"ItemGPS"
-		};
-		respawnLinkedItems[]= {
-			"KAR_FDF_M17_LITE",
-			"H_PilotHelmetFighter_O",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"ItemGPS"
-		};
-		uniformClass = "U_B_HeliPilotCoveralls";
-		weapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
+		editorSubcategory = "KAR_FDF_PILOT";
+		genericNames = "FinnishMen";
+		icon = "iconMan";
 		Items[] = {"FirstAidKit"};
-		RespawnItems[] = {"FirstAidKit"};
 		magazines[] = {"SmokeShellBlue","SmokeShellBlue","SmokeShell","SmokeShell","rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP"};
+		RespawnItems[] = {"FirstAidKit"};
 		respawnMagazines[] = {"SmokeShellBlue","SmokeShellBlue","SmokeShell","SmokeShell","rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP"};
+		respawnWeapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
+		role = "Crewman";
+		uniformClass = "U_B_HeliPilotCoveralls";
+		vehicleClass = "KAR_FDF_PILOT";
+		weapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
+		linkedItems[] = {
+			"KAR_FDF_M17_LITE",
+			"H_PilotHelmetFighter_O",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"ItemGPS"
+		};
+		respawnlinkedItems[] = {
+			"KAR_FDF_M17_LITE",
+			"H_PilotHelmetFighter_O",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"ItemGPS"
+		};
 	};
-	class KAR_FDF_Heli_Pilot: KAR_FDF_RIF_S {	
+	class KAR_FDF_Heli_Pilot: KAR_FDF_F35_Pilot {	
+		backpack = "";
 		displayName = "Heli Pilot";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_Heli_Pilot.jpg";
-		role="Crewman";
-		icon="iconMan";
-		backpack = "";
-		linkedItems[]= {
-			"KAR_FDF_M17_LITE",
-			"H_PilotHelmetHeli_B",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"ItemGPS"
-		};
-		respawnLinkedItems[]= {
-			"KAR_FDF_M17_LITE",
-			"H_PilotHelmetHeli_B",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"ItemGPS"
-		};
-		uniformClass = "U_B_HeliPilotCoveralls";
-		weapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
 		magazines[] = {"SmokeShellBlue","SmokeShellBlue","SmokeShell","SmokeShell","rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP"};
 		respawnMagazines[] = {"SmokeShellBlue","SmokeShellBlue","SmokeShell","SmokeShell","rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP"};
+		respawnWeapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
+		uniformClass = "U_B_HeliPilotCoveralls";
+		weapons[] = {"rhsusf_weap_glock17g4","Throw","Put"};
+		linkedItems[] = {
+			"KAR_FDF_M17_LITE",
+			"H_PilotHelmetHeli_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"ItemGPS"
+		};
+		respawnlinkedItems[] = {
+			"KAR_FDF_M17_LITE",
+			"H_PilotHelmetHeli_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"ItemGPS"
+		};
 	};
 	////SOF////
 	class KAR_FDF_SOF_BASE: B_Soldier_base_G {	
-		author="Kartsa";
-		expansion=1;
-		identityTypes[]={"Head_Enoch","Head_Euro","NoGlasses","LanguageENGB_F"};
-		faceType="Man_A3";
-		side=1;
-		faction="KAR_FIN_FACTION";
-		genericNames="FinnishMen";
-		vehicleClass="Men";
-		editorSubcategory="KAR_FDF_INF_SOF";
+		accuracy = 4.9000001;
+		author = "Kartsa";
+		camouflage = 1.2;
+		editorCategory = "KAR_FDF_TOP";
+		editorSubcategory = "KAR_FDF_INF_SOF";
+		expansion = 1;
+		faceType = "Man_A3";
+		faction = "KAR_FIN_FACTION";
+		genericNames = "FinnishMen";
+		headgearProbability = 1;
+		icon = "iconMan";
+		identityTypes[] = {"Head_Enoch","Head_Euro","NoGlasses","LanguageENGB_F"};
+		minFireTime = 10;
 		nakedUniform = "U_BasicBody";
-		portrait="";
-		picture="";
-		icon="iconMan";
-		accuracy=4.9000001;
-		camouflage=1.2;
-		minFireTime=10;
-		scope=0;
-		scopeCurator=0;
-		linkedItems[]= {
+		picture = "";
+		portrait = "";
+		scope = 0;
+		scopeCurator = 0;
+		side = 1;
+		vehicleClass = "Men";
+		linkedItems[] = {
 			"KAR_FDF_M17_LITE",
 			"KAR_FDF_OPSCORE_02",
 			"ItemMap",
@@ -539,7 +444,7 @@ class CfgVehicles {
 			"ItemRadio",
 			"rhsusf_ANPVS_15"
 		};
-		respawnLinkedItems[]= {
+		respawnlinkedItems[] = {
 			"KAR_FDF_M17_LITE",
 			"KAR_FDF_OPSCORE_02",
 			"ItemMap",
@@ -553,14 +458,20 @@ class CfgVehicles {
 		};	
 	};
 	class KAR_FDF_RIF_SOF: KAR_FDF_SOF_BASE {
-		vehicleClass = "KAR_FDF_INF_SOF";
-		editorCategory = "KAR_FDF_TOP";
-		editorSubcategory = "KAR_FDF_INF_SOF";
+		backpack = "KAR_FDF_SOF_BAG";
+		displayName = "Rifleman";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF.jpg";
+		Items[] = {"FirstAidKit"};
+		magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG"};
+		RespawnItems[] = {"FirstAidKit"};
+		respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG"};
+		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","Throw","Put"};
+		role = "Rifleman";
 		scope = 2;
 		scopeCurator = 2;
-		author = "Kartsa";
-		headgearProbability=100;
+		uniformClass = "KAR_FDF_CRYE_GEN3";
+		vehicleClass = "KAR_FDF_INF_SOF";
+		weapons[] = {"KAR_FDF_SOF_SCAR","Throw","Put"};
 		allowedHeadgear[]= {
 			"KAR_FDF_OPSCORE_01",
 			"KAR_FDF_OPSCORE_02"
@@ -569,204 +480,153 @@ class CfgVehicles {
 			"KAR_FDF_OPSCORE_01", 1,
 			"KAR_FDF_OPSCORE_02", 1
 		};
-		displayName = "Rifleman";
-		role = "Rifleman";
-		uniformClass = "KAR_FDF_CRYE_GEN3";
-		backpack = "KAR_FDF_SOF_BAG";
-		weapons[] = {"KAR_FDF_SOF_SCAR","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","Throw","Put"};
-		Items[] = {"FirstAidKit"};
-		RespawnItems[] = {"FirstAidKit"};
-		magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG"};
-		respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","KARRK62_Mag","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG","rhs_mag_30Rnd_556x45_Mk318_PMAG"};
 	};
 	class KAR_FDF_RIF_SOF_AT: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Rifleman (M72)";
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_AT.jpg";
+		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","rhs_weap_m72a7","Throw","Put"};
 		role = "Rifleman";
 		weapons[] = {"KAR_FDF_SOF_SCAR","rhs_weap_m72a7","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","rhs_weap_m72a7","Throw","Put"};
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_AT.jpg";
 	};	
 	class KAR_FDF_RIF_SOF_HAT: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Rifleman (NLAW)";
-		icon="iconManAT";
-		role="MissileSpecialist";
-		weapons[] = {"KAR_FDF_SOF_SCAR","launch_NLAW_F","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","launch_NLAW_F","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_HAT.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","launch_NLAW_F","Throw","Put"};
+		role = "MissileSpecialist";
+		weapons[] = {"KAR_FDF_SOF_SCAR","launch_NLAW_F","Throw","Put"};
 	};
 	class KAR_FDF_RIF_SOF_MK: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Marksman";
-		role="Marksman";
-		weapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_MK.jpg";
+		respawnWeapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
+		role = "Marksman";
+		weapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
 	};
 	class KAR_FDF_RIF_SOF_SNI: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Sniper";
-		role="Marksman";
 		backpack = "";
-		weapons[] = {"KAR_FDF_SNI_SOF","rhsusf_weap_glock17g4","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SNI","rhsusf_weap_glock17g4","Throw","Put"};
+		displayName = "Sniper";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_SNI.jpg";
 		magazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhs_5Rnd_338lapua_t5000","rhsusf_mag_17Rnd_9x19_FMJ","rhsusf_mag_17Rnd_9x19_FMJ"};
+		respawnWeapons[] = {"KAR_FDF_SNI_SOF","rhsusf_weap_glock17g4","Throw","Put"};
+		role = "Marksman";
+		weapons[] = {"KAR_FDF_SNI_SOF","rhsusf_weap_glock17g4","Throw","Put"};
 	};
 	class KAR_FDF_RIF_SOF_MEDIC: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Medic";
-		icon="iconManMedic";
-		role="CombatLifeSaver";
-		attendant=1;
+		attendant = 1;
 		backpack = "KAR_FDF_S_MEDICBAG";
+		displayName = "Medic";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_MEDIC.jpg";
+		icon = "iconManMedic";
+		medic = 1;
+		role = "CombatLifeSaver";
 	};
 	class KAR_FDF_RIF_SOF_MG: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Machinegunner";
-		icon="iconManMG";
-		role="MachineGunner";
 		backpack = "KAR_FDF_MG_SOF_BAG";
-		weapons[] = {"KAR_FDF_MG_SOF","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_MG_SOF","Throw","Put"};
+		displayName = "Machinegunner";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_MG.jpg";
+		icon = "iconManMG";
 		magazines[] = {"SmokeShell","SmokeShell","rhsusf_100Rnd_556x45_soft_pouch","rhsusf_100Rnd_556x45_soft_pouch","rhsusf_100Rnd_556x45_soft_pouch"};
 		respawnMagazines[] = {"SmokeShell","SmokeShell","rhsusf_100Rnd_556x45_soft_pouch","rhsusf_100Rnd_556x45_soft_pouch","rhsusf_100Rnd_556x45_soft_pouch"};
+		respawnWeapons[] = {"KAR_FDF_MG_SOF","Throw","Put"};
+		role = "MachineGunner";
+		weapons[] = {"KAR_FDF_MG_SOF","Throw","Put"};
 	};
 	class KAR_FDF_RIF_SOF_ENG: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Engineer";
-		engineer=1;
-		icon="iconManEngineer";
-		role="Sapper";
 		backpack = "KAR_FDF_S_MECH";
+		displayName = "Engineer";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_ENG.jpg";
+		engineer = 1;
+		icon = "iconManEngineer";
+		role = "Sapper";
 	};
-	class KAR_FDF_RIF_SOF_EOD: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "EOD";
-		engineer=1;
-		canDeactivateMines=1;
-		detectSkill=38;
-		icon="iconManExplosive";
-		role="Sapper";
+	class KAR_FDF_RIF_SOF_EOD: KAR_FDF_RIF_SOF_ENG {
 		backpack = "KAR_FDF_S_EOD";
+		canDeactivateMines = 1;
+		detectSkill = 38;
+		displayName = "EOD";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_EOD.jpg";
+		icon = "iconManExplosive";
 	};
 	class KAR_FDF_RIF_SOF_AA: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Rifleman (AA)";
-		icon="iconManAT";
-		role="MissileSpecialist";
 		backpack = "KAR_FDF_S_AA";
-		weapons[] = {"KAR_FDF_SOF_SCAR","rhs_weap_fim92","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","rhs_weap_fim92","Throw","Put"};
+		displayName = "Rifleman (AA)";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_AA.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_FDF_SOF_SCAR","rhs_weap_fim92","Throw","Put"};
+		role = "MissileSpecialist";
+		weapons[] = {"KAR_FDF_SOF_SCAR","rhs_weap_fim92","Throw","Put"};
 	};
 	class KAR_FDF_RIF_SOF_SL: KAR_FDF_RIF_SOF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
 		displayName = "Squad Leader";
-		icon="iconManLeader";
-		role="Rifleman";
-		weapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_SOF_SL.jpg";
+		icon = "iconManLeader";
+		respawnWeapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
+		role = "Rifleman";
+		weapons[] = {"KAR_FDF_SOF_MK","Throw","Put"};
 	};
 	////SISSI////
 	class KAR_FDF_SIS_BASE: B_Soldier_base_G {	
-		author="Kartsa";
 		_generalMacro="I_G_Soldier_base_F";
-		expansion=1;
-		identityTypes[]={"Head_Enoch","Head_Euro","NoGlasses","LanguageENGB_F"};
-		faceType="Man_A3";
-		side=1;
-		faction="KAR_FIN_FACTION";
-		genericNames="FinnishMen";
-		vehicleClass="Men";
-		editorSubcategory="KAR_FDF_SIS_S";
+		accuracy = 3.9000001;
+		author = "Kartsa";
+		camouflage = 1.1;
+		editorCategory = "KAR_FDF_TOP";
+		editorSubcategory = "KAR_FDF_SIS";
+		expansion = 1;
+		faceType = "Man_A3";
+		faction = "KAR_FIN_FACTION";
+		genericNames = "FinnishMen";
+		headgearProbability = 1;
+		icon = "iconMan";
+		identityTypes[] = {"Head_Enoch","Head_Euro","NoGlasses","LanguageENGB_F"};
+		minFireTime = 10;
 		nakedUniform = "U_BasicBody";
-		portrait="";
-		picture="";
-		icon="iconMan";
-		accuracy=3.9000001;
-		camouflage=1.1;
-		minFireTime=10;
-		scope=0;
-		scopeCurator=0;
-		linkedItems[]= {
+		picture = "";
+		portrait = "";
+		scope = 0;
+		scopeCurator = 0;
+		side = 1;
+		vehicleClass = "Men";
+		linkedItems[] = {
 			"rhsgref_chicom",
 			"KAR_FDF_SEIKKAILUHATTU",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ItemRadio",
+			"ItemRadio"
 		};
-		respawnLinkedItems[]= {
+		respawnlinkedItems[] = {
 			"rhsgref_chicom",
 			"KAR_FDF_SEIKKAILUHATTU",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ItemRadio",
+			"ItemRadio"
 		};	
 	};
 	class KAR_FDF_SIS_RIF: KAR_FDF_SIS_BASE {
-		vehicleClass = "KAR_FDF_SIS";
-		editorCategory = "KAR_FDF_TOP";
-		editorSubcategory = "KAR_FDF_SIS";
+		backpack = "KAR_FDF_SIS_BP";
+		displayName = "Sissi";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_RIF.jpg";
+		Items[] = {"FirstAidKit"};
+		magazines[] = {"SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
+		RespawnItems[] = {"FirstAidKit"};
+		respawnMagazines[] = {"SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
+		respawnWeapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
+		role = "Rifleman";
 		scope = 2;
 		scopeCurator = 2;
-		author = "Kartsa";
-		headgearProbability=100;
-		displayName = "Sissi";
-		role = "Rifleman";
 		uniformClass = "KAR_FDF_M05_maastopuku_hihat";
-		backpack = "KAR_FDF_SIS_BP";
+		vehicleClass = "KAR_FDF_SIS";
 		weapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
-		respawnWeapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
-		Items[] = {"FirstAidKit"};
-		RespawnItems[] = {"FirstAidKit"};
-		magazines[] = {"SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
-		respawnMagazines[] = {"SmokeShell","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"};
 	};
 	class KAR_FDF_SIS_TL: KAR_FDF_SIS_RIF {
-		vehicleClass = "KAR_FDF_SIS";
-		editorCategory = "KAR_FDF_TOP";
-		editorSubcategory = "KAR_FDF_SIS";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_TL.jpg";
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		headgearProbability=100;
 		displayName = "Sissi (SL)";
-		icon="iconManLeader";
-		role = "Rifleman";
-		linkedItems[]= {
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_TL.jpg";
+		icon = "iconManLeader";
+		linkedItems[] = {
 			"rhsgref_chicom",
 			"Binoculars",
 			"KAR_FDF_SEIKKAILUHATTU",
@@ -776,7 +636,7 @@ class CfgVehicles {
 			"ItemRadio",
 			"ItemGPS",
 		};
-		respawnlinkedItems[]= {
+		respawnlinkedItems[] = {
 			"rhsgref_chicom",
 			"KAR_FDF_SEIKKAILUHATTU",
 			"Binoculars",
@@ -788,75 +648,62 @@ class CfgVehicles {
 		};
 	};
 	class KAR_FDF_SIS_MK: KAR_FDF_SIS_TL {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		headgearProbability=100;
-		displayName = "Sissi (Marksman)";
-		role = "Rifleman";
-		uniformClass = "KAR_FDF_M05_maastopuku_hihat";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_MK.jpg";
 		backpack = "";
-		weapons[] = {"KAR_FDF_MK","Throw","Put"};
-		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
+		displayName = "Sissi (Marksman)";
+		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_MK.jpg";
 		Items[] = {"FirstAidKit"};
 		RespawnItems[] = {"FirstAidKit"};
+		respawnWeapons[] = {"KAR_FDF_MK","Throw","Put"};
+		uniformClass = "KAR_FDF_M05_maastopuku_hihat";
+		weapons[] = {"KAR_FDF_MK","Throw","Put"};
 	};
 	class KAR_FDF_SIS_MED: KAR_FDF_SIS_RIF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Sissi (Medic)";
-		icon="iconManMedic";
-		role="CombatLifeSaver";
-		attendant=1;
+		attendant = 1;
 		backpack = "KAR_FDF_SIS_BP_MED";
+		displayName = "Sissi (Medic)";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_MED.jpg";
+		icon = "iconManMedic";
+		medic = 1;
+		role = "CombatLifeSaver";
 	};
 	class KAR_FDF_SIS_AT: KAR_FDF_SIS_RIF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Sissi (AT)";
-		icon="iconManAT";
-		role="MissileSpecialist";
 		backpack = "KAR_FDF_SIS_BP_AT";
-		weapons[] = {"KAR_RIFLE_RK62","rhs_weap_m72a7","Throw","Put"};
-		respawnWeapons[] = {"KAR_RIFLE_RK62","rhs_weap_m72a7","Throw","Put"};
+		displayName = "Sissi (AT)";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_AT.jpg";
+		icon = "iconManAT";
+		respawnWeapons[] = {"KAR_RIFLE_RK62","rhs_weap_m72a7","Throw","Put"};
+		role = "MissileSpecialist";
+		weapons[] = {"KAR_RIFLE_RK62","rhs_weap_m72a7","Throw","Put"};
 	};
 	class KAR_FDF_SIS_EOD: KAR_FDF_SIS_RIF {
-		scope = 2;
-		scopeCurator = 2;
-		author = "Kartsa";
-		displayName = "Sissi (EOD)";
-		icon="iconManAT";
-		role="MissileSpecialist";
 		backpack = "KAR_FDF_SIS_BP_EOD";
+		canDeactivateMines = 1;
+		detectSkill = 38;
+		displayName = "Sissi (EOD)";
 		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SIS_AT.jpg";
-		engineer=1;
-		canDeactivateMines=1;
-		detectSkill=38;
-		linkedItems[]= {
-			"rhsgref_chicom",
-			"KAR_FDF_SEIKKAILUHATTU",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"MineDetector"
-		};
-		respawnlinkedItems[]= {
-			"rhsgref_chicom",
-			"KAR_FDF_SEIKKAILUHATTU",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"MineDetector"
-		};
-		weapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
+		engineer = 1;
+		icon = "iconManAT";
 		respawnWeapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
+		role = "MissileSpecialist";
+		weapons[] = {"KAR_RIFLE_RK62","Throw","Put"};
+		linkedItems[] = {
+			"rhsgref_chicom",
+			"KAR_FDF_SEIKKAILUHATTU",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"MineDetector"
+		};
+		respawnlinkedItems[] = {
+			"rhsgref_chicom",
+			"KAR_FDF_SEIKKAILUHATTU",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"MineDetector"
+		};
 	};
 	////Backpacks////
 	class KAR_FDF_BAG_01;
@@ -872,7 +719,7 @@ class CfgVehicles {
 			};
 			class _xx_KARRK62_Mag {
 				name = "KARRK62_Mag";
-				count = "8";
+				count = 8;
 			};
 		};
 	};
@@ -894,7 +741,7 @@ class CfgVehicles {
 			};
 			class _xx_MediKit {
 				name = "MediKit";
-				count = "1";
+				count = 1;
 			};
 		};
 	};
@@ -907,11 +754,11 @@ class CfgVehicles {
 			};
 			class _xx_ToolKit {
 				name = "ToolKit";
-				count = "1";
+				count = 1;
 			};
 			class _xx_ClaymoreDirectionalMine_Remote_Mag {
 				name = "ClaymoreDirectionalMine_Remote_Mag";
-				count = "2";
+				count = 2;
 			};
 		};
 	};
@@ -925,7 +772,7 @@ class CfgVehicles {
 			};
 			class _xx_KARRK62_Mag {
 				name = "KARRK62_Mag";
-				count = "3";
+				count = 3;
 			};
 		};
 	};
@@ -987,7 +834,7 @@ class CfgVehicles {
 			};
 			class _xx_KARRK62_Mag {
 				name = "KARRK62_Mag";
-				count = "5";
+				count = 5;
 			};
 		};
 	};
@@ -1059,7 +906,7 @@ class CfgVehicles {
 			};
 			class _xx_rhs_mag_30Rnd_556x45_Mk318_PMAG {
 				name = "rhs_mag_30Rnd_556x45_Mk318_PMAG";
-				count = "5";
+				count = 5;
 			};
 		};
 	};
