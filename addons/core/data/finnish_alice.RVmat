@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: data\finnish_alice.RVmat
-//Produced from mikero's Dos Tools Dll version 9.98
-//https://mikero.bytex.digital/Downloads
-//'now' is Tue May 20 14:38:30 2025 : 'file' last modified on Wed Apr 10 11:25:05 2024
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
 class StageTI {
 	texture = "a3\animals_f\fishes\data\mullet_ti_ca.paa";
 };
@@ -19,7 +10,7 @@ specularPower = 100.0;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1 {
-	texture = "KAR_FDF\data\finnish_alice_NOHQ.paa";
+	texture = "x\kar_fdf\addons\core\data\finnish_alice_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = {1.0,0.0,0.0};
@@ -49,7 +40,7 @@ class Stage3 {
 	};
 };
 class Stage4 {
-	texture = "KAR_FDF\data\finnish_alice_AS.paa";
+	texture = "x\kar_fdf\addons\core\data\finnish_alice_AS.paa";
 	uvSource = "tex1";
 	class uvTransform {
 		aside[] = {1.0,0.0,0.0};
@@ -59,7 +50,7 @@ class Stage4 {
 	};
 };
 class Stage5 {
-	texture = "KAR_FDF\data\finnish_alice_SMDI.paa";
+	texture = "x\kar_fdf\addons\core\data\finnish_alice_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = {1.0,0.0,0.0};

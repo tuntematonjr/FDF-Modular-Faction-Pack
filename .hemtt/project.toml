@@ -31,7 +31,7 @@ enabled = true
 [hemtt.launch.default]
 workshop = [
     "450814997", # CBA_A3
-    #"463939057", # ACE
+    "463939057", # ACE
     "2369477168", # Advanced tool thing
     "843425103", # RHS AFRF Workshop ID
     "843577117", # RHS USAF Workshop ID

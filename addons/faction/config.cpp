@@ -22,7 +22,7 @@ class cfgFactionClasses {
 		displayName = "Finnish Defence Forces";
 		priority = 3;
 		side = 1;
-		icon = "KAR_FDF_Faction\UI\FDF_emblem_ca.paa";
+		icon = QPATHTOF(UI\FDF_emblem_ca.paa);
 	};
 };
 

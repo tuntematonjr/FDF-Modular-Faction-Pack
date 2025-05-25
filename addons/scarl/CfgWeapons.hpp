@@ -38,7 +38,7 @@ class CfgWeapons {
         displayName = "SCAR-L";
 		baseweapon = "KAR_FDF_SCAR_L";
 		descriptionShort = "Assault rifle<br/>Caliber: 5.56x45mm NATO";
-		model = "KAR_FDF_SCARL\SCAR_L_F.p3d";
+		model = QPATHTOF(SCAR_L_F.p3d);
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
 		picture = QPATHTOF(pictures\icon_arifle_scar_L_black.paa);
 		hiddenSelections[] = {
@@ -189,8 +189,8 @@ class CfgWeapons {
 		ACE_railHeightAboveBore = 4.7;
 	};
 	class KAR_FDF_SCAR_L_S: KAR_FDF_SCAR_L {
-		model = "KAR_FDF_SCARL\SCAR_L_short_F.p3d";
-        scope = "2";
+		model = QPATHTOF(SCAR_L_short_F.p3d);
+        scope = 2;
 		baseweapon = "KAR_FDF_SCAR_L_S";
         displayName = "SCAR-L (Short)";
 		picture = QPATHTOF(pictures\icon_arifle_scar_L_short_black.paa);
@@ -211,7 +211,7 @@ class CfgWeapons {
         ACE_barrelLength = 330.2;
 	};
 	class KAR_FDF_SCAR_L_G: KAR_FDF_SCAR_L {
-		model = "KAR_FDF_SCARL\SCAR_L_grip_F.p3d";
+		model = QPATHTOF(SCAR_L_grip_F.p3d);
 		baseweapon = "KAR_FDF_SCAR_L_G";
 		picture = QPATHTOF(pictures\icon_arifle_scar_L_grip_black.paa);
         displayName = "SCAR-L (Grip)";
@@ -238,10 +238,10 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "Hensoldt ZO";
 		descriptionShort = "Hensoldt ZO 4x Optic";
-		model = "KAR_FDF_SCARL\ZOx4\acco_LRCO_blk_F.p3d";
+		model = QPATHTOF(ZOx4\acco_LRCO_blk_F.p3d);
 		picture = QPATHTOF(pictures\icon_acco_LRCO_blk_F_CA.paa);
 		class ItemInfo: ItemInfo {
-			modelOptics = "KAR_FDF_SCARL\ZOx4\acco_LRCO_blk_F.p3d";
+			modelOptics = QPATHTOF(ZOx4\acco_LRCO_blk_F.p3d);
 		};
 	};
 };

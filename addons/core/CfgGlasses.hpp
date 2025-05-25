@@ -8,7 +8,7 @@ class CfgGlasses {
 		identityTypes[] = {"NoGlasses",0, "G_NATO_default",300, "G_NATO_casual",0, "G_NATO_pilot",0, "G_NATO_recon",50, "G_NATO_SF",300, "G_NATO_sniper",0,"G_NATO_diver",0, "G_IRAN_default",0, "G_IRAN_diver",0, "G_GUERIL_default",0, "G_HAF_default",50, "G_CIVIL_female",0, "G_CIVIL_male",0};
 		mass = 4;
 		mode = 4;
-		model = QPATHTOF(balaclava\am_sov_balaclava.p3d);
+		model = QPATHTOF(balaclava\jam_sov_balaclava.p3d);
 		picture = QPATHTOF(pictures\PB_Bala_GR_ca.paa);
 	};
 

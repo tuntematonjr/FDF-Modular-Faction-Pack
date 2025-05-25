@@ -40,7 +40,7 @@ class CfgWeapons {
 		hiddenSelectionsTextures[] = {QPATHTOF(data\PKM_co.paa),QPATHTOF(data\rails_co.paa)};
 		magazines[] = {"rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR_green","rhs_100Rnd_762x54mmR_7N13","rhs_100Rnd_762x54mmR_7N26","rhs_100Rnd_762x54mmR_7BZ3"};
 		maxZeroing=600;
-		model = "KAR_PKM\KAR_PKM.p3d";
+		model = QPATHTOF(KAR_PKM.p3d);
 		recoil = "rhs_recoil_pkm";
 		inertia = 0.8;
 		magazineWell[] = {"PK_762x54R","CBA_762x54R_LINKS"};

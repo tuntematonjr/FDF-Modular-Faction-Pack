@@ -14,4 +14,4 @@ class CfgPatches {
 
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
-#include "CfgGlasses.hpp"
+#include "CfgGlasses.hpp" //P3D missing configs, so no balaclavas

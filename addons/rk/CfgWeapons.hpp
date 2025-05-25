@@ -26,13 +26,13 @@ class CfgWeapons {
 		displayName = "RK62";
 		drySound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK47\AK47_dry.wss",0.17782794,1,10};
 		maxZeroing=600;
-		model = "KAR_RK\KARRK62.p3d";
+		model = QPATHTOF(KARRK62.p3d);
 		picture = QPATHTOF(pictures\RK62_UI_CA.paa);
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\handguard_d_co.paa),QPATHTOF(data\rk62_d2_co.paa)};
-		handAnim[]={"OFP2_ManSkeleton","\KAR_RK\anim\handpose_ak12.rtm"};
+		handAnim[]={"OFP2_ManSkeleton",QPATHTOF(anim\handpose_ak12.rtm)};
 		reloadAction = "HLC_GestureReloadAK";
-        reloadMagazineSound[] = { "\KAR_RK62M2\snd\ak74m_reload.wss", 0.8, 1, 20 };
+        reloadMagazineSound[] = {QPATHTOEF(rk62m2,snd\ak74m_reload.wss), 0.8, 1, 20 };
 		magazineReloadSwitchPhase = 0.3;
 		magazines[]= {
 			"KARRK62_Mag"

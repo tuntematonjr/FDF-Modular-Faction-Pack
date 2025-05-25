@@ -366,7 +366,7 @@ class CfgVehicles {
 			"KAR_FDF_SISU_COV_M05W",0
 		};
 		hiddenSelectionsMaterials[]= {
-			"KAR_FDF_Vehicles\data\sisu_02_kab.rvmat"
+			QPATHTOF(data\sisu_02_kab.rvmat)
 		};
 		class TextureSources {
 			class KAR_FDF_SISU_COV_M05 {
@@ -422,7 +422,7 @@ class CfgVehicles {
 			"KAR_FDF_SISU_M05W",0
 		};
 		hiddenSelectionsMaterials[]= {
-			"KAR_FDF_Vehicles\data\sisu_02_kab.rvmat"
+			QPATHTOF(data\sisu_02_kab.rvmat)
 		};
 		class TextureSources {
 			class KAR_FDF_SISU_M05 {
@@ -477,7 +477,7 @@ class CfgVehicles {
 			"KAR_FDF_SISU_REP_M05W",0
 		};
 		hiddenSelectionsMaterials[]= {
-			"KAR_FDF_Vehicles\data\sisu_02_kab.rvmat"
+			QPATHTOF(data\sisu_02_kab.rvmat)
 		};
 		class TextureSources {
 			class KAR_FDF_SISU_REP_M05 {
@@ -523,7 +523,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C_MEDIC";
 		displayName = "Sisu (Medical)";
 		hiddenselections[] = { "camo1","camo2","camo3","camo4" };
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SISU_MEDICAL.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_SISU_MEDICAL.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -532,7 +532,7 @@ class CfgVehicles {
 			"KAR_FDF_SISU_MED_M05W",0
 		};
 		hiddenSelectionsMaterials[]= {
-			"KAR_FDF_Vehicles\data\sisu_02_kab.rvmat"
+			QPATHTOF(data\sisu_02_kab.rvmat)
 		};
 		
 		class TextureSources {
@@ -588,7 +588,7 @@ class CfgVehicles {
 			"KAR_FDF_SISU_AMMO_M05W",0
 		};
 		hiddenSelectionsMaterials[]= {
-			"KAR_FDF_Vehicles\data\sisu_02_kab.rvmat"
+			QPATHTOF(data\sisu_02_kab.rvmat)
 		};
 		
 		class TextureSources {
@@ -644,7 +644,7 @@ class CfgVehicles {
 			"KAR_FDF_SISU_FUEL_M05W",0
 		};
 		hiddenSelectionsMaterials[]= {
-			"KAR_FDF_Vehicles\data\sisu_02_kab.rvmat"
+			QPATHTOF(data\sisu_02_kab.rvmat)
 		};
 		class TextureSources {
 			class KAR_FDF_SISU_FUEL_M05 {
@@ -821,7 +821,7 @@ class CfgVehicles {
 					"KAR_FIN_FACTION" 
 				};
 				textures[] =  {
-					"KAR_FDF_Vehicles\data\KAR_FDF_BTR_01_co",
+					QPATHTOF(data\KAR_FDF_BTR_01_co.paa),
 					QPATHTOF(data\KAR_FDF_BTR_02_co.paa)
 				};
 

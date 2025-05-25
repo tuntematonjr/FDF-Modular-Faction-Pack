@@ -45,7 +45,7 @@ class CfgVehicles {
 		backpack = "KAR_FDF_C_BAG";
 		displayName = "Rifleman";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RIF_C.jpg";
+		editorPreview = QPATHTOF(preview\KAR_FDF_RIF_C.jpg);
 		editorSubcategory = "KAR_FDF_INF_C";
 		headgearProbability = 1;
 		Items[] = {"FirstAidKit"};

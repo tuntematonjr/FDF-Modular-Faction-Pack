@@ -12,9 +12,9 @@ class CfgMagazines {
 		hiddenSelectionsTextures[] = {
 			QPATHTOF(data\stock_co.paa)
 		};
-		modelSpecial="KAR_RK62M2\mag\KARRK62_mag.p3d";
+		modelSpecial = QPATHTOF(mag\KARRK62_mag.p3d);
 		modelSpecialIsProxy=1;
-		picture = "\KAR_RK62M2\ui\RK62MAG_UI_CA.paa";
+		picture = QPATHTOF(ui\RK62MAG_UI_CA.paa);
 		lastroundstracer=3;
 		count=30;
 		scope = 2;

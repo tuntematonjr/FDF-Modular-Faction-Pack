@@ -43,7 +43,7 @@ class CfgVehicles {
 		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05_CA.PAA);
 	};
 	class KAR_FDF_BASE_03b: KAR_FDF_BASE_02 {
-		hiddenSelectionsTextures[] = {"KAR_FDF\data\m05w_m05cw_gorka_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\m05w_m05cw_gorka_co.paa)};
 		picture = QPATHTOF(pictures\KAR_FDF_JACKET_M05W_M05CW_CA.PAA);
 	};
 	class KAR_FDF_BASE_06: KAR_FDF_BASE_02 {
@@ -97,6 +97,7 @@ class CfgVehicles {
 		picture = QPATHTOF(pictures\M04R_CO.paa);
 	};
 	class KAR_FDF_BASE_12: KAR_FDF_BASE_04 {
+		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\m62_maastotakki_co.paa),QPATHTOF(data\m62_maastohousut_co.paa)};
 		model = "\rhsafrf\addons\rhs_infantry3\rhs_afghanka_boots.p3d";
 		picture = QPATHTOF(pictures\KAR_FDF_M62_MAASTOPUKU_CA.PAA);
@@ -163,7 +164,7 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {QPATHTOF(data\finnish_alice_co.paa)};
 		mass = 50;
 		maximumLoad = 280;
-		model = "KAR_FDF\model\finnish_alice.p3d";
+		model = QPATHTOF(model\finnish_alice.p3d);
 		picture = QPATHTOF(pictures\KAR_FDF_BAG_01_CA.PAA);
 		scope = 2;
 		scopeCurator = 2;

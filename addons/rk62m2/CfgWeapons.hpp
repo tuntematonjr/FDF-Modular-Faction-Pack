@@ -31,7 +31,7 @@ class CfgWeapons {
 		scope = 2;
 		cameraDir="eye_look";
 		changeFiremodeSound[]= {
-			"KAR_RK62M2\snd\ak_selector.wss",
+			QPATHTOF(snd\ak_selector.wss),
 			1,
 			1,
 			8
@@ -50,7 +50,7 @@ class CfgWeapons {
 			10
 		};
 		maxZeroing=600;
-		model = "KAR_RK62M2\RK62m2.p3d";
+		model = QPATHTOF(RK62m2.p3d);
 		picture = QPATHTOF(pictures\RK62M2_UI_CA.paa);
 		hiddenSelections[] = {
 			"camo1",
@@ -66,11 +66,11 @@ class CfgWeapons {
 		};
 		handAnim[]= {
 			"OFP2_ManSkeleton",
-			"\KAR_RK62M2\anim\handpose_VFG.rtm"
+			QPATHTOF(anim\handpose_VFG.rtm)
 		};
 		reloadAction="HLC_GestureReloadAK";
 		reloadMagazineSound[]= {
-			"\KAR_RK62M2\snd\ak74m_reload.wss",
+			QPATHTOF(snd\ak74m_reload.wss),
 			0.80000001,
 			1,
 			20
