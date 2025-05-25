@@ -9,7 +9,7 @@ class CfgVehicles {
 		faction = "KAR_FIN_FACTION";
 		editorCategory = "KAR_FDF_TOP";
 		editorSubcategory = "KAR_FDF_Planes";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_CUP_F35.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_CUP_F35.jpg);
 		vehicleclass = "KAR_FDF_Planes";
 		crew = "KAR_FDF_F35_Pilot";
 		class TransportWeapons {};
@@ -24,7 +24,7 @@ class CfgVehicles {
 		faction = "KAR_FIN_FACTION";
 		editorCategory = "KAR_FDF_TOP";
 		editorSubcategory = "KAR_FDF_Planes";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_CUP_F35_S.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_CUP_F35_S.jpg);
 		vehicleclass = "KAR_FDF_Planes";
 		crew = "KAR_FDF_F35_Pilot";
 		class TransportWeapons {};
@@ -42,7 +42,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_ART";
 		crew = "KAR_FDF_RIF_C_TD";
 		displayName = "298 RSRAKH06";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_CUP_RSRAKH.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_CUP_RSRAKH.jpg);
 		texturelist[] = {
 			"KAR_FDF_CUP_RSRAKH_M05",1,
 			"KAR_FDF_CUP_RSRAKH_M05W",0
@@ -85,7 +85,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_ART";
 		crew = "KAR_FDF_RIF_C_TD";
 		displayName = "122 RAKH 89";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_CUP_RSRAKH89.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_CUP_RSRAKH89.jpg);
 		hiddenSelectionsTextures[] =  {
 			
 			QPATHTOF(data\KAR_FDF_CUP_RSRAKH89_01_co.paa),
@@ -132,3 +132,4 @@ class CfgVehicles {
 		};
 	};
 };
+

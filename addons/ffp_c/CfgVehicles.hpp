@@ -7,7 +7,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C";
 		displayName = "Pasi";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_PGB203.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_PGB203.jpg);
 		editorSubcategory = "KAR_FDF_APCs";
 		faction = "KAR_FIN_FACTION";
 		hiddenSelections[] = {"camo1"};
@@ -25,7 +25,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_S";
 		displayName = "Patria XA-203";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_PGB360.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_PGB360.jpg);
 		editorSubcategory = "KAR_FDF_APCs";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -40,7 +40,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_Heli_Pilot";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_md500.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_md500.jpg);
 		editorSubcategory = "KAR_FDF_HELI";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -55,7 +55,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_Heli_Pilot";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_NH90.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_NH90.jpg);
 		editorSubcategory = "KAR_FDF_HELI";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -70,7 +70,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_Heli_Pilot";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_NH90_A.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_NH90_A.jpg);
 		editorSubcategory = "KAR_FDF_HELI";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -85,7 +85,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C_TD";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_RSRAKH06.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_RSRAKH06.jpg);
 		editorSubcategory = "KAR_FDF_ART";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -100,7 +100,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_122H63.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_122H63.jpg);
 		editorSubcategory = "KAR_FDF_ART";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -115,7 +115,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C_TD";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_BMP2.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_BMP2.jpg);
 		editorSubcategory = "KAR_FDF_APCs";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -130,7 +130,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C_TD";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_BMP2_ATGM.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_BMP2_ATGM.jpg);
 		editorSubcategory = "KAR_FDF_APCs";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -145,7 +145,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_GBOAT.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_GBOAT.jpg);
 		editorSubcategory = "KAR_FDF_BOAT";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -160,7 +160,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_BV206.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_BV206.jpg);
 		editorSubcategory = "KAR_FDF_Cars";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -175,7 +175,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_AMB.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_AMB.jpg);
 		editorSubcategory = "KAR_FDF_Cars";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -190,7 +190,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_S";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_RG32_GMG.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_RG32_GMG.jpg);
 		editorSubcategory = "KAR_FDF_MRAPs";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -205,7 +205,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_S";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_RG32.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_RG32.jpg);
 		editorSubcategory = "KAR_FDF_MRAPs";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -220,7 +220,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "B_UAV_AI";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_ORBITER.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_ORBITER.jpg);
 		editorSubcategory = "KAR_FDF_Drones";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -235,7 +235,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C_TD";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_LEO2A4.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_LEO2A4.jpg);
 		editorSubcategory = "KAR_FDF_Tanks";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -250,7 +250,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C_TD";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_LEO2A6.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_LEO2A6.jpg);
 		editorSubcategory = "KAR_FDF_Tanks";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;
@@ -265,7 +265,7 @@ class CfgVehicles {
 		class TransportWeapons {};
 		crew = "KAR_FDF_RIF_C";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_FFP_ITO05.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_FFP_ITO05.jpg);
 		editorSubcategory = "KAR_FDF_TUR";
 		faction = "KAR_FIN_FACTION";
 		scope = 2;

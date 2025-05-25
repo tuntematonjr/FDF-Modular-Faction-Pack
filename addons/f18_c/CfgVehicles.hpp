@@ -4,7 +4,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_F35_Pilot";
 		displayName = "Boeing F/A-18 Hornet";
 		editorCategory = "KAR_FDF_TOP";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_F18C.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_F18C.jpg);
 		editorSubcategory = "KAR_FDF_Planes";
 		faction = "KAR_FIN_Faction";
 		scope = 2;

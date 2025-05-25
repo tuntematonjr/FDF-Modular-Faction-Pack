@@ -14,7 +14,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_APCs";
 		typicalCargo[] = {"KAR_FDF_RIF_C_TD"};
 		displayName = "BMP-2";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_BMP2MD.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_BMP2MD.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -49,7 +49,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C";
 		typicalCargo[] = {"KAR_FDF_RIF_C"};
 		displayName = "81 KRH 96";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_KRH.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_KRH.jpg);
 	};
 	class RHS_MK19_TriPod_WD;
 	class KAR_FDF_KRKK: RHS_MK19_TriPod_WD {
@@ -63,7 +63,7 @@ class CfgVehicles {
 		typicalCargo[] = {"KAR_FDF_RIF_S"};
 		displayName = "40 KRKK 2005";
 		vehicleclass = "KAR_FDF_TUR";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_KRKK.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_KRKK.jpg);
 	};
 	class RHS_TOW_TriPod_USMC_WD;
 	class KAR_FDF_PSTOHJ: RHS_TOW_TriPod_USMC_WD {
@@ -77,7 +77,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_TUR";
 		typicalCargo[] = {"KAR_FDF_RIF_S"};
 		displayName = "PSTOHJ 83";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_PSTOHJ.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_PSTOHJ.jpg);
 	};
 	class rhsusf_m109_usarmy;
 	class KAR_FDF_K9: rhsusf_m109_usarmy {
@@ -89,7 +89,7 @@ class CfgVehicles {
 		typicalCargo[] = {"KAR_FDF_RIF_S_TD"};
 		vehicleclass = "KAR_FDF_ART";
 		displayName = "155 PSH K9";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_K9.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_K9.jpg);
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5"};
 		texturelist[] = { 
 			"KAR_FDF_K9_M05",1
@@ -141,7 +141,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_TUR";
 		typicalCargo[] = {"KAR_FDF_RIF_C"};
 		displayName = "23 ITK 65";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_ITK65.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_ITK65.jpg);
         class Turrets : Turrets 
         {
             class MainTurret: MainTurret{};
@@ -162,7 +162,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_TUR";
 		typicalCargo[] = {"KAR_FDF_RIF_S"};
 		displayName = "12.7 ITKK 96";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_ITK96.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_ITK96.jpg);
 	};
 	class rhs_D30_vmf;
 	class KAR_FDF_PSH74: rhs_D30_vmf {
@@ -176,7 +176,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_TUR";
 		typicalCargo[] = {"KAR_FDF_RIF_C"};
 		displayName = "122 H 63";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_PSH74.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_PSH74.jpg);
 	};
 	class rhs_2s1tank_base;
     class KAR_FDF_122PSH_A:rhs_2s1tank_base
@@ -231,7 +231,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_ART";
 		typicalCargo[] = {"KAR_FDF_RIF_C_TD"};
 		displayName = "122 PSH 74";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_122PSH.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_122PSH.jpg);
 		rhs_decalParameters[] = {};	
 		hiddenSelections[] = {"camo1","camo2","camo_sprocket","camo_idler","camo_wheel1","camo_wheel2","camo_wheel3","camo_wheel4","camo_wheel5","camo_wheel6","camo_wheel7","n1","n2","n3","n4","n5","n6","n7","n8","n9","n10","n11","n12","n13","n14","n15","n16","n17","n18","n19","n20","i1","i2","i3","i4","i5","i6","i7"};
 		texturelist[] = {
@@ -296,7 +296,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_AA";
 		typicalCargo[] = {"KAR_FDF_RIF_C_TD"};
 		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet"};
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_IPTSV.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_IPTSV.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -356,7 +356,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C";
 		displayName = "Sisu (COVERED)";
 		hiddenselections[] = { "camo1","camo2","camo3","camo4" };
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SISU_COV.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_SISU_COV.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -413,7 +413,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C";
 		displayName = "Sisu (Transport)";
 		hiddenselections[] = { "camo1","camo2","camo3","camo4" };
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SISU.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_SISU.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -468,7 +468,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C_ENG";
 		displayName = "Sisu (Repair)";
 		hiddenselections[] = { "camo1","camo2","camo3","camo4" };
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SISU_REPAIR.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_SISU_REPAIR.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -579,7 +579,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C";
 		displayName = "Sisu (Ammo)";
 		hiddenselections[] = { "camo1","camo2","camo3","camo4" };
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SISU_AMMO.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_SISU_AMMO.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -635,7 +635,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C";
 		displayName = "Sisu (Fuel)";
 		hiddenselections[] = { "camo1","camo2","camo3","camo4" };
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_SISU_FUEL.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_SISU_FUEL.jpg);
 		class EventHandlers : EventHandlers {
 			postInit = "if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; };";
 		};
@@ -686,7 +686,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_MRAPs";
 		crew = "KAR_FDF_RIF_SOF";
 		displayName = "RG32 (MG)";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RG32_M2.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_RG32_M2.jpg);
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","pintle","camo5","camo6","camo9","camo10","camoH24","BFT_screen"};
 		texturelist[] = {
 			"rhs_olive",1,
@@ -721,7 +721,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_MRAPs";
 		crew = "KAR_FDF_RIF_SOF";
 		displayName = "RG32 (KRKK)";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_RG32_KRKK.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_RG32_KRKK.jpg);
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","pintle","camo5","camo6","camo9","camo10","camoH24","BFT_screen"};
 		texturelist[] = {
 			"rhs_olive",1,
@@ -756,7 +756,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_ART";
 		crew = "KAR_FDF_RIF_C_TD";
 		displayName = "122 RKH 76";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_BM21.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_BM21.jpg);
 		rhs_decalParameters[] = {};	
 		hiddenSelections[] = {"camo1","camo2","n1","n2","n3","n4","i1","i2","i3","i4"};
 		texturelist[] = {
@@ -803,7 +803,7 @@ class CfgVehicles {
 		vehicleclass = "KAR_FDF_APCs";
 		crew = "KAR_FDF_RIF_C_TD";
 		displayName = "BTR-60";
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_BTR.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_BTR.jpg);
 		rhs_decalParameters[] = {};	
 		hiddenSelections[] = {"camo1","camo2","camo3","cover1","cover2","i1","i2","i3","i4","i5","i6","i7","n1","n2","n3","n4","n5","n6","n7","n8","n9","n10","n11","i8","i9","i10"};
 		texturelist[] = {
@@ -890,7 +890,7 @@ class CfgVehicles {
 		crew = "KAR_FDF_RIF_C_TD";
 		vehicleclass = "KAR_FDF_Tanks";
 		typicalCargo[] = {"KAR_FDF_RIF_C_TD"};
-		editorPreview = "\KAR_FDF_EP\UI\KAR_FDF_T72.jpg";
+		editorPreview = QPATHTOF(ui\preview\KAR_FDF_T72.jpg);
 		displayName = "T-72";
 		rhs_decalParameters[] = {};	
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","camo9","camo10","camo11","n1","n2","n3","i1","i2",""};
@@ -939,3 +939,4 @@ class CfgVehicles {
 		};
     };
 };
+
