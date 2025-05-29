@@ -8,6 +8,7 @@
 #define DEFAULT_MAGAZINES       "HandGrenade","HandGrenade","SmokeShell","SmokeShell"
 #define DEFAULT_RK62_MAGS       "KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"
 #define DEFAULT_WEAPONS         "Throw","Put","binocular"
+#define DEFAULT_FIRSTAID        "FirstAidKit","FirstAidKit"
 
 #define TRANSPORT_ITEM(item, cnt)\
         class _xx_##item {\
