@@ -6,7 +6,7 @@ class CfgPatches {
 		units[]={"KAR_FDF_RIF_C","KAR_FDF_RIF_C_AT","KAR_FDF_RIF_C_HAT","KAR_FDF_RIF_C_MK","KAR_FDF_RIF_C_SNI","KAR_FDF_RIF_C_MEDIC","KAR_FDF_RIF_C_MG","KAR_FDF_RIF_C_ENG","KAR_FDF_RIF_C_EOD","KAR_FDF_RIF_C_SL","KAR_FDF_RIF_C_TD","KAR_FDF_RIF_S","KAR_FDF_RIF_S_AT","KAR_FDF_RIF_S_HAT","KAR_FDF_RIF_S_MK","KAR_FDF_RIF_S_SNI","KAR_FDF_RIF_S_MEDIC","KAR_FDF_RIF_S_MG","KAR_FDF_RIF_S_ENG","KAR_FDF_RIF_S_EOD","KAR_FDF_RIF_S_AA","KAR_FDF_RIF_S_SL","KAR_FDF_RIF_S_TD","KAR_FDF_F35_Pilot","KAR_FDF_RIF_SOF","KAR_FDF_RIF_SOF_AT","KAR_FDF_RIF_SOF_HAT","KAR_FDF_RIF_SOF_MK","KAR_FDF_RIF_SOF_SNI","KAR_FDF_RIF_SOF_MEDIC","KAR_FDF_RIF_SOF_MG","KAR_FDF_RIF_SOF_ENG","KAR_FDF_RIF_SOF_EOD","KAR_FDF_RIF_SOF_AA","KAR_FDF_RIF_SOF_SL","KAR_FDF_SIS_RIF","KAR_FDF_SIS_TL","KAR_FDF_SIS_MK","KAR_FDF_SIS_AT","KAR_FDF_SIS_MED","KAR_FDF_SIS_EOD","KAR_FDF_Heli_Pilot"};
 		weapons[]={};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"kar_fdf_main","kar_fdf_rk62m2","kar_fdf_rk","kar_fdf_PKM"};
+        requiredAddons[] = {"kar_fdf_main","kar_fdf_core","kar_fdf_rk62m2","kar_fdf_rk","kar_fdf_pkm","kar_fdf_pkp","kar_fdf_scarl"};
         authors[] = {"Kartsa"};
         VERSION_CONFIG;
     };

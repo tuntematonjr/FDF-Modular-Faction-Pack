@@ -27,7 +27,7 @@ class CfgWeapons {
 		drySound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK47\AK47_dry.wss",0.17782794,1,10};
 		maxZeroing=600;
 		model = QPATHTOF(KARRK62.p3d);
-		picture = QPATHTOF(pictures\RK62_UI_CA.paa);
+		picture = QPATHTOF(ui\icons\RK62_UI_CA.paa);
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\handguard_d_co.paa),QPATHTOF(data\rk62_d2_co.paa)};
 		handAnim[]={"OFP2_ManSkeleton",QPATHTOF(anim\handpose_ak12.rtm)};

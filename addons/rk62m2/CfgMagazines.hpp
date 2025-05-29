@@ -14,7 +14,7 @@ class CfgMagazines {
 		};
 		modelSpecial = QPATHTOF(mag\KARRK62_mag.p3d);
 		modelSpecialIsProxy=1;
-		picture = QPATHTOF(ui\RK62MAG_UI_CA.paa);
+		picture = QPATHTOF(ui\icons\RK62MAG_UI_CA.paa);
 		lastroundstracer=3;
 		count=30;
 		scope = 2;

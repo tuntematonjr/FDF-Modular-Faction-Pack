@@ -40,7 +40,7 @@ class CfgWeapons {
 		descriptionShort = "Assault rifle<br/>Caliber: 5.56x45mm NATO";
 		model = QPATHTOF(SCAR_L_F.p3d);
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
-		picture = QPATHTOF(pictures\icon_arifle_scar_L_black.paa);
+		picture = QPATHTOF(ui\icons\icon_arifle_scar_L_black.paa);
 		hiddenSelections[] = {
 			"Camo1",
 			"Camo2"
@@ -193,7 +193,7 @@ class CfgWeapons {
         scope = 2;
 		baseweapon = "KAR_FDF_SCAR_L_S";
         displayName = "SCAR-L (Short)";
-		picture = QPATHTOF(pictures\icon_arifle_scar_L_short_black.paa);
+		picture = QPATHTOF(ui\icons\icon_arifle_scar_L_short_black.paa);
 		inertia = 0.4;
 		dexterity = 1.5;
 		aimTransitionSpeed = 1;
@@ -213,7 +213,7 @@ class CfgWeapons {
 	class KAR_FDF_SCAR_L_G: KAR_FDF_SCAR_L {
 		model = QPATHTOF(SCAR_L_grip_F.p3d);
 		baseweapon = "KAR_FDF_SCAR_L_G";
-		picture = QPATHTOF(pictures\icon_arifle_scar_L_grip_black.paa);
+		picture = QPATHTOF(ui\icons\icon_arifle_scar_L_grip_black.paa);
         displayName = "SCAR-L (Grip)";
         scope = 2;
 		handAnim[] = {
@@ -239,7 +239,7 @@ class CfgWeapons {
 		displayName = "Hensoldt ZO";
 		descriptionShort = "Hensoldt ZO 4x Optic";
 		model = QPATHTOF(ZOx4\acco_LRCO_blk_F.p3d);
-		picture = QPATHTOF(pictures\icon_acco_LRCO_blk_F_CA.paa);
+		picture = QPATHTOF(ui\icons\icon_acco_LRCO_blk_F_CA.paa);
 		class ItemInfo: ItemInfo {
 			modelOptics = QPATHTOF(ZOx4\acco_LRCO_blk_F.p3d);
 		};

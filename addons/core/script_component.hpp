@@ -21,11 +21,10 @@
 			"rhsusf_shemagh2_gogg_od", 1,\
 			"rhsusf_shemagh_gogg_grn", 1,\
 			"rhsusf_shemagh2_gogg_grn", 1,\
-			"KAR_FDF_B_W", 1,\
 			"KAR_FDF_B_GR", 1,\
 			"KAR_FDF_B_GL", 1,\
 			"KAR_FDF_B_B", 1,\
-			"", 1\
+			"", 10\
 		}
 
 #define ALLOWEDFACEWEAR_OPSCORE\
@@ -52,4 +51,5 @@
 			"rhsusf_oakley_goggles_blk", 1,\
 			"rhsusf_oakley_goggles_clr", 1,\
 			"rhsusf_oakley_goggles_ylw", 1,\
+			"", 10\
 		}

@@ -173,9 +173,10 @@ class CfgVehicles {
 	class KAR_FDF_RIF_C_TD: KAR_FDF_RIF_C {
 		allowedHeadgear[]= {"KAR_FDF_VP_01","KAR_FDF_VP_02"};
 		backpack = "";
+		class EventHandlers;
 		displayName = "Crewman";
 		editorPreview = QPATHTOF(ui\preview\KAR_FDF_RIF_C_TD.jpg);
-		headgearList[] =  {"KAR_FDF_VP_02", 1,"KAR_FDF_VP_01", 1};
+		headgearList[] =  {"KAR_FDF_VP_01", 1,"KAR_FDF_VP_02", 1};
 		linkedItems[] = {"KAR_FDF_M05_TST"};
 		respawnlinkedItems[] = {"KAR_FDF_M05_TST"};
 		role = "Crewman";
@@ -328,19 +329,18 @@ class CfgVehicles {
 	class KAR_FDF_RIF_S_TD: KAR_FDF_RIF_S {
 		author = "Kartsa";
 		backpack = "";
+		class EventHandlers;
 		displayName = "Crewman";
 		editorPreview = QPATHTOF(ui\preview\KAR_FDF_RIF_S_TD.jpg);
 		role = "Crewman";
 		uniformClass = "KAR_FDF_COVERALLS_01";
 		allowedHeadgear[]= {
 			"KAR_FDF_VP_02",
-			"KAR_FDF_VP_01",
-			"H_HelmetCrew_I"
+			"KAR_FDF_VP_01"
 		};
 		headgearList[] =  {
-			"KAR_FDF_VP_02", 0.2,
-			"KAR_FDF_VP_01", 0.2,
-			"H_HelmetCrew_I", 0.6
+			"KAR_FDF_VP_02", 1,
+			"KAR_FDF_VP_01", 1
 		};
 		linkedItems[] = {
 			"KAR_FDF_M17_VEST"

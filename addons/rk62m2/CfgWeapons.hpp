@@ -51,7 +51,7 @@ class CfgWeapons {
 		};
 		maxZeroing=600;
 		model = QPATHTOF(RK62m2.p3d);
-		picture = QPATHTOF(pictures\RK62M2_UI_CA.paa);
+		picture = QPATHTOF(ui\icons\RK62M2_UI_CA.paa);
 		hiddenSelections[] = {
 			"camo1",
 			"camo2",
