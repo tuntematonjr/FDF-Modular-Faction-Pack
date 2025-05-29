@@ -5,9 +5,9 @@
 
 
 #define DEFAULT_LINKED_ITEMS    "ItemMap","ItemCompass","ItemWatch","ItemRadio"
-#define DEFAULT_MAGAZINES   "HandGrenade","HandGrenade","SmokeShell","SmokeShell"
-#define DEFAULT_RK62_MAGS   KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"
-#define DEFAULT_WEAPONS "Throw","Put",binocular
+#define DEFAULT_MAGAZINES       "HandGrenade","HandGrenade","SmokeShell","SmokeShell"
+#define DEFAULT_RK62_MAGS       "KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"
+#define DEFAULT_WEAPONS         "Throw","Put","binocular"
 
 #define TRANSPORT_ITEM(item, cnt)\
         class _xx_##item {\
