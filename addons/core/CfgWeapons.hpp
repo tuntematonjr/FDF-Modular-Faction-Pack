@@ -21,7 +21,7 @@ class CfgWeapons {
 		author = "Kartsa";
 		displayName = "Combat Uniform (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_TAISTELUPAITA_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_TAISTELUPAITA_CA.paa);
 		scope = 2;
 		class ItemInfo: UniformItem {
 			containerClass = "Supply40";
@@ -32,7 +32,7 @@ class CfgWeapons {
 	};
 	class KAR_FDF_M05_Taistelupaita_Sleeve: KAR_FDF_M05_Taistelupaita {
 		displayName = "Combat Uniform (M05/Rolled-Up)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_TAISTELUPAITA_SLEEVE_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_TAISTELUPAITA_SLEEVE_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_24";
 		};
@@ -42,7 +42,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_villapaita_co.paa)};
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_VILLAPAITA_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_VILLAPAITA_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_05";
 		};
@@ -50,14 +50,14 @@ class CfgWeapons {
 	class KAR_FDF_M04_Taistelupaita: KAR_FDF_M05_Taistelupaita {
 		displayName = "Combat Uniform (M04)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M04_TAISTELUPAITA_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M04_TAISTELUPAITA_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_09";
 		};
 	};
 	class KAR_FDF_TALVIPUKU: KAR_FDF_M04_Taistelupaita {
 		displayName = "Winter Oversuit";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_TALVIPUKU_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_TALVIPUKU_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_21";
 		};
@@ -65,168 +65,168 @@ class CfgWeapons {
 	class KAR_FDF_NCU: KAR_FDF_VILLAPAITA {
 		displayName = "NCU (M05)";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_NCU_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_NCU_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_01";
 		};
 	};
 	class KAR_FDF_JACKET_M05: KAR_FDF_NCU {
 		displayName = "Jacket (M05)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_02";
 		};
 	};
 	class KAR_FDF_JACKET_M05_CW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05/M05 Cold Weather)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05_CW_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05_CW_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_02a";
 		};
 	};
 	class KAR_FDF_JACKET_M05_W: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket M05/M05W";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05_W_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05_W_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_02b";
 		};
 	};
 	class KAR_FDF_JACKET_M05W: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05 Winter)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05W_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05W_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_03";
 		};
 	};
 	class KAR_FDF_JACKET_M05W_M05: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05 Winter/M05)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05W_M05_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05W_M05_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_03a";
 		};
 	};
 	class KAR_FDF_JACKET_M05W_M05CW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05 Winter/M05 Cold Weather)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05W_M05CW_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_M05W_M05CW_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_03b";
 		};
 	};
 	class KAR_FDF_JACKET_CW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05 Cold Weather)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_CW_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_CW_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_06";
 		};
 	};
 	class KAR_FDF_JACKET_CW_M05: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05 Cold Weather/M05)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_CW_M05_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_CW_M05_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_06a";
 		};
 	};	
 	class KAR_FDF_JACKET_CW_M05W: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05 Cold Weather/M05 Winter)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_CW_M05W_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_JACKET_CW_M05W_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_06b";
 		};
 	};
 	class KAR_FDF_COVERALLS_01: KAR_FDF_JACKET_M05 {
 		displayName = "Tanker Coveralls (Green)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_COVERALLS_01_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_COVERALLS_01_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_13";
 		};
 	};
 	class KAR_FDF_COVERALLS_02: KAR_FDF_JACKET_M05 {
 		displayName = "Tanker Coveralls (M62/Green)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_COVERALLS_02_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_COVERALLS_02_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_14";
 		};
 	};
 	class KAR_FDF_COVERALLS_03: KAR_FDF_JACKET_M05 {
 		displayName = "Tanker Coveralls (M62)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_COVERALLS_03_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_COVERALLS_03_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_15";
 		};
 	};
 	class KAR_FDF_GORKA_W: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M05 Winter)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_GORKA_W_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_GORKA_W_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_04";
 		};
 	};
 	class KAR_FDF_GORKA_SW: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket 2 (M05)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_GORKA_SW_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_GORKA_SW_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_16";
 		};
 	};
 	class KAR_FDF_CRYE_GEN3: KAR_FDF_JACKET_M05 {
 		displayName = "Crye Gen3 (M05)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_CRYE_GEN3_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_CRYE_GEN3_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_08";
 		};
 	};
 	class KAR_FDF_CRYE_GEN3_M04: KAR_FDF_JACKET_M05 {
 		displayName = "Crye Gen3 (M04)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_CRYE_GEN3_M04_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_CRYE_GEN3_M04_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_11";
 		};
 	};
 	class KAR_FDF_M04_Takki: KAR_FDF_JACKET_M05 {
 		displayName = "Jacket (M04)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M04_TAKKI_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M04_TAKKI_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_10";
 		};
 	};
 	class KAR_FDF_M62_maastopuku: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Uniform 2 (M62)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_MAASTOPUKU_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_MAASTOPUKU_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_12";
 		};
 	};
 	class KAR_FDF_M62_maastopuku_hihat: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Uniform (M62/Rolled-Up)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_MAASTOPUKU_HIHAT_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_MAASTOPUKU_HIHAT_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_19";
 		};
 	};
 	class KAR_FDF_M62_maastotakki: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Jacket (M62)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_MAASTOTAKKI_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_MAASTOTAKKI_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_20";
 		};
 	};
 	class KAR_FDF_M05_maastopuku_hihat: KAR_FDF_JACKET_M05 {
 		displayName = "M05 Camo Uniform 2 (M05/Rolled-Up)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_MAASTOPUKU_HIHAT_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_MAASTOPUKU_HIHAT_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_23";
 		};
 	};
 	class KAR_FDF_M62_Palvelus: KAR_FDF_JACKET_M05 {
 		displayName = "Camo Uniform (M62)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_PALVELUS_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M62_PALVELUS_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_18";
 		};
 	};
 	class KAR_FDF_M05_Palvelus: KAR_FDF_M62_Palvelus {
 		displayName = "Camo Uniform 2 (M05)";
-		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_PALVELUS_CA.PAA);
+		picture = QPATHTOF(ui\icons\uniforms\KAR_FDF_M05_PALVELUS_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformClass = "KAR_FDF_BASE_22";
 		};
@@ -251,7 +251,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M62_helmet_co.paa)};
 		model = "rhsgref\addons\rhsgref_infantry\gear\Head\M1942_heercoverwinter.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_M62_HELM_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_M62_HELM_CA.paa);
 		scope = 2;
 		scopeCurator = 2;
 		class ItemInfo: ItemInfo {
@@ -271,7 +271,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\kar_vaunupaahine_co.paa)};
 		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_VP_01_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_VP_01_CA.paa);
 		scope = 2;
 		scopeCurator = 2;
 		class ItemInfo: ItemInfo {
@@ -284,7 +284,7 @@ class CfgWeapons {
 		allowedFacewear[] = {"",3,"rhs_scarf",7};
 		displayName = "Tank Helmet (Goggles)";
 		model = "\rhsafrf\addons\rhs_infantry\gear\head\rhs_tsh4_ess.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_VP_02_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_VP_02_CA.paa);
 		scope = 2;
 		scopeCurator = 2;
 		class ItemInfo: ItemInfo {
@@ -298,7 +298,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_co.paa)};
 		model = "rhsgref\addons\rhsgref_infantry\gear_tanoa\head\pasgt_helmet.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_01_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_01_CA.paa);
 		scope = 2;
 		scopeCurator = 2;
 		class ItemInfo: ItemInfo {
@@ -318,7 +318,7 @@ class CfgWeapons {
 	class KAR_FDF_COM_02: KAR_FDF_COM_01 {
 		displayName = "Composite Helmet (M05 Winter)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_W_co.paa)};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_02_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_02_CA.paa);
 
 		class ItemInfo: ItemInfo {
 			hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CH_W_co.paa)};
@@ -329,7 +329,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa)};
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_03_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_03_CA.paa);
 		weaponPoolAvailable = 1;
 		class ItemInfo: ItemInfo {
 			hiddenSelections[] = {"camo","camo2"};
@@ -347,7 +347,7 @@ class CfgWeapons {
 		displayName = "Composite Helmet 2 (M05/Black ESS)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_04_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_04_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_ess01.p3d";
 			class HitpointsProtectionInfo {
@@ -362,7 +362,7 @@ class CfgWeapons {
 	class KAR_FDF_COM_05: KAR_FDF_COM_04 {
 		displayName = "Composite Helmet 2 (M05/Headset/Black ESS)";
 		model = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_05_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_05_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\lwh_wd_headset.p3d";
 		};
@@ -370,21 +370,21 @@ class CfgWeapons {
 	class KAR_FDF_COM_06: KAR_FDF_COM_03 {
 		displayName = "Composite Helmet 2 (M05 Winter)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa)};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_06_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_06_CA.paa);
 	};
 	class KAR_FDF_COM_07: KAR_FDF_COM_04 {
 		displayName = "Composite Helmet 2 (M05 Winter/Black ESS)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_CHV2_W_co.paa),"\rhsusf\addons\rhsusf_infantry\gear\head\data\lwh_acc_wd_co.paa"};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_07_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_07_CA.paa);
 	};
 	class KAR_FDF_COM_08: KAR_FDF_COM_07 {
 		displayName = "Composite Helmet 2 (M05 Winter/Headset/Black ESS)";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_08_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_08_CA.paa);
 	};
 	class KAR_FDF_COM_10: KAR_FDF_COM_01 {
 		displayName = "Composite Helmet (M04)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_pask_co.paa)};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_10_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_COM_10_CA.paa);
 		class ItemInfo: ItemInfo {
 			hiddenSelectionsTextures[] = {QPATHTOF(data\M04_pask_co.paa)};
 		};
@@ -420,7 +420,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","UNCOV_FLAG","ms2000"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"","","","",""};
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_01_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_01_CA.paa);
 		scope = 2;
 		scopeCurator = 2;
 		class ItemInfo: ItemInfo {
@@ -439,27 +439,27 @@ class CfgWeapons {
 	class KAR_FDF_OPSCORE_02: KAR_FDF_OPSCORE_01 {
 		displayName = "FAST Opscore Helmet (M05/Headset)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_02_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_02_CA.paa);
 	};
 	class KAR_FDF_OPSCORE_04: KAR_FDF_OPSCORE_01 {
 		displayName = "FAST Opscore Helmet (M04)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"","","","",""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_04_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_04_CA.paa);
 	};
 	class KAR_FDF_OPSCORE_05: KAR_FDF_OPSCORE_01 {
 		displayName = "FAST Opscore Helmet (M04/Headset)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_05_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_05_CA.paa);
 	};
 	class KAR_FDF_W_OPSCORE_01: KAR_FDF_OPSCORE_01 {
 		displayName = "FAST Opscore Helmet (M05 Winter)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"","","","",""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_01_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_01_CA.paa);
 	};
 	class KAR_FDF_W_OPSCORE_02: KAR_FDF_OPSCORE_01 {
 		displayName = "FAST Opscore Helmet (M05 Winter/Headset)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","",""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_02_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_02_CA.paa);
 	};
 	class KAR_FDF_Opscore_01_C: KAR_FDF_OPSCORE_01 {
 		ALLOWEDFACEWEAR_OPSCORE;
@@ -467,7 +467,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 		hiddenSelectionsTextures[] =  {QPATHTOF(data\M05_opscore_co.paa),"","","",QPATHTOF(data\M05_cover_co.paa),""};
 		Model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_01_C_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_01_C_CA.paa);
 		class ItemInfo: ItemInfo {
 			hiddenSelections[] = {"opscore","comtac","NSW","contour","cover","ms2000"};
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover.p3d";
@@ -476,22 +476,22 @@ class CfgWeapons {
 	class KAR_FDF_Opscore_02_C: KAR_FDF_Opscore_01_C {
 		displayName = "FAST Opscore Helmet (M05/Cover/Headset)";
 		hiddenSelectionsTextures[] =  {QPATHTOF(data\M05_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","",QPATHTOF(data\M05_cover_co.paa),""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_02_C_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_02_C_CA.paa);
 	};
 	class KAR_FDF_Opscore_04_C: KAR_FDF_Opscore_01_C {
 		displayName = "FAST Opscore Helmet (M04/Cover)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"","","",QPATHTOF(data\M04_cover_co.paa),""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_04_C_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_04_C_CA.paa);
 	};
 	class KAR_FDF_Opscore_05_C: KAR_FDF_Opscore_01_C {
 		displayName = "FAST Opscore Helmet (M04/Cover/Headset)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M04_opscore_co.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","",QPATHTOF(data\M04_cover_co.paa),""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_05_C_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_OPSCORE_05_C_CA.paa);
 	};
 	class KAR_FDF_W_Opscore_01_C: KAR_FDF_Opscore_01_C {
 		displayName = "FAST Opscore Helmet (M05 Winter/Cover)";
 		hiddenSelectionsTextures[] =  {QPATHTOF(data\M05_W_opscore.paa),"","","",QPATHTOF(data\M05W_cover_co.paa),""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_01_C_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_01_C_CA.paa);
 		class ItemInfo: ItemInfo {
 			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 		};
@@ -499,7 +499,7 @@ class CfgWeapons {
 	class KAR_FDF_W_Opscore_02_C: KAR_FDF_Opscore_01_C {
 		displayName = "FAST Opscore Helmet (M05 Winter/Cover/Headset)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\M05_W_opscore.paa),"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","",QPATHTOF(data\M05W_cover_co.paa),""};
-		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_02_C_CA.PAA);
+		picture = QPATHTOF(ui\icons\helmets\KAR_FDF_W_OPSCORE_02_C_CA.paa);
 	};
 	class KAR_FDF_COM_11: KAR_FDF_HELM_BASE {
 		displayName = "Composite Helmet (M62)";

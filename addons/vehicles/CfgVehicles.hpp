@@ -2,8 +2,7 @@ class Eventhandlers;
 class CfgVehicles {
 	
 	class rhs_bmp2e_vdv;
-	class KAR_FDF_BMP2MD : rhs_bmp2e_vdv 
-    {
+	class KAR_FDF_BMP2MD : rhs_bmp2e_vdv {
 		scope = 2;
 		side = 1;
 		author = "Kartsa";
@@ -36,9 +35,24 @@ class CfgVehicles {
 				textures[] = {QPATHTOF(data\BMP_1_W_co.paa),QPATHTOF(data\BMP_2_W_co.paa),QPATHTOF(data\BMP_3_W_co.paa),QPATHTOF(data\BMP_4_W_co.paa),QPATHTOF(data\BMP_5_W_co.paa),QPATHTOF(data\BMP_6_W_co.paa)};
 			};
 		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {
+			TRANSPORT_MAGAZINE(KARRK62_Mag,20);
+			TRANSPORT_MAGAZINE(rhs_100Rnd_762x54mmR,10);
+			TRANSPORT_MAGAZINE(rhs_mag_30Rnd_556x45_Mk318_PMAG,10);
+		};
+		class TransportWeapons {
+			TRANSPORT_WEAPON(rhs_weap_m72a7,2);
+		};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
     };
-	class RHS_M252_D;
-	class KAR_FDF_KRH: RHS_M252_D {
+	class RHS_M252_WD;
+	class KAR_FDF_KRH: RHS_M252_WD {
 		scope = 2;
 		side = 1;
 		author = "Kartsa";
@@ -50,6 +64,9 @@ class CfgVehicles {
 		typicalCargo[] = {"KAR_FDF_RIF_C"};
 		displayName = "81 KRH 96";
 		editorPreview = QPATHTOF(ui\preview\KAR_FDF_KRH.jpg);
+		class TransportItems {};
+		class TransportMagazines {};
+		class TransportWeapons {};
 	};
 	class RHS_MK19_TriPod_WD;
 	class KAR_FDF_KRKK: RHS_MK19_TriPod_WD {
@@ -64,6 +81,9 @@ class CfgVehicles {
 		displayName = "40 KRKK 2005";
 		vehicleclass = "KAR_FDF_TUR";
 		editorPreview = QPATHTOF(ui\preview\KAR_FDF_KRKK.jpg);
+		class TransportItems {};
+		class TransportMagazines {};
+		class TransportWeapons {};
 	};
 	class RHS_TOW_TriPod_USMC_WD;
 	class KAR_FDF_PSTOHJ: RHS_TOW_TriPod_USMC_WD {
@@ -78,6 +98,9 @@ class CfgVehicles {
 		typicalCargo[] = {"KAR_FDF_RIF_S"};
 		displayName = "PSTOHJ 83";
 		editorPreview = QPATHTOF(ui\preview\KAR_FDF_PSTOHJ.jpg);
+		class TransportItems {};
+		class TransportMagazines {};
+		class TransportWeapons {};
 	};
 	class rhsusf_m109_usarmy;
 	class KAR_FDF_K9: rhsusf_m109_usarmy {
@@ -103,30 +126,33 @@ class CfgVehicles {
 				author = "Kartsa";
 				Textures[] = {QPATHTOF(data\k9_01_co.paa),QPATHTOF(data\k9_02_co.paa),QPATHTOF(data\k9_03_co.paa),"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_wd_ca.paa","rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_wd_co.paa"};
 			};
+		};class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
 		};
 	};
 	class RHS_ZU23_base;
-    class KAR_FDF_ITK_A: RHS_ZU23_base
-    {
+    class KAR_FDF_ITK_A: RHS_ZU23_base {
 		scope = 0;
         class Turrets;
     };
-   	class KAR_FDF_ITK_B :KAR_FDF_ITK_A
-    {
+   	class KAR_FDF_ITK_B :KAR_FDF_ITK_A {
 		scope = 0;
         class Turrets:Turrets
         {
             class MainTurret;
         };
     };
-    class KAR_FDF_ITK_C: KAR_FDF_ITK_B
-    {
+    class KAR_FDF_ITK_C: KAR_FDF_ITK_B {
 		scope = 0;
         class Turrets: Turrets
         {
-            class MainTurret: MainTurret
-            {
-            };
+            class MainTurret: MainTurret {};
 			class CargoTurret_01;
         };
     };
@@ -149,6 +175,9 @@ class CfgVehicles {
 				gunnerType = "KAR_FDF_RIF_C";
 			};
         };
+		class TransportItems {};
+		class TransportMagazines {};
+		class TransportWeapons {};
     };
 	class rhs_KORD_high_MSV;
 	class KAR_FDF_ITK96: rhs_KORD_high_MSV {
@@ -163,6 +192,9 @@ class CfgVehicles {
 		typicalCargo[] = {"KAR_FDF_RIF_S"};
 		displayName = "12.7 ITKK 96";
 		editorPreview = QPATHTOF(ui\preview\KAR_FDF_ITK96.jpg);
+		class TransportItems {};
+		class TransportMagazines {};
+		class TransportWeapons {};
 	};
 	class rhs_D30_vmf;
 	class KAR_FDF_PSH74: rhs_D30_vmf {
@@ -177,23 +209,23 @@ class CfgVehicles {
 		typicalCargo[] = {"KAR_FDF_RIF_C"};
 		displayName = "122 H 63";
 		editorPreview = QPATHTOF(ui\preview\KAR_FDF_PSH74.jpg);
+		class TransportItems {};
+		class TransportMagazines {};
+		class TransportWeapons {};
 	};
 	class rhs_2s1tank_base;
-    class KAR_FDF_122PSH_A:rhs_2s1tank_base
-    {
+    class KAR_FDF_122PSH_A:rhs_2s1tank_base {
 		scope = 0;
         class Turrets;
     };
-   	class KAR_FDF_122PSH_B:KAR_FDF_122PSH_A
-    {
+   	class KAR_FDF_122PSH_B:KAR_FDF_122PSH_A {
 		scope = 0;
         class Turrets: Turrets
         {
             class MainTurret;
         };
     };
-    class KAR_FDF_122PSH_C: KAR_FDF_122PSH_B
-    {
+    class KAR_FDF_122PSH_C: KAR_FDF_122PSH_B {
 		scope = 0;
         class Turrets: Turrets
         {
@@ -204,8 +236,7 @@ class CfgVehicles {
         };
 		
     };
-    class KAR_FDF_122PSH_D:KAR_FDF_122PSH_C
-    {
+    class KAR_FDF_122PSH_D:KAR_FDF_122PSH_C {
 		scope = 0;
         class Turrets: Turrets
         {
@@ -273,6 +304,9 @@ class CfgVehicles {
 				};			
 			};
 		};
+		class TransportItems {};
+		class TransportMagazines {};
+		class TransportWeapons {};
     };
 	class B_APC_Tracked_01_AA_F;
 	class KAR_FDF_ITPSV_BASE: B_APC_Tracked_01_AA_F  {
@@ -341,6 +375,14 @@ class CfgVehicles {
 					QPATHTOF(data\iptsv_W_torni.paa)
 				};
 			};
+		};class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
 		};
 	};	
 	class O_Truck_02_covered_F;
@@ -396,9 +438,21 @@ class CfgVehicles {
 				};
 			};
 		};
-		class TransportWeapons {};
-		class TransportMagazines {};
-		class TransportItems {};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {
+			TRANSPORT_MAGAZINE(KARRK62_Mag,20);
+			TRANSPORT_MAGAZINE(rhs_100Rnd_762x54mmR,10);
+			TRANSPORT_MAGAZINE(rhs_mag_30Rnd_556x45_Mk318_PMAG,10);
+		};
+		class TransportWeapons {
+			TRANSPORT_WEAPON(rhs_weap_m72a7,2);
+		};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class O_Truck_02_transport_F;
 	class KAR_FDF_SISU: O_Truck_02_transport_F {
@@ -452,9 +506,21 @@ class CfgVehicles {
 				};
 			};
 		};
-		class TransportWeapons {};
-		class TransportMagazines {};
-		class TransportItems {};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {
+			TRANSPORT_MAGAZINE(KARRK62_Mag,20);
+			TRANSPORT_MAGAZINE(rhs_100Rnd_762x54mmR,10);
+			TRANSPORT_MAGAZINE(rhs_mag_30Rnd_556x45_Mk318_PMAG,10);
+		};
+		class TransportWeapons {
+			TRANSPORT_WEAPON(rhs_weap_m72a7,2);
+		};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class O_Truck_02_box_F;
 	class KAR_FDF_SISU_REPAIR: O_Truck_02_box_F {
@@ -507,9 +573,16 @@ class CfgVehicles {
 				};
 			};
 		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {
+		};
 		class TransportWeapons {};
-		class TransportMagazines {};
-		class TransportItems {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class O_Truck_02_medical_F;
 	class KAR_FDF_SISU_MEDICAL: O_Truck_02_medical_F {
@@ -563,9 +636,16 @@ class CfgVehicles {
 				};
 			};
 		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,20);
+			TRANSPORT_ITEM(MediKit,4);
+		};
+		class TransportMagazines {
+		};
 		class TransportWeapons {};
-		class TransportMagazines {};
-		class TransportItems {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class O_Truck_02_Ammo_F;
 	class KAR_FDF_SISU_AMMO: O_Truck_02_Ammo_F {
@@ -618,10 +698,15 @@ class CfgVehicles {
 					"\a3\soft_f_beta\truck_02\data\truck_02_chassis_co.paa"
 				};
 			};
+		};class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
 		};
-		class TransportWeapons {};
 		class TransportMagazines {};
-		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class O_Truck_02_fuel_F;
 	class KAR_FDF_SISU_FUEL: O_Truck_02_fuel_F {
@@ -674,6 +759,15 @@ class CfgVehicles {
 				};
 			};
 		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class rhsusf_m1240a1_m2_usarmy_d;
 	class KAR_FDF_RG32_M2: rhsusf_m1240a1_m2_usarmy_d {
@@ -709,6 +803,21 @@ class CfgVehicles {
 				factions[] = {};
 			};
 		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {
+			TRANSPORT_MAGAZINE(KARRK62_Mag,20);
+			TRANSPORT_MAGAZINE(rhs_100Rnd_762x54mmR,10);
+			TRANSPORT_MAGAZINE(rhs_mag_30Rnd_556x45_Mk318_PMAG,10);
+		};
+		class TransportWeapons {
+			TRANSPORT_WEAPON(rhs_weap_m72a7,2);
+		};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class rhsusf_m1240a1_mk19_usarmy_d;
 	class KAR_FDF_RG32_KRKK: rhsusf_m1240a1_mk19_usarmy_d {
@@ -743,6 +852,21 @@ class CfgVehicles {
 				textures[] = {"rhsusf\addons\rhsusf_matv\data\rhsusf_matv_ext_o_co.paa","rhsusf\addons\rhsusf_matv\data\rhsusf_matv_wheel_co.paa","rhsusf\addons\rhsusf_rg33l\data\rg33_turretwd_co.paa","rhsusf\addons\rhsusf_matv\data\rhsusf_matv_decal_ca.paa","rhsusf\addons\rhsusf_rg33l\data\rhsusf_camonet_wdl_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa","rhsusf\addons\rhsusf_caiman\data\M153_WD_CO.paa","rhsusf\addons\rhsusf_matv\data\rhsusf_matv_sof_o_co.paa","rhsusf\addons\rhsusf_matv\data\rhsusf_matvA1_wd_CO.paa","rhsusf\addons\rhsusf_matv\data\rhsusf_matvA1QNet_wd_CA.paa","rhsusf\addons\rhsusf_m1165\data\rhsusf_m11165a1_gmv_h246mount_wd_co.paa"};
 				factions[] = {};
 			};
+		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {
+			TRANSPORT_MAGAZINE(KARRK62_Mag,20);
+			TRANSPORT_MAGAZINE(rhs_100Rnd_762x54mmR,10);
+			TRANSPORT_MAGAZINE(rhs_mag_30Rnd_556x45_Mk318_PMAG,10);
+		};
+		class TransportWeapons {
+			TRANSPORT_WEAPON(rhs_weap_m72a7,2);
+		};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
 		};
 	};
 	class RHS_BM21_MSV_01;
@@ -791,6 +915,15 @@ class CfgVehicles {
 				};
 			};
 		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class rhs_btr60_msv;
 	class KAR_FDF_BTR: rhs_btr60_msv {
@@ -838,23 +971,35 @@ class CfgVehicles {
 				};
 			};
 		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {
+			TRANSPORT_MAGAZINE(KARRK62_Mag,20);
+			TRANSPORT_MAGAZINE(rhs_100Rnd_762x54mmR,10);
+			TRANSPORT_MAGAZINE(rhs_mag_30Rnd_556x45_Mk318_PMAG,10);
+		};
+		class TransportWeapons {
+			TRANSPORT_WEAPON(rhs_weap_m72a7,2);
+		};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
+		};
 	};
 	class rhs_t72ba_tv;
-    class KAR_FDF_T72_A: rhs_t72ba_tv
-    {
+    class KAR_FDF_T72_A: rhs_t72ba_tv {
 		scope = 0;
         class Turrets;
     };
-  	class KAR_FDF_T72_B: KAR_FDF_T72_A
-    {
+  	class KAR_FDF_T72_B: KAR_FDF_T72_A {
 		scope = 0;
         class Turrets: Turrets
         {
             class MainTurret;
         };
     };
-    class KAR_FDF_T72_C: KAR_FDF_T72_B
-    {
+    class KAR_FDF_T72_C: KAR_FDF_T72_B {
 		scope = 0;
         class Turrets: Turrets
         {
@@ -865,8 +1010,7 @@ class CfgVehicles {
         };
 		
     };
-    class KAR_FDF_T72_D: KAR_FDF_T72_C
-    {
+    class KAR_FDF_T72_D: KAR_FDF_T72_C {
 		scope = 0;
         class Turrets: Turrets
         {
@@ -936,6 +1080,15 @@ class CfgVehicles {
 					QPATHTOF(data\KAR_72_04_co.paa)
 				};			
 			};
+		};
+		class TransportItems {
+			TRANSPORT_ITEM(FirstAidKit,6);
+			TRANSPORT_ITEM(ToolKit,2);
+		};
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportBackpacks {
+			TRANSPORT_BACKPACKS(KAR_FDF_BAG_01,2);
 		};
     };
 };

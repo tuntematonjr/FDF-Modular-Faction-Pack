@@ -2,6 +2,37 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
 
+
+
+#define DEFAULT_LINKED_ITEMS    "ItemMap","ItemCompass","ItemWatch","ItemRadio"
+#define DEFAULT_MAGAZINES   "HandGrenade","HandGrenade","SmokeShell","SmokeShell"
+#define DEFAULT_RK62_MAGS   KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag","KARRK62_Mag"
+#define DEFAULT_WEAPONS "Throw","Put",binocular
+
+#define TRANSPORT_ITEM(item, cnt)\
+        class _xx_##item {\
+            name = #item;\
+            count = cnt;\
+        }
+
+#define TRANSPORT_BACKPACKS(item, cnt)\
+        class _xx_##item {\
+            backpack = #item;\
+            count = cnt;\
+        }
+        
+#define TRANSPORT_WEAPON(item, cnt)\
+        class _xx_##item {\
+            weapon = #item;\
+            count = cnt;\
+        }
+        
+#define TRANSPORT_MAGAZINE(item, cnt)\
+        class _xx_##item {\
+            magazine = #item;\
+            count = cnt;\
+        }
+
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
 

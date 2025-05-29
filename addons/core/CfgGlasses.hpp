@@ -9,25 +9,25 @@ class CfgGlasses {
 		mass = 4;
 		mode = 4;
 		model = QPATHTOF(balaclava\jam_sov_balaclava.p3d);
-		picture = QPATHTOF(ui\icons\PB_Bala_GR_ca.paa);
+		picture = QPATHTOF(ui\icons\balaclavas\PB_Bala_GR_ca.paa);
 	};
 
 	class KAR_FDF_B_W: KAR_FDF_B_GR {
 		displayName = "Balaclava (Winter)";
 		hiddenselectionstextures[] = {QPATHTOF(balaclava\bala_W_co.paa)};
-		picture = QPATHTOF(ui\icons\PB_Bala_W_ca.paa);
+		picture = QPATHTOF(ui\icons\balaclavas\PB_Bala_W_ca.paa);
 	};
 
 	class KAR_FDF_B_GL: KAR_FDF_B_GR {
 		displayName = "Balaclava (Light Green)";
 		hiddenselectionstextures[] = {QPATHTOF(balaclava\bala_L_GR_co.paa)};
-		picture = QPATHTOF(ui\icons\PB_Bala_GL_ca.paa);
+		picture = QPATHTOF(ui\icons\balaclavas\PB_Bala_GL_ca.paa);
 	};
 
 	class KAR_FDF_B_B: KAR_FDF_B_GR {
 		displayName = "Balaclava (Black)";
 		hiddenselectionstextures[] = {QPATHTOF(balaclava\bala_B_co.paa)};
-		picture = QPATHTOF(ui\icons\PB_Bala_B_ca.paa);
+		picture = QPATHTOF(ui\icons\balaclavas\PB_Bala_B_ca.paa);
 	};
 };
 
